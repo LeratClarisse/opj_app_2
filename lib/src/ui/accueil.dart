@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'cours.dart';
+import 'recap.dart';
+import 'question.dart';
 
 class Accueil extends StatelessWidget {
   const Accueil({Key? key}) : super(key: key);
@@ -22,19 +25,34 @@ class Accueil extends StatelessWidget {
           children: <Widget>[
             ElevatedButton(
               style: style,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Cours()),
+                );
+              },
               child: const Text('Cours'),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
               style: style,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Recap()),
+                );
+              },
               child: const Text('Récap'),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
               style: style,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Question()),
+                );
+              },
               child: const Text('Questions'),
             ),
           ],
