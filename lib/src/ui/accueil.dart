@@ -21,7 +21,7 @@ class Accueil extends StatelessWidget {
               child: const Text('Cours'),
             ),
             const SizedBox(height: 30),
-            ElevatedButton(
+            TextButton(
               style: style,
               onPressed: () {},
               child: const Text('Récap'),
