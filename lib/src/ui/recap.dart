@@ -17,12 +17,9 @@ class Recap extends StatelessWidget {
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
-            // const DrawerHeader(
-            //   decoration: BoxDecoration(
-            //     color: Colors.blue,
-            //   ),
-            //   child: Text('Drawer Header'),
-            // ),
+            const DrawerHeader(
+              child: Text('Drawer Header'),
+            ),
             ListTile(
               title: const Text('Accueil'),
               onTap: () {
