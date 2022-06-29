@@ -36,7 +36,6 @@ class Accueil extends StatelessWidget {
                   context,
                   MaterialPageRoute(builder: (context) => const Accueil()),
                 );
-                Navigator.pop(context);
               },
             ),
             ListTile(
@@ -46,19 +45,24 @@ class Accueil extends StatelessWidget {
                   context,
                   MaterialPageRoute(builder: (context) => const Cours()),
                 );
-                // Navigator.pop(context);
               },
             ),
             ListTile(
               title: const Text('Récap'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Recap()),
+                );
               },
             ),
             ListTile(
               title: const Text('Questions'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Question()),
+                );
               },
             ),
           ],
