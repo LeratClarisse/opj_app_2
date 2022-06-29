@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'cours.dart';
-import 'question.dart';
+import 'recap.dart';
 import 'accueil.dart';
 
 class Question extends StatelessWidget {
