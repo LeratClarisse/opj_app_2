@@ -32,7 +32,7 @@ class Accueil extends StatelessWidget {
             ListTile(
               title: const Text('Accueil'),
               onTap: () {
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(builder: (context) => const Accueil()),
                 );
               },
@@ -48,8 +48,7 @@ class Accueil extends StatelessWidget {
             ListTile(
               title: const Text('Récap'),
               onTap: () {
-                Navigator.push(
-                  context,
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(builder: (context) => const Recap()),
                 );
               },
@@ -57,8 +56,7 @@ class Accueil extends StatelessWidget {
             ListTile(
               title: const Text('Questions'),
               onTap: () {
-                Navigator.push(
-                  context,
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(builder: (context) => const Question()),
                 );
               },
@@ -73,8 +71,7 @@ class Accueil extends StatelessWidget {
             ElevatedButton(
               style: style,
               onPressed: () {
-                Navigator.push(
-                  context,
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(builder: (context) => const Cours()),
                 );
               },
@@ -84,8 +81,7 @@ class Accueil extends StatelessWidget {
             ElevatedButton(
               style: style,
               onPressed: () {
-                Navigator.push(
-                  context,
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(builder: (context) => const Recap()),
                 );
               },
@@ -95,8 +91,7 @@ class Accueil extends StatelessWidget {
             ElevatedButton(
               style: style,
               onPressed: () {
-                Navigator.push(
-                  context,
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(builder: (context) => const Question()),
                 );
               },
