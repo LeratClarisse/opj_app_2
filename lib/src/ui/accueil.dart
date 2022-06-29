@@ -17,13 +17,13 @@ class Accueil extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            OutlinedButton(
+            ElevatedButton(
               style: style,
               onPressed: () {},
               child: const Text('Cours'),
             ),
             const SizedBox(height: 30),
-            TextButton(
+            ElevatedButton(
               style: style,
               onPressed: () {},
               child: const Text('Récap'),
