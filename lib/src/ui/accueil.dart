@@ -16,7 +16,7 @@ class Accueil extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        //centerTitle: true,
+        centerTitle: true,
         title: const Text('OPJ Expert'),
       ),
       body: Center(
