@@ -7,6 +7,8 @@ class Accueil extends StatelessWidget {
   Widget build(BuildContext context) {
     final ButtonStyle style = ElevatedButton.styleFrom(
       textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+      elevation: 15,
+      padding: const EdgeInsets.all(20),
     );
 
     return Scaffold(
