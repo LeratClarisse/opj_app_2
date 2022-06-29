@@ -5,7 +5,9 @@ class Accueil extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ButtonStyle style = ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
+    final ButtonStyle style = ElevatedButton.styleFrom(
+      textStyle: const TextStyle(fontSize: 20),
+    );
 
     return Scaffold(
       appBar: AppBar(
@@ -16,13 +18,11 @@ class Accueil extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             OutlinedButton(
-              style: style,
               onPressed: () {},
               child: const Text('Cours'),
             ),
             const SizedBox(height: 30),
             TextButton(
-              style: style,
               onPressed: () {},
               child: const Text('Récap'),
             ),
