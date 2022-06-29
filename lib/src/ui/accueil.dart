@@ -19,6 +19,51 @@ class Accueil extends StatelessWidget {
         centerTitle: true,
         title: const Text('OPJ Expert'),
       ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            // const DrawerHeader(
+            //   decoration: BoxDecoration(
+            //     color: Colors.blue,
+            //   ),
+            //   child: Text('Drawer Header'),
+            // ),
+            ListTile(
+              title: const Text('Accueil'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Accueil()),
+                );
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: const Text('Cours'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Cours()),
+                );
+                // Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: const Text('Récap'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: const Text('Questions'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        ),
+      ),
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
