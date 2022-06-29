@@ -15,7 +15,7 @@ class Accueil extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            ElevatedButton(
+            OutlinedButton(
               style: style,
               onPressed: () {},
               child: const Text('Cours'),
