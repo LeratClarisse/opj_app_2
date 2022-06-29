@@ -7,8 +7,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark(),
-      home: const Scaffold(
-        body: Text("Hello"),
+      home: const Accueil()
       ),
     );
   }
