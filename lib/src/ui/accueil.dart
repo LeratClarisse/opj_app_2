@@ -18,11 +18,13 @@ class Accueil extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             OutlinedButton(
+              style: style,
               onPressed: () {},
               child: const Text('Cours'),
             ),
             const SizedBox(height: 30),
             TextButton(
+              style: style,
               onPressed: () {},
               child: const Text('Récap'),
             ),
