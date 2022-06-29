@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'cours.dart';
+import 'question.dart';
+import 'accueil.dart';
 
 class Cours extends StatelessWidget {
   const Cours({Key? key}) : super(key: key);
