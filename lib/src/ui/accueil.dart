@@ -40,8 +40,7 @@ class Accueil extends StatelessWidget {
             ListTile(
               title: const Text('Cours'),
               onTap: () {
-                Navigator.push(
-                  context,
+                Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => const Cours()),
                 );
               },
