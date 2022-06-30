@@ -45,10 +45,10 @@ class Courses extends StatelessWidget {
                     trailing: Text('Catégorie'),
                   ),
                 ),
-                ListTile(title: Text(datas[index].title), onTap: () {})
+                ListTile(leading: Text(datas[index].docNumber.toString()), title: Text(datas[index].title), trailing: Text(datas[index].category), onTap: () {})
               ]);
             } else {
-              return ListTile(title: Text(datas[index].title), onTap: () {});
+              return ListTile(leading: Text(datas[index].docNumber.toString()), title: Text(datas[index].title), trailing: Text(datas[index].category), onTap: () {});
             }
           } else {
             return const Text("Aucun cours");
