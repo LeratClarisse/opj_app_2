@@ -34,7 +34,7 @@ class Courses extends StatelessWidget {
     return ListView.builder(
         itemCount: snapshot.data?.length,
         itemBuilder: (BuildContext context, int index) {
-          if (datas != null) {
+          if (datas == null) {
             return ListTile(title: Text(datas[index].title));
           } else {
             return const Text("Aucun cours");
