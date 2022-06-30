@@ -25,7 +25,11 @@ class DocumentProvider {
   Future<List<Document>> fetchSumUpList() async {
     if (response.isNotEmpty) {
       Iterable l = json.decode(response)['documents'];
-      List<Document> documents = List<Document>.from(l.map((model) { if(model['isSumUp']) {Document.fromJson(model)}}));
+      List<Document> documents = List<Document>.from(l.map((model) {
+        if (model['isSumUp']) {
+          Document.fromJson(model);
+        }
+      }));
       return documents;
     } else {
       throw Exception('Failed to load documents');
