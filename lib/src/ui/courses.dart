@@ -38,7 +38,6 @@ class Courses extends StatelessWidget {
             if (index == 0) {
               return Column(children: [
                 Container(
-                  padding: const EdgeInsets.all(5),
                   color: Colors.grey,
                   child: const ListTile(
                     leading: Text('N°'),
