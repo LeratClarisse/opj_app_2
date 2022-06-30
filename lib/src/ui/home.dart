@@ -17,6 +17,7 @@ class Home extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        color: Colors.lightBlueAccent,
         centerTitle: true,
         title: const Text('OPJ Expert'),
       ),
