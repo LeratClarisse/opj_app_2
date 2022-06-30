@@ -11,7 +11,7 @@ class DocumentProvider {
         {"id": "3", "docNumber": "3", "title": "Doc3", "file": "doc3.pdf", "category": "DPG" },
         {"id": "4", "docNumber": "4", "title": "Doc4", "file": "doc4.pdf", "category": "DPS" },
         {"id": "5", "docNumber": "5", "title": "Doc5", "file": "doc5.pdf", "category": "PP" },
-    ]}}''';
+    ]}''';
 
     // ignore: avoid_print
     print(json.decode(response));
