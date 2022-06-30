@@ -30,11 +30,12 @@ class Courses extends StatelessWidget {
 
   Widget buildList(AsyncSnapshot<List<Document>> snapshot) {
     List<Document>? datas = snapshot.data;
+
     return ListView.builder(
         itemCount: snapshot.data?.length,
         itemBuilder: (BuildContext context, int index) {
           if (datas != null) {
-            return Text(datas[index].title);
+            return ListTile(title: Text(datas[index].title));
           } else {
             return const Text("Aucun cours");
           }
