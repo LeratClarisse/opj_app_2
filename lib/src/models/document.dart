@@ -3,8 +3,8 @@ class Document {
   final int docNumber;
   final String title;
   final String file;
-  final int category;
-  final int? subcategory;
+  final String category;
+  final String? subcategory;
   final bool isSumUp;
 
   const Document({required this.id, required this.docNumber, required this.title, required this.file, required this.category, this.subcategory, this.isSumUp = false});
