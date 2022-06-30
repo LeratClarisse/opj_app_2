@@ -30,9 +30,8 @@ class Courses extends StatelessWidget {
 
   Widget buildList(AsyncSnapshot<List<Document>> snapshot) {
     List<Document>? datas = snapshot.data;
-    return GridView.builder(
+    return ListView.builder(
         itemCount: snapshot.data?.length,
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
         itemBuilder: (BuildContext context, int index) {
           if (datas != null) {
             return Text(datas[index].title);
