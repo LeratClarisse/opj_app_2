@@ -34,7 +34,8 @@ class Courses extends StatelessWidget {
     return ListView.builder(
         itemCount: snapshot.data?.length,
         itemBuilder: (BuildContext context, int index) {
-          if (datas != null) {
+          Document? doc = datas[index];
+          if (doc != null) {
             if (index == 0) {
               return Column(children: [
                 Container(
@@ -45,10 +46,10 @@ class Courses extends StatelessWidget {
                     trailing: Text('Catégorie'),
                   ),
                 ),
-                ListTile(leading: Text(datas[index].docNumber.toString()), title: Text(datas[index].title), trailing: Text(datas[index].category), onTap: () {})
+                ListTile(leading: Text(doc.docNumber.toString()), title: Text(doc.title), trailing: Text(doc.category), onTap: () {})
               ]);
             } else {
-              return ListTile(leading: Text(datas[index].docNumber.toString()), title: Text(datas[index].title), trailing: Text(datas[index].category), onTap: () {});
+              return ListTile(leading: Text(doc.docNumber.toString()), title: Text(doc.title), trailing: Text(doc.category), onTap: () {});
             }
           } else {
             return const Text("Aucun cours");
