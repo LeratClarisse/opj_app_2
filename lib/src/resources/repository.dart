@@ -5,5 +5,6 @@ import '../models/document.dart';
 class Repository {
   final documentProvider = DocumentProvider();
 
-  Future<List<Document>> fetchAllDocuments() => documentProvider.fetchDocumentList();
+  Future<List<Document>> fetchAllCourses() => documentProvider.fetchCourseList();
+  Future<List<Document>> fetchAllSumUps() => documentProvider.fetchSumUpList();
 }

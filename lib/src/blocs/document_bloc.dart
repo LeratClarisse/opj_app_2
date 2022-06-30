@@ -6,11 +6,17 @@ class DocumentsBloc {
   final _repository = Repository();
   final _documentsFetcher = PublishSubject<List<Document>>();
 
-  Stream<List<Document>> get allDocuments => _documentsFetcher.stream;
+  Stream<List<Document>> get allCourses => _documentsFetcher.stream;
+  Stream<List<Document>> get allSumUps => _documentsFetcher.stream;
 
-  fetchAllDocuments() async {
-    List<Document> documents = await _repository.fetchAllDocuments();
-    _documentsFetcher.sink.add(documents);
+  fetchAllCourses() async {
+    List<Document> courses = await _repository.fetchAllCourses();
+    _documentsFetcher.sink.add(courses);
+  }
+
+  fetchAllSumUps() async {
+    List<Document> sumUps = await _repository.fetchAllSumUps();
+    _documentsFetcher.sink.add(sumUps);
   }
 
   dispose() {

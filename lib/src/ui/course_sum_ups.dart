@@ -1,18 +1,59 @@
 import 'package:flutter/material.dart';
 import 'menu.dart';
+import '../models/document.dart';
+import '../blocs/document_bloc.dart';
 
 class CourseSumUps extends StatelessWidget {
   const CourseSumUps({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    bloc.fetchAllSumUps();
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('OPJ Expert'),
-      ),
-      drawer: const Menu(),
-      body: const Center(child: Text("Page Récap")),
-    );
+        appBar: AppBar(
+          centerTitle: true,
+          title: const Text('OPJ Expert'),
+        ),
+        drawer: const Menu(),
+        body: StreamBuilder(
+          stream: bloc.allSumUps,
+          builder: (context, AsyncSnapshot<List<Document>> snapshot) {
+            if (snapshot.hasData) {
+              return buildList(snapshot);
+            } else if (snapshot.hasError) {
+              return Text(snapshot.error.toString());
+            }
+            return const Center(child: CircularProgressIndicator());
+          },
+        ));
+  }
+
+  Widget buildList(AsyncSnapshot<List<Document>> snapshot) {
+    List<Document>? datas = snapshot.data;
+
+    return ListView.builder(
+        itemCount: snapshot.data?.length,
+        itemBuilder: (BuildContext context, int index) {
+          if (datas != null) {
+            Document doc = datas[index];
+            if (index == 0) {
+              return Column(children: [
+                Container(
+                  color: Colors.cyan,
+                  child: const ListTile(
+                    leading: Text('N°'),
+                    title: Text('Titre'),
+                    trailing: Text('Catégorie'),
+                  ),
+                ),
+                ListTile(leading: Text(doc.docNumber.toString()), title: Text(doc.title), trailing: Text(doc.category), onTap: () {})
+              ]);
+            } else {
+              return ListTile(leading: Text(doc.docNumber.toString()), title: Text(doc.title), trailing: Text(doc.category), onTap: () {});
+            }
+          } else {
+            return const Text("Aucun cours");
+          }
+        });
   }
 }
