@@ -34,8 +34,8 @@ class Courses extends StatelessWidget {
     return ListView.builder(
         itemCount: snapshot.data?.length,
         itemBuilder: (BuildContext context, int index) {
-          Document? doc = datas[index];
-          if (doc != null) {
+          if (datas != null) {
+            Document doc = datas[index];
             if (index == 0) {
               return Column(children: [
                 Container(
