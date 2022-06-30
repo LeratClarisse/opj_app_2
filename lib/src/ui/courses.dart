@@ -8,7 +8,7 @@ class Courses extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bloc.fetchAllDocuments();
+    bloc.fetchAllCourses();
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
@@ -16,7 +16,7 @@ class Courses extends StatelessWidget {
         ),
         drawer: const Menu(),
         body: StreamBuilder(
-          stream: bloc.allDocuments,
+          stream: bloc.allCourses,
           builder: (context, AsyncSnapshot<List<Document>> snapshot) {
             if (snapshot.hasData) {
               return buildList(snapshot);
