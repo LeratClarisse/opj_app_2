@@ -39,7 +39,7 @@ class Courses extends StatelessWidget {
               return Column(children: [
                 Container(
                   padding: const EdgeInsets.all(10),
-                  color: Color.blue,
+                  color: Colors.blue,
                   child: const ListTile(
                     leading: Text('N°'),
                     title: Text('Titre'),
