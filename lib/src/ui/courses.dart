@@ -29,11 +29,16 @@ class Courses extends StatelessWidget {
   }
 
   Widget buildList(AsyncSnapshot<List<Document>> snapshot) {
+    List<Document>? datas = snapshot.data;
     return GridView.builder(
         itemCount: snapshot.data?.length,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
         itemBuilder: (BuildContext context, int index) {
-          return const Text("test");
+          if (datas != null) {
+            return Text(datas[index].title);
+          } else {
+            return const Text("Aucun cours");
+          }
         });
   }
 }

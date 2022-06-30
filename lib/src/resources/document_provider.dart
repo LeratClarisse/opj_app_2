@@ -9,8 +9,6 @@ class DocumentProvider {
     if (response.isNotEmpty) {
       Iterable l = json.decode(response)['documents'];
       List<Document> documents = List<Document>.from(l.map((model) => Document.fromJson(model)));
-      // ignore: avoid_print
-      print(documents);
       return documents;
     } else {
       throw Exception('Failed to load documents');
