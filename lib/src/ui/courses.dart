@@ -34,8 +34,31 @@ class Courses extends StatelessWidget {
     return ListView.builder(
         itemCount: snapshot.data?.length,
         itemBuilder: (BuildContext context, int index) {
-          if (datas == null) {
-            return ListTile(title: Text(datas[index].title));
+          if (datas != null) {
+            if (index == 0) {
+              return Column(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(10),
+                    color: Colors.amber,
+                    child: const ListTile(
+                      leading: Text('ID'),
+                      title: Text('Name'),
+                      trailing: Text('Age'),
+                    ),
+                  ),
+                  ListTile(
+                    title: Text(datas[index].title),
+                    onTap: (){}
+                  )
+                ]
+              );
+            } else {
+              return ListTile(
+                    title: Text(datas[index].title),
+                    onTap: (){}
+                  );
+            }
           } else {
             return const Text("Aucun cours");
           }
