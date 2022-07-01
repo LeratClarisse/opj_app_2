@@ -46,7 +46,7 @@ class _Questions extends State<Questions> {
   }
 
   Widget buildReponse(BuildContext context) {
-    return Expanded(
+    return 
         child: Stack(alignment: Alignment.center, children: <Widget>[
       AnimatedPositioned(
         width: selected ? 200.0 : 0,
@@ -60,7 +60,7 @@ class _Questions extends State<Questions> {
           ),
         ),
       )
-    ]));
+    ]);
   }
 
   /// Bottom side rendering (buttons)
