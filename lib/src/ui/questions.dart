@@ -22,6 +22,7 @@ class Questions extends StatelessWidget {
             alignment: Alignment.bottomCenter,
             child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
               ElevatedButton(style: style, onPressed: () {}, child: const Text('Réponse')),
+              const SizedBox(height: 30),
               ElevatedButton(style: style, onPressed: () {}, child: const Text('Fiche'))
             ])));
   }
