@@ -51,6 +51,8 @@ class _Questions extends State<Questions> {
       opacity: opacityLevel,
       duration: const Duration(seconds: 1),
       child: Container(
+        width: 200,
+        height: 200,
         color: Colors.blue,
         child: const Center(child: Text('Réponse')),
       ),
