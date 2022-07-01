@@ -7,33 +7,11 @@ class Questions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('OPJ Expert'),
-      ),
-      drawer: const Menu(),
-      body: const Center(child: Text("Page Question")),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Précédent',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Réponse',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'Fiche',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'Suivant',
-          ),
-        ],
-        selectedItemColor: Colors.cyan,
-      ),
-    );
+        appBar: AppBar(
+          centerTitle: true,
+          title: const Text('OPJ Expert'),
+        ),
+        drawer: const Menu(),
+        body: const Align(alignment: Alignment.bottomCenter, child: ElevatedButton(onPressed: () {}, child: Text('Sample Button'))));
   }
 }
