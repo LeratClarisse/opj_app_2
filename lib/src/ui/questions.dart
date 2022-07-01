@@ -35,7 +35,7 @@ class _Questions extends State<Questions> {
         width: 200.0,
         height: selected ? 50.0 : 200.0,
         top: selected ? 50.0 : 210.0,
-        duration: const Duration(milliseconds: 500),
+        duration: const Duration(milliseconds: 300),
         curve: Curves.fastOutSlowIn,
         child: GestureDetector(
           child: Container(
@@ -55,7 +55,7 @@ class _Questions extends State<Questions> {
   Widget buildReponse(BuildContext context) {
     return AnimatedOpacity(
       opacity: opacityLevel,
-      duration: const Duration(milliseconds: 50),
+      duration: const Duration(milliseconds: 100),
       child: Container(
         width: selected ? 200 : 0,
         height: selected ? 200 : 0,
