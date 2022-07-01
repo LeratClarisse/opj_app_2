@@ -24,9 +24,9 @@ class Questions extends StatelessWidget {
               ElevatedButton(style: style, onPressed: () {}, child: const Text('Réponse')),
               const SizedBox(height: 30),
               Row(children: <Widget>[
-                IconButton(icon: const Icon(Icons.arrow_left), tooltip: 'Préc.', onPressed: () {}),
-                ElevatedButton(style: style, onPressed: () {}, child: const Text('Fiche')),
-                IconButton(icon: const Icon(Icons.arrow_right), tooltip: 'Suiv.', onPressed: () {})
+                Expanded(child: IconButton(icon: const Icon(Icons.arrow_left), tooltip: 'Préc.', onPressed: () {})),
+                Expanded(child: ElevatedButton(style: style, onPressed: () {}, child: const Text('Fiche'))),
+                Expanded(child: IconButton(icon: const Icon(Icons.arrow_right), tooltip: 'Suiv.', onPressed: () {}))
               ]),
               const SizedBox(height: 30),
             ])));
