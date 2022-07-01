@@ -6,6 +6,12 @@ class Questions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final ButtonStyle style = ElevatedButton.styleFrom(
+      textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+      fixedSize: const Size(200, 50),
+      padding: const EdgeInsets.all(20),
+    );
+
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
@@ -15,8 +21,8 @@ class Questions extends StatelessWidget {
         body: Align(
             alignment: Alignment.bottomCenter,
             child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
-              ElevatedButton(onPressed: () {}, child: const Text('Réponse')),
-              ElevatedButton(onPressed: () {}, child: const Text('Fiche'))
+              ElevatedButton(style: style, onPressed: () {}, child: const Text('Réponse')),
+              ElevatedButton(style: style, onPressed: () {}, child: const Text('Fiche'))
             ])));
   }
 }
