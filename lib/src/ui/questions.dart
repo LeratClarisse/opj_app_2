@@ -49,6 +49,8 @@ class _Questions extends State<Questions> {
   Widget buildReponse(BuildContext context) {
     return Visibility(
         visible: selected,
+        maintainAnimation: true,
+        maintainState: true,
         child: AnimatedOpacity(
           opacity: opacityLevel,
           duration: const Duration(seconds: 1),
