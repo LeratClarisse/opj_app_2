@@ -53,6 +53,7 @@ class _Questions extends State<Questions> {
       child: Container(
         width: selected ? 200 : 0,
         height: selected ? 200 : 0,
+        top: 150,
         color: Colors.blue,
         child: const Center(child: Text('Réponse')),
       ),
