@@ -26,22 +26,24 @@ class _Questions extends State<Questions> {
   }
 
   Widget buildQuestion(BuildContext context) {
-    return AnimatedPositioned(
-      top: selected ? 50.0 : 150.0,
-      duration: const Duration(seconds: 2),
-      curve: Curves.fastOutSlowIn,
-      child: GestureDetector(
-        onTap: () {
-          setState(() {
-            selected = !selected;
-          });
-        },
-        child: Container(
-          color: Colors.blue,
-          child: const Center(child: Text('Tap me')),
+    return Stack(children: <Widget>[
+      AnimatedPositioned(
+        top: selected ? 50.0 : 150.0,
+        duration: const Duration(seconds: 2),
+        curve: Curves.fastOutSlowIn,
+        child: GestureDetector(
+          onTap: () {
+            setState(() {
+              selected = !selected;
+            });
+          },
+          child: Container(
+            color: Colors.blue,
+            child: const Center(child: Text('Tap me')),
+          ),
         ),
-      ),
-    );
+      )
+    ]);
   }
 
   /// Bottom side rendering (buttons)
