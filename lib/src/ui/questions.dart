@@ -50,7 +50,7 @@ class _Questions extends State<Questions> {
     return AnimatedOpacity(
       opacity: opacityLevel,
       duration: const Duration(seconds: 1),
-      child: Expandable(
+      child: Expanded(
         child: Container(
           color: Colors.blue,
           child: const Center(child: Text('Réponse')),
