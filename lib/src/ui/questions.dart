@@ -10,6 +10,7 @@ class Questions extends StatefulWidget {
 
 class _Questions extends State<Questions> {
   bool selected = false;
+  double opacityLevel = 1.0;
 
   @override
   Widget build(BuildContext context) {
@@ -48,21 +49,24 @@ class _Questions extends State<Questions> {
   Widget buildReponse(BuildContext context) {
     return Visibility(
         visible: selected,
-        child: Expanded(
-            child: Stack(alignment: Alignment.center, children: <Widget>[
-          AnimatedPositioned(
-            width: selected ? 200.0 : 0,
-            height: selected ? 200.0 : 0,
-            duration: const Duration(seconds: 1),
-            curve: Curves.fastOutSlowIn,
-            child: GestureDetector(
-              child: Container(
-                color: Colors.blue,
-                child: const Center(child: Text('Réponse')),
-              ),
-            ),
-          )
-        ])));
+        child: AnimatedOpacity(
+            opacity: opacityLevel,
+            duration: const Duration(seconds: 3),
+            child: Expanded(
+                child: Stack(alignment: Alignment.center, children: <Widget>[
+              AnimatedPositioned(
+                width: selected ? 200.0 : 0,
+                height: selected ? 200.0 : 0,
+                duration: const Duration(seconds: 1),
+                curve: Curves.fastOutSlowIn,
+                child: GestureDetector(
+                  child: Container(
+                    color: Colors.blue,
+                    child: const Center(child: Text('Réponse')),
+                  ),
+                ),
+              )
+            ]))));
   }
 
   /// Bottom side rendering (buttons)
