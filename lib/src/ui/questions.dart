@@ -25,7 +25,7 @@ class Questions extends StatelessWidget {
               const SizedBox(height: 30),
               Row(children: <Widget>[
                 Expanded(child: IconButton(icon: const Icon(Icons.arrow_left), tooltip: 'Préc.', onPressed: () {})),
-                Expanded(flex: 2, child: ElevatedButton(style: style, onPressed: () {}, child: const Text('Fiche'))),
+                Expanded(flex: 2, child: IconButton(icon: const Icon(Icons.document_scanner_outlined), tooltip: 'Fiche', onPressed: () {})),
                 Expanded(child: IconButton(icon: const Icon(Icons.arrow_right), tooltip: 'Suiv.', onPressed: () {}))
               ]),
               const SizedBox(height: 30),
