@@ -3,8 +3,8 @@ class Question {
   final String label;
   final String response;
   final int docNumber;
-  final int category;
-  final int? subcategory;
+  final String category;
+  final String? subcategory;
 
   const Question({required this.id, required this.label, required this.response, required this.docNumber, required this.category, this.subcategory});
 

@@ -13,6 +13,27 @@ class Questions extends StatelessWidget {
       ),
       drawer: const Menu(),
       body: const Center(child: Text("Page Question")),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Précédent',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.business),
+            label: 'Réponse',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.school),
+            label: 'Fiche',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.school),
+            label: 'Suivant',
+          ),
+        ],
+        selectedItemColor: Colors.cyan,
+      ),
     );
   }
 }
