@@ -50,8 +50,7 @@ class _Questions extends State<Questions> {
         visible: selected,
         maintainAnimation: true,
         maintainState: true,
-        child: Expanded(
-            child: Stack(alignment: Alignment.center, children: <Widget>[
+        child: Stack(alignment: Alignment.center, children: <Widget>[
           AnimatedPositioned(
             width: selected ? 200.0 : 0,
             height: selected ? 200.0 : 0,
@@ -64,7 +63,7 @@ class _Questions extends State<Questions> {
               ),
             ),
           )
-        ])));
+        ]));
   }
 
   /// Bottom side rendering (buttons)
