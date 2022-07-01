@@ -79,7 +79,7 @@ class _Questions extends State<Questions> {
                   opacityLevel = (opacityLevel - 1.0).abs();
                 });
               },
-              child: const Text('Réponse')),
+              child: selected ? const Text('Cacher') : const Text('Réponse')),
           const SizedBox(height: 30),
           Row(children: <Widget>[
             Expanded(child: IconButton(icon: const Icon(Icons.arrow_left), onPressed: () {})),
