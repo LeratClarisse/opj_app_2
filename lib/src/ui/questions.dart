@@ -34,7 +34,7 @@ class _Questions extends State<Questions> {
       AnimatedPositioned(
         width: selected ? 100.0 : 200.0,
         height: selected ? 100.0 : 200.0,
-        top: selected ? 50.0 : 150.0,
+        top: selected ? 50.0 : 200.0,
         duration: const Duration(milliseconds: 50),
         curve: Curves.fastOutSlowIn,
         child: GestureDetector(
