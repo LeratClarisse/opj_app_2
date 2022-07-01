@@ -44,7 +44,9 @@ class _Questions extends State<Questions> {
           ),
         ),
         onEnd: () {
-          opacityLevel = (opacityLevel - 1.0).abs();
+          setState(() {
+            opacityLevel = (opacityLevel - 1.0).abs();
+          });
         },
       )
     ]));
