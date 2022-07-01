@@ -75,7 +75,7 @@ class _Questions extends State<Questions> {
               onPressed: () {
                 setState(() {
                   selected = !selected;
-                  opacityLevel = 1.0
+                  opacityLevel = 1.0;
                 });
               },
               child: const Text('Réponse')),
