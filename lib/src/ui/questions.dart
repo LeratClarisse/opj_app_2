@@ -49,7 +49,7 @@ class _Questions extends State<Questions> {
   Widget buildReponse(BuildContext context) {
     return AnimatedOpacity(
       opacity: opacityLevel,
-      duration: const Duration(seconds: 10),
+      duration: const Duration(seconds: 1),
       child: GestureDetector(
         child: Container(
           color: Colors.blue,
