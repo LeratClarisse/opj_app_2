@@ -50,7 +50,7 @@ class _Questions extends State<Questions> {
     return AnimatedOpacity(
       opacity: opacityLevel,
       duration: const Duration(seconds: 1),
-      child: GestureDetector(
+      child: Expandable(
         child: Container(
           color: Colors.blue,
           child: const Center(child: Text('Réponse')),
@@ -75,7 +75,7 @@ class _Questions extends State<Questions> {
               onPressed: () {
                 setState(() {
                   selected = !selected;
-                  opacityLevel = 1.0;
+                  opacityLevel = (opacityLevel - 1.0).abs();
                 });
               },
               child: const Text('Réponse')),
