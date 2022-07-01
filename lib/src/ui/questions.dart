@@ -54,8 +54,7 @@ class _Questions extends State<Questions> {
         maintainSize: true,
         child: AnimatedOpacity(
           opacity: opacityLevel,
-          duration: const Duration(seconds: 1),
-          curve: Curves.fastOutSlowIn,
+          duration: const Duration(seconds: 10),
           child: GestureDetector(
             child: Container(
               color: Colors.blue,
