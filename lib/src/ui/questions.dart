@@ -35,11 +35,6 @@ class _Questions extends State<Questions> {
         duration: const Duration(seconds: 1),
         curve: Curves.fastOutSlowIn,
         child: GestureDetector(
-          onTap: () {
-            setState(() {
-              selected = !selected;
-            });
-          },
           child: Container(
             color: Colors.blue,
             child: const Center(child: Text('Tap me')),
@@ -64,7 +59,15 @@ class _Questions extends State<Questions> {
           const SizedBox(height: 30),
           Row(children: <Widget>[
             Expanded(child: IconButton(icon: const Icon(Icons.arrow_left), onPressed: () {})),
-            Expanded(flex: 2, child: IconButton(icon: const Icon(Icons.document_scanner_outlined), onPressed: () {})),
+            Expanded(
+                flex: 2,
+                child: IconButton(
+                    icon: const Icon(Icons.document_scanner_outlined),
+                    onPressed: () {
+                      setState(() {
+                        selected = !selected;
+                      });
+                    })),
             Expanded(child: IconButton(icon: const Icon(Icons.arrow_right), onPressed: () {}))
           ]),
           const SizedBox(height: 30),
