@@ -29,8 +29,8 @@ class _Questions extends State<Questions> {
     return Expanded(
         child: Stack(alignment: Alignment.center, children: <Widget>[
       AnimatedPositioned(
-        width: selected ? 200.0 : 50.0,
-        height: selected ? 200.0 : 50.0,
+        width: selected ? 100.0 : 200.0,
+        height: selected ? 100.0 : 200.0,
         top: selected ? 50.0 : 150.0,
         duration: const Duration(seconds: 1),
         curve: Curves.fastOutSlowIn,
