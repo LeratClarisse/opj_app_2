@@ -47,7 +47,7 @@ class _Questions extends State<Questions> {
 
   Widget buildReponse(BuildContext context) {
     return Visibility(
-        visibility: selected,
+        visible: selected,
         child: Expanded(
             child: Stack(alignment: Alignment.center, children: <Widget>[
           AnimatedPositioned(
