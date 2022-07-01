@@ -12,6 +12,11 @@ class Questions extends StatelessWidget {
           title: const Text('OPJ Expert'),
         ),
         drawer: const Menu(),
-        body: Align(alignment: Alignment.bottomCenter, child: ElevatedButton(onPressed: () {}, child: const Text('Sample Button'))));
+        body: Align(
+            alignment: Alignment.bottomCenter,
+            child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+              ElevatedButton(onPressed: () {}, child: const Text('Sample Button')),
+              ElevatedButton(onPressed: () {}, child: const Text('Sample Button'))
+            ])));
   }
 }
