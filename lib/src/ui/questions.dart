@@ -49,7 +49,7 @@ class _Questions extends State<Questions> {
   Widget buildReponse(BuildContext context) {
     return AnimatedOpacity(
       opacity: opacityLevel,
-      duration: const Duration(milliseconds: 500),
+      // duration: const Duration(milliseconds: 500),
       child: Container(
         width: selected ? 200 : 0,
         height: selected ? 200 : 0,
