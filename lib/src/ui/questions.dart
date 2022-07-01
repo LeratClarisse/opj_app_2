@@ -21,6 +21,7 @@ class _Questions extends State<Questions> {
         drawer: const Menu(),
         body: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
           buildQuestion(context),
+          buildReponse(context),
           buildBottom(context)
         ]));
   }
@@ -37,7 +38,25 @@ class _Questions extends State<Questions> {
         child: GestureDetector(
           child: Container(
             color: Colors.blue,
-            child: const Center(child: Text('Tap me')),
+            child: const Center(child: Text('Question')),
+          ),
+        ),
+      )
+    ]));
+  }
+
+  Widget buildReponse(BuildContext context) {
+    return Expanded(
+        child: Stack(alignment: Alignment.center, children: <Widget>[
+      AnimatedPositioned(
+        width: selected ? 200.0 : 0,
+        height: selected ? 200.0 : 0,
+        duration: const Duration(seconds: 1),
+        curve: Curves.fastOutSlowIn,
+        child: GestureDetector(
+          child: Container(
+            color: Colors.blue,
+            child: const Center(child: Text('Réponse')),
           ),
         ),
       )
