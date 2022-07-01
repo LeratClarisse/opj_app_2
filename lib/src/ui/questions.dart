@@ -28,6 +28,8 @@ class _Questions extends State<Questions> {
   Widget buildQuestion(BuildContext context) {
     return Stack(children: <Widget>[
       AnimatedPositioned(
+        width: selected ? 200.0 : 50.0,
+        height: selected ? 50.0 : 200.0,
         top: selected ? 50.0 : 150.0,
         duration: const Duration(seconds: 2),
         curve: Curves.fastOutSlowIn,
