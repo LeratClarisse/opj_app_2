@@ -23,7 +23,8 @@ class Questions extends StatelessWidget {
             child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
               ElevatedButton(style: style, onPressed: () {}, child: const Text('Réponse')),
               const SizedBox(height: 30),
-              ElevatedButton(style: style, onPressed: () {}, child: const Text('Fiche'))
+              ElevatedButton(style: style, onPressed: () {}, child: const Text('Fiche')),
+              const SizedBox(height: 30),
             ])));
   }
 }
