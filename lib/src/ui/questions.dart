@@ -47,14 +47,15 @@ class _Questions extends State<Questions> {
   }
 
   Widget buildReponse(BuildContext context) {
-    return AnimatedOpacity(
+    return Expanded(
+        child: AnimatedOpacity(
       opacity: opacityLevel,
       duration: const Duration(seconds: 1),
       child: Container(
         color: Colors.blue,
         child: const Center(child: Text('Réponse')),
       ),
-    );
+    ));
   }
 
   /// Bottom side rendering (buttons)
