@@ -51,6 +51,7 @@ class _Questions extends State<Questions> {
         visible: selected,
         maintainAnimation: true,
         maintainState: true,
+        maintainSize: true,
         child: AnimatedOpacity(
           opacity: opacityLevel,
           duration: const Duration(seconds: 1),
