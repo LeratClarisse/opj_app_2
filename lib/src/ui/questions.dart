@@ -23,18 +23,20 @@ class Questions extends StatelessWidget {
             child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
               ElevatedButton(style: style, onPressed: () {}, child: const Text('Réponse')),
               const SizedBox(height: 30),
-              Row(crossAxisAlignment: CrossAxisAlignment.center, children: <Widget>[
-                IconButton(
+              Row(children: <Widget>[
+                Expanded(
+                    child: IconButton(
                   icon: const Icon(Icons.arrow_left),
                   tooltip: 'Préc.',
                   onPressed: () {},
-                ),
-                ElevatedButton(style: style, onPressed: () {}, child: const Text('Fiche')),
-                IconButton(
+                )),
+                Expanded(child: ElevatedButton(style: style, onPressed: () {}, child: const Text('Fiche'))),
+                Expanded(
+                    child: IconButton(
                   icon: const Icon(Icons.arrow_right),
                   tooltip: 'Suiv.',
                   onPressed: () {},
-                ),
+                ))
               ]),
               const SizedBox(height: 30),
             ])));
