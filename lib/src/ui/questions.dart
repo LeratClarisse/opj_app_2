@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'menu.dart';
 
-class Questions extends StatelessWidget {
+class Questions extends StatefulWidget {
   const Questions({Key? key}) : super(key: key);
+
+  @override
+  State<Questions> createState() => _Questions();
+}
+
+class _Questions extends State<Questions> {
+  bool selected = false;
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +19,26 @@ class Questions extends StatelessWidget {
           title: const Text('OPJ Expert'),
         ),
         drawer: const Menu(),
-        body: buildBottom(context));
+        body: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[buildQuestion(context), buildBottom(context)]);
+  }
+
+  Widget buildQuestion(BuildContext context) {
+    return AnimatedPositioned(
+            top: selected ? 50.0 : 150.0,
+            duration: const Duration(seconds: 2),
+            curve: Curves.fastOutSlowIn,
+            child: GestureDetector(
+              onTap: () {
+                setState(() {
+                  selected = !selected;
+                });
+              },
+              child: Container(
+                color: Colors.blue,
+                child: const Center(child: Text('Tap me')),
+              ),
+            ),
+          );
   }
 
   /// Bottom side rendering (buttons)
