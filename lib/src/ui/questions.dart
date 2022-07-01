@@ -49,6 +49,7 @@ class _Questions extends State<Questions> {
     return Visibility(
         visible: selected,
         maintainSize: true,
+        maintainAnimation: true,
         child: Expanded(
             child: Stack(alignment: Alignment.center, children: <Widget>[
           AnimatedPositioned(
