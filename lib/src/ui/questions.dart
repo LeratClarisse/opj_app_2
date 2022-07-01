@@ -19,26 +19,29 @@ class _Questions extends State<Questions> {
           title: const Text('OPJ Expert'),
         ),
         drawer: const Menu(),
-        body: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[buildQuestion(context), buildBottom(context)]);
+        body: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+          buildQuestion(context),
+          buildBottom(context)
+        ]));
   }
 
   Widget buildQuestion(BuildContext context) {
     return AnimatedPositioned(
-            top: selected ? 50.0 : 150.0,
-            duration: const Duration(seconds: 2),
-            curve: Curves.fastOutSlowIn,
-            child: GestureDetector(
-              onTap: () {
-                setState(() {
-                  selected = !selected;
-                });
-              },
-              child: Container(
-                color: Colors.blue,
-                child: const Center(child: Text('Tap me')),
-              ),
-            ),
-          );
+      top: selected ? 50.0 : 150.0,
+      duration: const Duration(seconds: 2),
+      curve: Curves.fastOutSlowIn,
+      child: GestureDetector(
+        onTap: () {
+          setState(() {
+            selected = !selected;
+          });
+        },
+        child: Container(
+          color: Colors.blue,
+          child: const Center(child: Text('Tap me')),
+        ),
+      ),
+    );
   }
 
   /// Bottom side rendering (buttons)
