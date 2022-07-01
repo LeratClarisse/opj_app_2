@@ -43,6 +43,9 @@ class _Questions extends State<Questions> {
             child: const Center(child: Text('Question')),
           ),
         ),
+        onEnd: () {
+          opacityLevel = (opacityLevel - 1.0).abs();
+        },
       )
     ]));
   }
@@ -76,7 +79,6 @@ class _Questions extends State<Questions> {
               onPressed: () {
                 setState(() {
                   selected = !selected;
-                  opacityLevel = (opacityLevel - 1.0).abs();
                 });
               },
               child: selected ? const Text('Cacher') : const Text('Réponse')),
