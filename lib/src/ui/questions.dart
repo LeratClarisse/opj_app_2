@@ -27,7 +27,7 @@ class _Questions extends State<Questions> {
 
   Widget buildQuestion(BuildContext context) {
     return Align(
-        alignment: Alignment.center,
+        alignment: Alignment.topCenter,
         child: SizedBox(
             width: 200,
             height: 350,
