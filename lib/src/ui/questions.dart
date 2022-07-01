@@ -33,7 +33,7 @@ class _Questions extends State<Questions> {
         child: Stack(alignment: Alignment.center, children: <Widget>[
       AnimatedPositioned(
         width: 200.0,
-        height: selected ? 100.0 : 200.0,
+        height: selected ? 50.0 : 200.0,
         top: selected ? 50.0 : 210.0,
         duration: const Duration(milliseconds: 500),
         curve: Curves.fastOutSlowIn,
