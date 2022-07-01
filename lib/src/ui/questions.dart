@@ -47,21 +47,22 @@ class _Questions extends State<Questions> {
 
   Widget buildReponse(BuildContext context) {
     return Visibility(
+        visibility: selected,
         child: Expanded(
             child: Stack(alignment: Alignment.center, children: <Widget>[
-      AnimatedPositioned(
-        width: selected ? 200.0 : 0,
-        height: selected ? 200.0 : 0,
-        duration: const Duration(seconds: 1),
-        curve: Curves.fastOutSlowIn,
-        child: GestureDetector(
-          child: Container(
-            color: Colors.blue,
-            child: const Center(child: Text('Réponse')),
-          ),
-        ),
-      )
-    ])));
+          AnimatedPositioned(
+            width: selected ? 200.0 : 0,
+            height: selected ? 200.0 : 0,
+            duration: const Duration(seconds: 1),
+            curve: Curves.fastOutSlowIn,
+            child: GestureDetector(
+              child: Container(
+                color: Colors.blue,
+                child: const Center(child: Text('Réponse')),
+              ),
+            ),
+          )
+        ])));
   }
 
   /// Bottom side rendering (buttons)
