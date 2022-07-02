@@ -26,6 +26,8 @@ class _Questions extends State<Questions> {
         body: StreamBuilder(
             stream: bloc.randomQuestion,
             builder: (context, AsyncSnapshot<Question> snapshot) {
+              // ignore: avoid_print
+              print(snapshot.data);
               if (snapshot.hasData && snapshot.data != null) {
                 return Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
                   buildQuestion(context, snapshot.data?.label),
