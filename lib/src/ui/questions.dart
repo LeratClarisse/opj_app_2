@@ -15,8 +15,19 @@ class _Questions extends State<Questions> {
   double opacityLevel = 0.0;
 
   @override
-  Widget build(BuildContext context) {
+  void dispose() {
+    bloc.dispose();
+    super.dispose();
+  }
+
+  @override
+  void initState() {
     bloc.fetchRandomQuestion();
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
