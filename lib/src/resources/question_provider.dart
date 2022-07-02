@@ -9,6 +9,8 @@ class QuestionProvider {
     if (questionsJson.isNotEmpty) {
       Iterable l = json.decode(questionsJson)['questions'];
       List<Question> questions = List<Question>.from(l.map((model) => Question.fromJson(model)));
+
+      print(questions);
       return questions;
     } else {
       throw Exception('Failed to load questions');
