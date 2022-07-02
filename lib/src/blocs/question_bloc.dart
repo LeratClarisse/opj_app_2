@@ -6,14 +6,16 @@ import 'dart:math';
 class QuestionsBloc {
   final _repository = Repository();
   int _nbQuestions = 0;
-  List<Question> questions = [];
+  List<Question> _questions = [];
   final _randomQuestionFetcher = PublishSubject<Question>();
 
   Stream<Question> get randomQuestion => _randomQuestionFetcher.stream;
 
   fetchRandomQuestion() async {
-    questions = await _repository.fetchAllQuestions();
+    _questions = await _repository.fetchAllQuestions();
     _nbQuestions = questions.length;
+    // ignore: avoid_print
+    print(_nbQuestions);
     if (_nbQuestions == 0 || _nbQuestions == -1) {
       int randomId = 1 + Random().nextInt(_nbQuestions - 1);
       Question question = await _repository.fetchQuestionById(randomId);
