@@ -15,7 +15,7 @@ class QuestionsBloc {
   fetchAllQuestions() async {
     List<Question> questions = await _repository.fetchAllQuestions();
     // ignore: avoid_print
-    print(questions);
+    print("test");
     _nbQuestions = questions.length;
     _questionsFetcher.sink.add(questions);
   }
