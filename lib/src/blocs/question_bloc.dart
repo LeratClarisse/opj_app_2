@@ -14,9 +14,7 @@ class QuestionsBloc {
   fetchRandomQuestion() async {
     _questions = await _repository.fetchAllQuestions();
     _nbQuestions = _questions.length;
-    // ignore: avoid_print
-    print(_nbQuestions);
-    if (_nbQuestions == 0 || _nbQuestions == -1) {
+    if (_nbQuestions > 0) {
       int randomId = 1 + Random().nextInt(_nbQuestions - 1);
       Question question = await _repository.fetchQuestionById(randomId);
       _randomQuestionFetcher.sink.add(question);
