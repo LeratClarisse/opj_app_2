@@ -15,12 +15,6 @@ class _Questions extends State<Questions> {
   double opacityLevel = 0.0;
 
   @override
-  void dispose() {
-    bloc.dispose();
-    super.dispose();
-  }
-
-  @override
   void initState() {
     bloc.fetchRandomQuestion();
     super.initState();
