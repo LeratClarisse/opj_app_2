@@ -13,12 +13,11 @@ class QuestionsBloc {
   Stream<Question> get randomQuestion => _randomQuestionFetcher.stream;
 
   fetchRandomQuestion() async {
-    // ignore: avoid_print
-    print(_questions);
-    if (_questions == []) {
+    if (_questions.length == 0) {
       _questions = await _repository.fetchAllQuestions();
     }
-
+    // ignore: avoid_print
+    print(_questions);
     _nbQuestions = _questions.length;
 
     if (_nbQuestions > 0) {
