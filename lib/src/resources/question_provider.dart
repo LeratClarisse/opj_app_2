@@ -19,6 +19,8 @@ class QuestionProvider {
     if (questionsJson.isNotEmpty) {
       List<Question> list = json.decode(questionsJson)['questions'];
       Question question = list.singleWhere((q) => q.id == id);
+      // ignore: avoid_print
+      print(question);
       return question;
     } else {
       throw Exception('Failed to load question ' + id.toString());
