@@ -19,7 +19,7 @@ class QuestionProvider {
   Future<Question> fetchQuestionById(int id, List<Question> list) async {
     if (questionsJson.isNotEmpty) {
       Question question = list.singleWhere((q) => q.id == id);
-      // ignore: avoid_print
+      // ignore: avoid_inspect
       inspect(question);
       return question;
     } else {
