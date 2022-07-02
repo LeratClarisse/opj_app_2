@@ -7,6 +7,8 @@ class QuestionProvider {
 
   Future<List<Question>> fetchQuestionList() async {
     if (questionsJson.isNotEmpty) {
+      // ignore: avoid_print
+      print("test");
       Iterable l = json.decode(questionsJson)['questions'];
       List<Question> questions = List<Question>.from(l.map((model) => Question.fromJson(model)));
       return questions;
