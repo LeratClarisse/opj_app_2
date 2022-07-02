@@ -16,7 +16,8 @@ class QuestionsBloc {
     if (_questions == []) {
       _questions = await _repository.fetchAllQuestions();
     }
-
+// ignore: avoid_print
+    print(_questions);
     _nbQuestions = _questions.length;
 
     if (_nbQuestions > 0) {
