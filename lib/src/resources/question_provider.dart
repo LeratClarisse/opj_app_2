@@ -20,7 +20,7 @@ class QuestionProvider {
       List<Question> list = json.decode(questionsJson)['questions'];
       Question question = list.singleWhere((q) => q.id == id);
       // ignore: avoid_print
-      print(questiliston);
+      print(list);
       return question;
     } else {
       throw Exception('Failed to load question ' + id.toString());
