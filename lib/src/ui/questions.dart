@@ -104,9 +104,19 @@ class _Questions extends State<Questions> {
               child: selected ? const Text('Cacher') : const Text('Réponse')),
           const SizedBox(height: 30),
           Row(children: <Widget>[
-            Expanded(child: IconButton(icon: const Icon(Icons.arrow_left), onPressed: () {})),
+            Expanded(
+                child: IconButton(
+                    icon: const Icon(Icons.arrow_left),
+                    onPressed: () {
+                      bloc.fetchRandomQuestion();
+                    })),
             Expanded(flex: 2, child: IconButton(icon: const Icon(Icons.document_scanner_outlined), onPressed: () {})),
-            Expanded(child: IconButton(icon: const Icon(Icons.arrow_right), onPressed: () {}))
+            Expanded(
+                child: IconButton(
+                    icon: const Icon(Icons.arrow_right),
+                    onPressed: () {
+                      bloc.fetchRandomQuestion();
+                    }))
           ]),
           const SizedBox(height: 30),
         ]));

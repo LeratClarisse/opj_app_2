@@ -16,7 +16,7 @@ class Menu extends StatelessWidget {
         ListTile(
           title: const Text('Accueil'),
           onTap: () {
-            Navigator.of(context).pushReplacement(
+            Navigator.of(context).pop(
               MaterialPageRoute(builder: (context) => const Home()),
             );
           },
