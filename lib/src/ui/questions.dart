@@ -109,6 +109,10 @@ class _Questions extends State<Questions> {
                     icon: const Icon(Icons.arrow_left),
                     onPressed: () {
                       bloc.fetchRandomQuestion();
+                      setState(() {
+                        selected = false;
+                        opacityLevel = 0;
+                      });
                     })),
             Expanded(flex: 2, child: IconButton(icon: const Icon(Icons.document_scanner_outlined), onPressed: () {})),
             Expanded(
@@ -116,6 +120,10 @@ class _Questions extends State<Questions> {
                     icon: const Icon(Icons.arrow_right),
                     onPressed: () {
                       bloc.fetchRandomQuestion();
+                      setState(() {
+                        selected = false;
+                        opacityLevel = 0;
+                      });
                     }))
           ]),
           const SizedBox(height: 30),
