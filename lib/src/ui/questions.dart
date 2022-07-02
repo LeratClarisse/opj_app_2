@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'menu.dart';
+import '../models/question.dart';
+import '../blocs/question_bloc.dart';
 
 class Questions extends StatefulWidget {
   const Questions({Key? key}) : super(key: key);
@@ -14,21 +16,31 @@ class _Questions extends State<Questions> {
 
   @override
   Widget build(BuildContext context) {
+    bloc.fetchRandomQuestion();
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
           title: const Text('OPJ Expert'),
         ),
         drawer: const Menu(),
-        body: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
-          buildQuestion(context),
-          buildReponse(context),
-          const SizedBox(height: 30),
-          buildBottom(context)
-        ]));
+        body: StreamBuilder(
+            stream: bloc.randomQuestion,
+            builder: (context, AsyncSnapshot<Question> snapshot) {
+              if (snapshot.hasData && snapshot.data != null) {
+                return Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+                  buildQuestion(context, snapshot.data?.label),
+                  buildReponse(context, snapshot.data?.response),
+                  const SizedBox(height: 30),
+                  buildBottom(context)
+                ]);
+              } else if (snapshot.hasError) {
+                return Text(snapshot.error.toString());
+              }
+              return const Center(child: CircularProgressIndicator());
+            }));
   }
 
-  Widget buildQuestion(BuildContext context) {
+  Widget buildQuestion(BuildContext context, String? question) {
     return Expanded(
         child: Stack(alignment: Alignment.center, children: <Widget>[
       AnimatedPositioned(
@@ -40,7 +52,7 @@ class _Questions extends State<Questions> {
         child: GestureDetector(
           child: Container(
             color: Colors.blue,
-            child: const Center(child: Text('Question')),
+            child: Center(child: Text(question ??= "Pas de libellé")),
           ),
         ),
         onEnd: () {
@@ -52,7 +64,7 @@ class _Questions extends State<Questions> {
     ]));
   }
 
-  Widget buildReponse(BuildContext context) {
+  Widget buildReponse(BuildContext context, String? response) {
     return AnimatedOpacity(
       opacity: opacityLevel,
       duration: const Duration(milliseconds: 100),
@@ -60,7 +72,7 @@ class _Questions extends State<Questions> {
         width: selected ? 200 : 0,
         height: selected ? 200 : 0,
         color: Colors.blue,
-        child: const Center(child: Text('Réponse')),
+        child: Center(child: Text(response ??= "Pas de libellé")),
       ),
     );
   }

@@ -14,4 +14,14 @@ class QuestionProvider {
       throw Exception('Failed to load questions');
     }
   }
+
+  Future<Question> fetchQuestionById(int id) async {
+    if (questionsJson.isNotEmpty) {
+      List<Question> list = json.decode(questionsJson)['questions'];
+      Question question = list.singleWhere((q) => q.id == id);
+      return question;
+    } else {
+      throw Exception('Failed to load question ' + id.toString());
+    }
+  }
 }
