@@ -16,7 +16,7 @@ class QuestionsBloc {
     _nbQuestions = _questions.length;
     if (_nbQuestions > 0) {
       int randomId = 1 + Random().nextInt(_nbQuestions - 1);
-      Question question = await _repository.fetchQuestionById(randomId);
+      Question question = await _repository.fetchQuestionById(randomId, _questions);
       _randomQuestionFetcher.sink.add(question);
     }
   }
