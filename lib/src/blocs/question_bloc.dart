@@ -13,7 +13,7 @@ class QuestionsBloc {
 
   fetchRandomQuestion() async {
     _questions = await _repository.fetchAllQuestions();
-    _nbQuestions = questions.length;
+    _nbQuestions = _questions.length;
     // ignore: avoid_print
     print(_nbQuestions);
     if (_nbQuestions == 0 || _nbQuestions == -1) {
