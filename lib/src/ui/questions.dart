@@ -35,8 +35,9 @@ class _Questions extends State<Questions> {
                 ]);
               } else if (snapshot.hasError) {
                 return Text(snapshot.error.toString());
+              } else {
+                return const Text("Aucune question");
               }
-              return const Center(child: CircularProgressIndicator());
             }));
   }
 
