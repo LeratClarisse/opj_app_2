@@ -13,7 +13,7 @@ class QuestionProvider {
   );
 
   Future<int> fetchNbQuestions() async {
-    bool test = await File('../../../assets/db/opj_db.db').existsSync();
+    bool test = File('../../../assets/db/opj_db.db').existsSync();
     //ignore: avoid_print
     print(test);
     if (!kIsWeb) {
