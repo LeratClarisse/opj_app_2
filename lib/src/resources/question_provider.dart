@@ -50,13 +50,10 @@ class QuestionProvider {
     if (!kIsWeb) {
       Database db = await init();
       // Query the table for all The Questions
-      final List<Map<String, dynamic>> maps = await db.query('question',
-          where: "id = ?",
-          whereArgs: [
-            id
-          ],
-          limit: 1);
-      return Question.fromJson(maps[0]);
+      final List<Map<String, dynamic>> maps = await db.query('question', where: "id=?", whereArgs: [
+        id
+      ]);
+      return maps.isNotEmpty ? Question.fromJson(maps.first) : throw Exception('Question ' + id.toString() + ' not found');
     } else {
       if (questionsJson.isNotEmpty) {
         Iterable l = json.decode(questionsJson)['questions'];
