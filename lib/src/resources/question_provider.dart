@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:universal_io/io.dart';
 import '../models/question.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
@@ -13,9 +12,6 @@ class QuestionProvider {
   );
 
   Future<int> fetchNbQuestions() async {
-    bool test = File('../../../assets/db/opj_db.db').existsSync();
-    //ignore: avoid_print
-    print(test);
     if (!kIsWeb) {
       Database db = await database;
       // Convert the List<Map<String, dynamic> into a List<Question>
