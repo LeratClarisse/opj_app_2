@@ -29,11 +29,15 @@ class _Questions extends State<Questions> {
         ),
         drawer: const Menu(),
         body: StreamBuilder(
-            stream: bloc.nbQuestion,
-            builder: (context, AsyncSnapshot<int> snapshot) {
+            stream: bloc.randomQuestion,
+            builder: (context, AsyncSnapshot<Question> snapshot) {
               if (snapshot.hasData && snapshot.data != null) {
-                String nb = snapshot.data.toString();
-                return Text(nb);
+                return Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+                  buildQuestion(context, snapshot.data?.label),
+                  buildReponse(context, snapshot.data?.response),
+                  const SizedBox(height: 30),
+                  buildBottom(context)
+                ]);
               } else if (snapshot.hasError) {
                 return Text(snapshot.error.toString());
               } else {
