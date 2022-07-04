@@ -1,23 +1,39 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:io' as io;
 import '../models/question.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:path/path.dart';
+import 'package:path/path.dart' as path;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter/services.dart';
+import 'package:path_provider/path_provider.dart';
 
 class QuestionProvider {
   final questionsJson = '{"questions": [{"id": 1, "docNumber": 1, "label": "Question1", "response": "Réponse1", "category": "DPG" },{"id": 2, "docNumber": 2, "label": "Question2", "response": "Réponse2", "category": "DPS" },{"id": 3, "docNumber": 3, "label": "Question3", "response": "Réponse3", "category": "DPG" },{"id": 4, "docNumber": 4, "label": "Question4", "response": "Réponse4", "category": "DPS" },{"id": 5, "docNumber": 5, "label": "Question5", "response": "Réponse5", "category": "PP"}]}';
 
+  Future<Database> init() async {
+    io.Directory applicationDirectory = await getApplicationDocumentsDirectory();
+
+    String dbPath = path.join(applicationDirectory.path, "opj_db.db");
+
+    bool dbExists = await io.File(dbPath).exists();
+
+    if (!dbExists) {
+      // Copy from asset
+      ByteData data = await rootBundle.load(path.join("assets", "opj_db.db"));
+      List<int> bytes = data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
+
+      // Write and flush the bytes written
+      await io.File(dbPath).writeAsBytes(bytes, flush: true);
+    }
+
+    return openDatabase(dbPath);
+  }
+
   Future<int> fetchNbQuestions() async {
     if (!kIsWeb) {
-      WidgetsFlutterBinding.ensureInitialized();
-      final database = openDatabase(
-        join(await getDatabasesPath(), 'db/opj_db.db'),
-      );
-
-      Database db = await database;
-      // Convert the List<Map<String, dynamic> into a List<Question>
+      Database db = await init();
       int? nb = Sqflite.firstIntValue(await db.rawQuery('SELECT COUNT(*) FROM Question'));
       // Return COUNT or 0
       return nb ??= 0;
@@ -33,12 +49,7 @@ class QuestionProvider {
 
   Future<Question> fetchQuestionById(int id) async {
     if (!kIsWeb) {
-      WidgetsFlutterBinding.ensureInitialized();
-      final database = openDatabase(
-        join(await getDatabasesPath(), 'db/opj_db.db'),
-      );
-
-      Database db = await database;
+      Database db = await init();
       // Query the table for all The Questions
       final List<Map<String, dynamic>> maps = await db.query('question',
           where: "id = ?",
