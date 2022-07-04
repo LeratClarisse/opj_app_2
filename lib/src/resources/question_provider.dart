@@ -42,12 +42,8 @@ class QuestionProvider {
     } else {
       if (questionsJson.isNotEmpty) {
         Iterable l = json.decode(questionsJson)['questions'];
-        List<Question> question = List<Question>.from(l.map((model) {
-          if (model['id'] == id) {
-            Question.fromJson(model);
-          }
-        }));
-        return question[0];
+        List<Question> questions = List<Question>.from(l.map((model) => Question.fromJson(model)));
+        return questions.singleWhere((q) => q.id == id);
       } else {
         throw Exception('Failed to load question ' + id.toString());
       }
