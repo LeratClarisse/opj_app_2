@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
-import 'dart:io';
+import 'package:universal_io/io.dart';
 import '../models/question.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
