@@ -13,7 +13,7 @@ class QuestionProvider {
 
   Future<int> fetchNbQuestions() async {
     //ignore: avoid_print
-    print(join('../../assets/db', 'opj_db.db'));
+    print(join('../../../assets/db', 'opj_db.db'));
     if (!kIsWeb) {
       Database db = await database;
       // Convert the List<Map<String, dynamic> into a List<Question>
