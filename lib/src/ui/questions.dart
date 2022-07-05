@@ -32,12 +32,14 @@ class _Questions extends State<Questions> {
             stream: bloc.randomQuestion,
             builder: (context, AsyncSnapshot<Question> snapshot) {
               if (snapshot.hasData && snapshot.data != null) {
-                return Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
-                  buildQuestion(context, snapshot.data?.label),
-                  buildReponse(context, snapshot.data?.response),
-                  const SizedBox(height: 30),
-                  buildBottom(context)
-                ]);
+                return Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    buildQuestion(context, snapshot.data?.label),
+                    buildReponse(context, snapshot.data?.answer),
+                    const SizedBox(height: 30),
+                    buildBottom(context)
+                  ]);
               } else if (snapshot.hasError) {
                 return Text(snapshot.error.toString());
               } else {
@@ -58,7 +60,7 @@ class _Questions extends State<Questions> {
         child: GestureDetector(
           child: Container(
             color: Colors.blue,
-            child: Center(child: Text(question ??= "Pas de libellé")),
+            child: Center(child: Text(question ??= "Pas de libellé", textAlign: TextAlign.center)),
           ),
         ),
         onEnd: () {
@@ -75,10 +77,10 @@ class _Questions extends State<Questions> {
       opacity: opacityLevel,
       duration: const Duration(milliseconds: 100),
       child: Container(
-        width: selected ? 200 : 0,
-        height: selected ? 200 : 0,
+        width: selected ? 300 : 0,
+        height: selected ? 300 : 0,
         color: Colors.blue,
-        child: Center(child: Text(response ??= "Pas de libellé")),
+        child: Center(child: Text(response ??= "Pas de libellé", textAlign: TextAlign.center)),
       ),
     );
   }

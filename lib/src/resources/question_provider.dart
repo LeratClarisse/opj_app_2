@@ -50,7 +50,7 @@ class QuestionProvider {
     if (!kIsWeb) {
       Database db = await init();
       // Query the table for all The Questions
-      final List<Map<String, dynamic>> maps = await db.rawQuery('SELECT * FROM Question Where id=' + id.toString());
+      final List<Map<String, dynamic>> maps = await db.query('Question', where: 'Id=?', whereArgs: [id]);
       return maps.isNotEmpty ? Question.fromJson(maps.first) : throw Exception('Question ' + id.toString() + ' not found');
     } else {
       if (questionsJson.isNotEmpty) {
