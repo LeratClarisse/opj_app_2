@@ -12,7 +12,7 @@ class Home extends StatelessWidget {
     final ButtonStyle style = ElevatedButton.styleFrom(
       textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
       fixedSize: const Size(200, 50),
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(0),
     );
 
     return Scaffold(

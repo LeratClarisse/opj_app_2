@@ -1,14 +1,15 @@
 class Question {
   final int id;
   final String label;
-  final String response;
-  final int docNumber;
+  final String answer;
+  final String file;
   final String category;
   final String? subcategory;
+  final String? type;
 
-  const Question({required this.id, required this.label, required this.response, required this.docNumber, required this.category, this.subcategory});
+  const Question({required this.id, required this.label, required this.answer, required this.file, required this.category, this.subcategory, this.type});
 
   factory Question.fromJson(Map<String, dynamic> json) {
-    return Question(id: json['id'], label: json['label'], response: json['response'], docNumber: json['courseSumUp'], category: json['category'], subcategory: json['subcategory']);
+    return Question(id: json['Id'], label: json['Label'], answer: json['Answer'], file: json['File'], category: json['Category'], subcategory: json['Subcategory'], type: json['Type']);
   }
 }
