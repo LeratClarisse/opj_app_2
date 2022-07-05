@@ -22,8 +22,9 @@ class Courses extends StatelessWidget {
               return buildList(snapshot);
             } else if (snapshot.hasError) {
               return Text(snapshot.error.toString());
-            }
-            return const Center(child: CircularProgressIndicator());
+            } else {
+			  return const Center(child: Text("Aucun cours"));
+			}
           },
         ));
   }
