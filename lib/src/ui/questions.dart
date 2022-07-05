@@ -89,8 +89,8 @@ class _Questions extends State<Questions> {
   Widget buildBottom(BuildContext context) {
     final ButtonStyle style = ElevatedButton.styleFrom(
       textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-      fixedSize: const Size(200, 50),
-      padding: const EdgeInsets.all(20),
+      fixedSize: const Size(100, 50),
+      padding: const EdgeInsets.all(0),
     );
 
     return Align(
