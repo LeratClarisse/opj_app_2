@@ -33,13 +33,13 @@ class _Questions extends State<Questions> {
             builder: (context, AsyncSnapshot<Question> snapshot) {
               if (snapshot.hasData && snapshot.data != null) {
                 return Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    buildQuestion(context, snapshot.data?.label),
-                    buildReponse(context, snapshot.data?.answer),
-                    const SizedBox(height: 30),
-                    buildBottom(context)
-                  ]);
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      buildQuestion(context, snapshot.data?.label),
+                      buildReponse(context, snapshot.data?.answer),
+                      const SizedBox(height: 30),
+                      buildBottom(context)
+                    ]);
               } else if (snapshot.hasError) {
                 return Text(snapshot.error.toString());
               } else {
@@ -53,14 +53,17 @@ class _Questions extends State<Questions> {
         child: Stack(alignment: Alignment.center, children: <Widget>[
       AnimatedPositioned(
         width: 200.0,
-        height: selected ? 50.0 : 200.0,
-        top: selected ? 50.0 : 210.0,
+        height: selected ? 70.0 : 200.0,
+        top: selected ? 50.0 : 200.0,
         duration: const Duration(milliseconds: 300),
         curve: Curves.fastOutSlowIn,
         child: GestureDetector(
           child: Container(
             color: Colors.blue,
-            child: Center(child: Text(question ??= "Pas de libellé", textAlign: TextAlign.center)),
+            padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+            child: Center(
+                child: Text(question ??= "Pas de libellé",
+                    textAlign: TextAlign.center)),
           ),
         ),
         onEnd: () {
@@ -73,15 +76,20 @@ class _Questions extends State<Questions> {
   }
 
   Widget buildReponse(BuildContext context, String? response) {
+    if (response != null) {
+      response = response.replaceAll(r'\n', '\n');
+    }
     return AnimatedOpacity(
       opacity: opacityLevel,
       duration: const Duration(milliseconds: 100),
-      child: Container(
-        width: selected ? 300 : 0,
-        height: selected ? 300 : 0,
-        color: Colors.blue,
-        child: Center(child: Text(response ??= "Pas de libellé", textAlign: TextAlign.center)),
-      ),
+      child: SizedBox(
+          width: selected ? 300 : 0,
+          height: selected ? 300 : 0,
+          child: Center(
+            child: SingleChildScrollView(
+                scrollDirection: Axis.vertical,
+                child: Text(response ??= "Pas de libellé")),
+          )),
     );
   }
 
@@ -115,7 +123,11 @@ class _Questions extends State<Questions> {
                         selected = false;
                       });
                     })),
-            Expanded(flex: 2, child: IconButton(icon: const Icon(Icons.document_scanner_outlined), onPressed: () {})),
+            Expanded(
+                flex: 2,
+                child: IconButton(
+                    icon: const Icon(Icons.document_scanner_outlined),
+                    onPressed: () {})),
             Expanded(
                 child: IconButton(
                     icon: const Icon(Icons.arrow_right),
