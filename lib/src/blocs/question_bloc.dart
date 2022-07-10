@@ -26,6 +26,10 @@ class QuestionsBloc {
     }
   }
 
+  getDocumentByName(String name) async {
+    await _repository.getDocumentByName(name);
+  }
+  
   dispose() {
     _randomQuestionFetcher.close();
   }

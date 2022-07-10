@@ -38,7 +38,7 @@ class _Questions extends State<Questions> {
                       buildQuestion(context, snapshot.data?.label),
                       buildReponse(context, snapshot.data?.answer),
                       const SizedBox(height: 30),
-                      buildBottom(context)
+                      buildBottom(context, snapshot.data?.file)
                     ]);
               } else if (snapshot.hasError) {
                 return Text(snapshot.error.toString());
@@ -94,7 +94,7 @@ class _Questions extends State<Questions> {
   }
 
   /// Bottom side rendering (buttons)
-  Widget buildBottom(BuildContext context) {
+  Widget buildBottom(BuildContext context, String? docName) {
     final ButtonStyle style = ElevatedButton.styleFrom(
       textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
       fixedSize: const Size(100, 50),
@@ -127,7 +127,11 @@ class _Questions extends State<Questions> {
                 flex: 2,
                 child: IconButton(
                     icon: const Icon(Icons.document_scanner_outlined),
-                    onPressed: () {})),
+                    onPressed: () {
+                      if (docName != null) {
+                        bloc.getDocumentByName(docName);
+                      }
+                    })),
             Expanded(
                 child: IconButton(
                     icon: const Icon(Icons.arrow_right),
