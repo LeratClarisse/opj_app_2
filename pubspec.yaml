@@ -23,6 +23,7 @@ dependencies:
   sqflite: ^2.0.2
   path: ^1.8.2
   path_provider: ^2.0.11
+  open_file: ^3.2.1
 
 dev_dependencies:
   # The "flutter_lints" package below contains a set of recommended lints to
@@ -42,7 +43,8 @@ flutter_icons:
 # The following section is specific to Flutter.
 flutter:
   assets:
-    - assets/opj_db.db
+    - assets/db/opj_db.db
+    - assets/documents/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

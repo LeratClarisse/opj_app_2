@@ -12,7 +12,9 @@ class QuestionsBloc {
   Stream<Question> get randomQuestion => _randomQuestionFetcher.stream;
 
   fetchRandomQuestion() async {
-    _nbQuestions = await _repository.fetchNbQuestions();
+    if (_nbQuestions == 0) {
+      _nbQuestions = await _repository.fetchNbQuestions();
+    }
 
     if (_nbQuestions > 0) {
       int randomId = 0;
@@ -24,6 +26,10 @@ class QuestionsBloc {
       _currentQuestionId = currentQuestion.id;
       _randomQuestionFetcher.sink.add(currentQuestion);
     }
+  }
+
+  getDocumentByName(String name) async {
+    await _repository.getDocumentByName(name);
   }
 
   dispose() {
