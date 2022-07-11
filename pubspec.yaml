@@ -43,7 +43,7 @@ flutter_icons:
 # The following section is specific to Flutter.
 flutter:
   assets:
-    - assets/opj_db.db
+    - assets/db/opj_db.db
     - assets/documents/
 
   # The following line ensures that the Material Icons font is

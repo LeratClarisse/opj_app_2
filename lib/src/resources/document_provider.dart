@@ -40,13 +40,13 @@ class DocumentProvider {
     io.Directory applicationDirectory =
         await getApplicationDocumentsDirectory();
     String filePath =
-        path.join(applicationDirectory.path, "/documents/" + name);
+        path.join(applicationDirectory.path, name + ".pdf");
     bool fileExists = await io.File(filePath).exists();
 
     if (!fileExists) {
       // Copy from asset
       ByteData data =
-          await rootBundle.load(path.join("assets", name));
+          await rootBundle.load(path.join("assets", "documents", name + ".pdf"));
       List<int> bytes =
           data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
 

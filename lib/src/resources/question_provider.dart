@@ -22,7 +22,7 @@ class QuestionProvider {
 
     if (!dbExists) {
       // Copy from asset
-      ByteData data = await rootBundle.load(path.join("assets", "opj_db.db"));
+      ByteData data = await rootBundle.load(path.join("assets", "db", "opj_db.db"));
       List<int> bytes =
           data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
 
