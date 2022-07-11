@@ -31,14 +31,15 @@ class _Questions extends State<Questions> {
         body: StreamBuilder(
             stream: bloc.randomQuestion,
             builder: (context, AsyncSnapshot<Question> snapshot) {
-              if (snapshot.hasData && snapshot.data != null) {
+              if (snapshot.hasData) {
                 return Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
-                      buildQuestion(context, snapshot.data?.label),
-                      buildReponse(context, snapshot.data?.answer),
+                      buildQuestion(
+                          context, snapshot.data!.label),
+                      buildReponse(context, snapshot.data!.answer, snapshot.data!.id),
                       const SizedBox(height: 30),
-                      buildBottom(context, snapshot.data?.file)
+                      buildBottom(context, snapshot.data!.file)
                     ]);
               } else if (snapshot.hasError) {
                 return Text(snapshot.error.toString());
@@ -48,7 +49,7 @@ class _Questions extends State<Questions> {
             }));
   }
 
-  Widget buildQuestion(BuildContext context, String? question) {
+  Widget buildQuestion(BuildContext context, String question) {
     return Expanded(
         child: Stack(alignment: Alignment.center, children: <Widget>[
       AnimatedPositioned(
@@ -61,9 +62,7 @@ class _Questions extends State<Questions> {
           child: Container(
             color: Colors.blue,
             padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-            child: Center(
-                child: Text(question ??= "Pas de libellé",
-                    textAlign: TextAlign.center)),
+            child: Center(child: Text(question, textAlign: TextAlign.center)),
           ),
         ),
         onEnd: () {
@@ -75,10 +74,8 @@ class _Questions extends State<Questions> {
     ]));
   }
 
-  Widget buildReponse(BuildContext context, String? response) {
-    if (response != null) {
-      response = response.replaceAll(r'\n', '\n');
-    }
+  Widget buildReponse(BuildContext context, String response, int id) {
+    response = response.replaceAll(r'\n', '\n');
     return AnimatedOpacity(
       opacity: opacityLevel,
       duration: const Duration(milliseconds: 100),
@@ -87,14 +84,13 @@ class _Questions extends State<Questions> {
           height: selected ? 300 : 0,
           child: Center(
             child: SingleChildScrollView(
-                scrollDirection: Axis.vertical,
-                child: Text(response ??= "Pas de libellé")),
+                scrollDirection: Axis.vertical, child: Text(response + "\n(${id.toString()})")),
           )),
     );
   }
 
   /// Bottom side rendering (buttons)
-  Widget buildBottom(BuildContext context, String? docName) {
+  Widget buildBottom(BuildContext context, String docName) {
     final ButtonStyle style = ElevatedButton.styleFrom(
       textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
       fixedSize: const Size(100, 50),
@@ -128,9 +124,7 @@ class _Questions extends State<Questions> {
                 child: IconButton(
                     icon: const Icon(Icons.document_scanner_outlined),
                     onPressed: () {
-                      if (docName != null) {
-                        bloc.getDocumentByName(docName);
-                      }
+                      bloc.getDocumentByName(docName);
                     })),
             Expanded(
                 child: IconButton(
