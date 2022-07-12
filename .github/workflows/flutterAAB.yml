@@ -34,6 +34,7 @@ jobs:
       # Get dependencies and make assigned appbundle
       - run: | 
           flutter pub get
+          flutter analyze .
           flutter build appbundle
       # Make appbundle downloadable
       - name: Upload artefato
