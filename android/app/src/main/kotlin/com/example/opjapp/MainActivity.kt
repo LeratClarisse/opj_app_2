@@ -1,4 +1,4 @@
-package com.example.opjapp
+package com.opjexpert.app
 
 import io.flutter.embedding.android.FlutterActivity
 
