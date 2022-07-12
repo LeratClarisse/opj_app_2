@@ -5,31 +5,48 @@ import 'dart:math';
 
 class QuestionsBloc {
   int _nbQuestions = 0;
-  int _currentQuestionId = 0;
+  List<Question> _questions = [];
+  Question? _currentQuestion;
   final _repository = Repository();
   final _randomQuestionFetcher = PublishSubject<Question>();
 
   Stream<Question> get randomQuestion => _randomQuestionFetcher.stream;
 
+  fetchAllQuestions() async {
+    _questions = await _repository.fetchAllQuestions();
+    _nbQuestions = _questions.length;
+    fetchRandomQuestion();
+  }
+
   fetchRandomQuestion() async {
-    if (_nbQuestions == 0) {
-      _nbQuestions = await _repository.fetchNbQuestions();
-    }
-
     if (_nbQuestions > 0) {
-      int randomId = 0;
+      int randomInt = 0;
       do {
-        randomId = 1 + Random().nextInt(_nbQuestions - 1);
-      } while (randomId == _currentQuestionId);
+        randomInt = Random().nextInt(_nbQuestions);
+      } while (_currentQuestion != null && randomInt == _currentQuestion!.id);
 
-      Question currentQuestion = await _repository.fetchQuestionById(randomId);
-      _currentQuestionId = currentQuestion.id;
+      Question currentQuestion = _questions[randomInt];
+      _currentQuestion = currentQuestion;
       _randomQuestionFetcher.sink.add(currentQuestion);
     }
   }
 
   getDocumentByName(String name) async {
     await _repository.getDocumentByName(name);
+  }
+
+  addQuestion() async {
+    _questions.add(_currentQuestion!);
+    _nbQuestions++;
+  }
+
+  removeQuestion() async {
+    bool success = _questions.remove(_currentQuestion);
+    if (success) {
+      _nbQuestions--;
+    } else {
+      throw "Error removing the question";
+    }
   }
 
   dispose() {

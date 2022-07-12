@@ -12,11 +12,12 @@ class Questions extends StatefulWidget {
 
 class _Questions extends State<Questions> {
   bool selected = false;
+  bool dontshow = false;
   double opacityLevel = 0.0;
 
   @override
   void initState() {
-    bloc.fetchRandomQuestion();
+    bloc.fetchAllQuestions();
     super.initState();
   }
 
@@ -35,9 +36,9 @@ class _Questions extends State<Questions> {
                 return Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
-                      buildQuestion(
-                          context, snapshot.data!.label),
-                      buildReponse(context, snapshot.data!.answer, snapshot.data!.id),
+                      buildQuestion(context, snapshot.data!.label),
+                      buildReponse(
+                          context, snapshot.data!.answer, snapshot.data!.id),
                       const SizedBox(height: 30),
                       buildBottom(context, snapshot.data!.file)
                     ]);
@@ -84,7 +85,8 @@ class _Questions extends State<Questions> {
           height: selected ? 300 : 0,
           child: Center(
             child: SingleChildScrollView(
-                scrollDirection: Axis.vertical, child: Text(response + "\n(${id.toString()})")),
+                scrollDirection: Axis.vertical,
+                child: Text(response + "\n(${id.toString()})")),
           )),
     );
   }
@@ -117,14 +119,23 @@ class _Questions extends State<Questions> {
                       bloc.fetchRandomQuestion();
                       setState(() {
                         selected = false;
+                        dontshow = false;
                       });
                     })),
             Expanded(
-                flex: 2,
                 child: IconButton(
                     icon: const Icon(Icons.document_scanner_outlined),
                     onPressed: () {
                       bloc.getDocumentByName(docName);
+                    })),
+            Expanded(
+                child: IconButton(
+                    icon: Icon(dontshow ? Icons.visibility_off : Icons.visibility_off_outlined),
+                    onPressed: () {
+                      dontshow ? bloc.addQuestion() : bloc.removeQuestion();
+                      setState(() {
+                        dontshow = !dontshow;
+                      });
                     })),
             Expanded(
                 child: IconButton(
@@ -133,6 +144,7 @@ class _Questions extends State<Questions> {
                       bloc.fetchRandomQuestion();
                       setState(() {
                         selected = false;
+                        dontshow = false;
                       });
                     }))
           ]),
