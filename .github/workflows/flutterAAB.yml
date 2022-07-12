@@ -36,7 +36,7 @@ jobs:
           flutter clean
           flutter pub get
           flutter analyze .
-          flutter build appbundle --target-platform android-arm,android-arm64
+          flutter build appbundle
       # Make appbundle downloadable
       - name: Upload artefato
         uses: actions/upload-artifact@v2
