@@ -10,7 +10,7 @@ import 'package:path_provider/path_provider.dart';
 
 class QuestionProvider {
   final questionsJson =
-      '{"questions": [{"id": 1, "docNumber": 1, "label": "Question1", "response": "Réponse1", "category": "DPG" },{"id": 2, "docNumber": 2, "label": "Question2", "response": "Réponse2", "category": "DPS" },{"id": 3, "docNumber": 3, "label": "Question3", "response": "Réponse3", "category": "DPG" },{"id": 4, "docNumber": 4, "label": "Question4", "response": "Réponse4", "category": "DPS" },{"id": 5, "docNumber": 5, "label": "Question5", "response": "Réponse5", "category": "PP"}]}';
+      '{"questions": [{"id": 1, "file": 1, "label": "Question1", "answer": "Réponse1", "category": "DPG" },{"id": 2, "file": 2, "label": "Question2", "answer": "Réponse2", "category": "DPS" },{"id": 3, "file": 3, "label": "Question3", "answer": "Réponse3", "category": "DPG" },{"id": 4, "file": 4, "label": "Question4", "answer": "Réponse4", "category": "DPS" },{"id": 5, "file": 5, "label": "Question5", "answer": "Réponse5", "category": "PP"}]}';
 
   Future<Database> init() async {
     io.Directory applicationDirectory =
@@ -22,7 +22,8 @@ class QuestionProvider {
 
     if (!dbExists) {
       // Copy from asset
-      ByteData data = await rootBundle.load(path.join("assets", "db", "opj_db.db"));
+      ByteData data =
+          await rootBundle.load(path.join("assets", "db", "opj_db.db"));
       List<int> bytes =
           data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
 
@@ -33,40 +34,21 @@ class QuestionProvider {
     return openDatabase(dbPath);
   }
 
-  Future<int> fetchNbQuestions() async {
+  Future<List<Question>> fetchAllQuestions() async {
     if (!kIsWeb) {
       Database db = await init();
-      int? nb = Sqflite.firstIntValue(
-          await db.rawQuery('SELECT COUNT(*) FROM Question'));
-      // Return COUNT or 0
-      return nb ??= 0;
-    } else {
-      if (questionsJson.isNotEmpty) {
-        Iterable l = json.decode(questionsJson)['questions'];
-        return l.length;
-      } else {
-        throw Exception('Failed to load questions');
-      }
-    }
-  }
-
-  Future<Question> fetchQuestionById(int id) async {
-    if (!kIsWeb) {
-      Database db = await init();
-      // Query the table for all The Questions
-      final List<Map<String, dynamic>> maps =
-          await db.query('Question', where: 'Id=?', whereArgs: [id]);
-      return maps.isNotEmpty
-          ? Question.fromJson(maps.first)
-          : throw Exception('Question ' + id.toString() + ' not found');
+      final List<Map<String, dynamic>> maps = await db.query('Question');
+      return List.generate(maps.length, (i) {
+        return Question.fromJson(maps[i]);
+      });
     } else {
       if (questionsJson.isNotEmpty) {
         Iterable l = json.decode(questionsJson)['questions'];
         List<Question> questions =
             List<Question>.from(l.map((model) => Question.fromJson(model)));
-        return questions.singleWhere((q) => q.id == id);
+        return questions;
       } else {
-        throw Exception('Failed to load question ' + id.toString());
+        throw Exception('Failed to load questions');
       }
     }
   }
