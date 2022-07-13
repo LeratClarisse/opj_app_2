@@ -3,7 +3,6 @@ import 'package:opjapp/src/ui/choose_questions.dart';
 import 'menu.dart';
 import 'courses.dart';
 import 'course_sum_ups.dart';
-import 'questions.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
