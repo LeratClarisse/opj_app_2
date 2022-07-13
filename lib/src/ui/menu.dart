@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:opjapp/src/ui/choose_questions.dart';
 import 'home.dart';
 import 'courses.dart';
 import 'course_sum_ups.dart';
@@ -41,7 +42,7 @@ class Menu extends StatelessWidget {
           title: const Text('Questions'),
           onTap: () {
             Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (context) => const Questions()),
+              MaterialPageRoute(builder: (context) => const ChooseQuestion()),
             );
           },
         ),

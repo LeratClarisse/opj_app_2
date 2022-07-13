@@ -1,23 +1,33 @@
 import 'package:flutter/material.dart';
+import 'choose_questions.dart';
 import 'menu.dart';
 import '../models/question.dart';
 import '../blocs/question_bloc.dart';
 
 class Questions extends StatefulWidget {
-  const Questions({Key? key}) : super(key: key);
+  final String category;
+    final String subcategory;
+
+  const Questions(this.category, this.subcategory, {Key? key}) : super(key: key);
 
   @override
   State<Questions> createState() => _Questions();
 }
 
 class _Questions extends State<Questions> {
+  bool firstQuestion = true;
   bool selected = false;
   bool dontshow = false;
   double opacityLevel = 0.0;
+  final ButtonStyle style = ElevatedButton.styleFrom(
+    textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+    fixedSize: const Size(100, 50),
+    padding: const EdgeInsets.all(0),
+  );
 
   @override
   void initState() {
-    bloc.fetchAllQuestions();
+    bloc.fetchAllQuestions(widget.category, widget.subcategory);
     super.initState();
   }
 
@@ -31,8 +41,10 @@ class _Questions extends State<Questions> {
         drawer: const Menu(),
         body: StreamBuilder(
             stream: bloc.randomQuestion,
-            builder: (context, AsyncSnapshot<Question> snapshot) {
+            builder: (context, AsyncSnapshot<Question?> snapshot) {
               if (snapshot.hasData) {
+                dontshow = snapshot.data!.dontshow;
+                firstQuestion = bloc.isFirst;
                 return Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
@@ -45,7 +57,22 @@ class _Questions extends State<Questions> {
               } else if (snapshot.hasError) {
                 return Text(snapshot.error.toString());
               } else {
-                return const Center(child: Text("Aucune question"));
+                return Center(
+                    child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: <Widget>[
+                      const Text("Fin des questions"),
+                      const SizedBox(height: 30),
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.of(context).pushReplacement(
+                            MaterialPageRoute(
+                                builder: (context) => const ChooseQuestion()),
+                          );
+                        },
+                        child: const Text('Recommencer'),
+                      ),
+                    ]));
               }
             }));
   }
@@ -93,12 +120,6 @@ class _Questions extends State<Questions> {
 
   /// Bottom side rendering (buttons)
   Widget buildBottom(BuildContext context, String docName) {
-    final ButtonStyle style = ElevatedButton.styleFrom(
-      textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-      fixedSize: const Size(100, 50),
-      padding: const EdgeInsets.all(0),
-    );
-
     return Align(
         alignment: Alignment.bottomCenter,
         child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
@@ -114,13 +135,15 @@ class _Questions extends State<Questions> {
           Row(children: <Widget>[
             Expanded(
                 child: IconButton(
-                    icon: const Icon(Icons.arrow_left),
+                    icon: Icon(firstQuestion ? null : Icons.arrow_left),
                     onPressed: () {
-                      bloc.fetchRandomQuestion();
-                      setState(() {
-                        selected = false;
-                        dontshow = false;
-                      });
+                      if (!firstQuestion) {
+                        bloc.fetchPreviousQuestion();
+                        setState(() {
+                          selected = false;
+                          dontshow = false;
+                        });
+                      }
                     })),
             Expanded(
                 child: IconButton(
@@ -130,7 +153,9 @@ class _Questions extends State<Questions> {
                     })),
             Expanded(
                 child: IconButton(
-                    icon: Icon(dontshow ? Icons.visibility_off : Icons.visibility_off_outlined),
+                    icon: Icon(dontshow
+                        ? Icons.visibility_off
+                        : Icons.visibility_off_outlined),
                     onPressed: () {
                       dontshow ? bloc.addQuestion() : bloc.removeQuestion();
                       setState(() {
@@ -141,10 +166,11 @@ class _Questions extends State<Questions> {
                 child: IconButton(
                     icon: const Icon(Icons.arrow_right),
                     onPressed: () {
-                      bloc.fetchRandomQuestion();
+                      bloc.fetchNextQuestion();
                       setState(() {
                         selected = false;
                         dontshow = false;
+                        firstQuestion = false;
                       });
                     }))
           ]),
