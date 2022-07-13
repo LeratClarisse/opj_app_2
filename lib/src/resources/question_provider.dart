@@ -34,10 +34,25 @@ class QuestionProvider {
     return openDatabase(dbPath);
   }
 
-  Future<List<Question>> fetchAllQuestions() async {
-    if (kIsWeb) {
+  Future<List<Question>> fetchAllQuestions(
+      String category, String subcategory) async {
+    if (!kIsWeb) {
       Database db = await init();
-      final List<Map<String, dynamic>> maps = await db.query('Question');
+      final List<Map<String, dynamic>> maps;
+
+      if (category != 'Tous') {
+        String whereString = 'Category = ?';
+        List<Object> whereArgs = [category];
+        if (subcategory != 'Tous') {
+          whereString += ' AND Subcategory = ?';
+          whereArgs.add(subcategory);
+        }
+        maps = await db.query('Question',
+            where: whereString, whereArgs: whereArgs);
+      } else {
+        maps = await db.query('Question');
+      }
+
       return List.generate(maps.length, (i) {
         return Question.fromJson(maps[i]);
       });

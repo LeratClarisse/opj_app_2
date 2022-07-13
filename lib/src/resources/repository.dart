@@ -12,5 +12,5 @@ class Repository {
   Future<List<Document>> fetchAllSumUps() => documentProvider.fetchSumUpList();
   Future getDocumentByName(String name) => documentProvider.getDocumentByName(name);
 
-  Future<List<Question>> fetchAllQuestions() => questionProvider.fetchAllQuestions();
+  Future<List<Question>> fetchAllQuestions(String category, String subcategory) => questionProvider.fetchAllQuestions(category, subcategory);
 }

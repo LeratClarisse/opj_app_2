@@ -9,16 +9,16 @@ class QuestionsBloc {
   List<Question> _pastQuestions = [];
   Question? _currentQuestion;
   final _repository = Repository();
-  final _randomQuestionFetcher = PublishSubject<Question>();
+  final _randomQuestionFetcher = PublishSubject<Question?>();
 
-  Stream<Question> get randomQuestion => _randomQuestionFetcher.stream;
+  Stream<Question?> get randomQuestion => _randomQuestionFetcher.stream;
   bool get isFirst =>
       _pastQuestions.indexWhere((q) => q.id == _currentQuestion!.id) <= 0
           ? true
           : false;
 
-  fetchAllQuestions() async {
-    _questions = await _repository.fetchAllQuestions();
+  fetchAllQuestions(String category, String subcategory) async {
+    _questions = await _repository.fetchAllQuestions(category, subcategory);
     _nbQuestions = _questions.length;
     _pastQuestions = [];
     fetchRandomQuestion();
@@ -42,6 +42,8 @@ class QuestionsBloc {
       _nbQuestions = _questions.length;
       _pastQuestions = [];
       fetchRandomQuestion();
+    } else {
+      _randomQuestionFetcher.sink.add(null);
     }
   }
 

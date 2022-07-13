@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'choose_questions.dart';
 import 'menu.dart';
 import '../models/question.dart';
 import '../blocs/question_bloc.dart';
 
 class Questions extends StatefulWidget {
-  const Questions({Key? key}) : super(key: key);
+  final String category;
+    final String subcategory;
+
+  const Questions(this.category, this.subcategory, {Key? key}) : super(key: key);
 
   @override
   State<Questions> createState() => _Questions();
@@ -15,10 +19,15 @@ class _Questions extends State<Questions> {
   bool selected = false;
   bool dontshow = false;
   double opacityLevel = 0.0;
+  final ButtonStyle style = ElevatedButton.styleFrom(
+    textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+    fixedSize: const Size(100, 50),
+    padding: const EdgeInsets.all(0),
+  );
 
   @override
   void initState() {
-    bloc.fetchAllQuestions();
+    bloc.fetchAllQuestions(widget.category, widget.subcategory);
     super.initState();
   }
 
@@ -32,7 +41,7 @@ class _Questions extends State<Questions> {
         drawer: const Menu(),
         body: StreamBuilder(
             stream: bloc.randomQuestion,
-            builder: (context, AsyncSnapshot<Question> snapshot) {
+            builder: (context, AsyncSnapshot<Question?> snapshot) {
               if (snapshot.hasData) {
                 dontshow = snapshot.data!.dontshow;
                 firstQuestion = bloc.isFirst;
@@ -48,7 +57,22 @@ class _Questions extends State<Questions> {
               } else if (snapshot.hasError) {
                 return Text(snapshot.error.toString());
               } else {
-                return const Center(child: Text("Aucune question"));
+                return Center(
+                    child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: <Widget>[
+                      const Text("Fin des questions"),
+                      const SizedBox(height: 30),
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.of(context).pushReplacement(
+                            MaterialPageRoute(
+                                builder: (context) => const ChooseQuestion()),
+                          );
+                        },
+                        child: const Text('Recommencer'),
+                      ),
+                    ]));
               }
             }));
   }
@@ -96,12 +120,6 @@ class _Questions extends State<Questions> {
 
   /// Bottom side rendering (buttons)
   Widget buildBottom(BuildContext context, String docName) {
-    final ButtonStyle style = ElevatedButton.styleFrom(
-      textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-      fixedSize: const Size(100, 50),
-      padding: const EdgeInsets.all(0),
-    );
-
     return Align(
         alignment: Alignment.bottomCenter,
         child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
