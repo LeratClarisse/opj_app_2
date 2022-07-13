@@ -11,6 +11,7 @@ class Questions extends StatefulWidget {
 }
 
 class _Questions extends State<Questions> {
+  bool firstQuestion = true;
   bool selected = false;
   bool dontshow = false;
   double opacityLevel = 0.0;
@@ -33,6 +34,8 @@ class _Questions extends State<Questions> {
             stream: bloc.randomQuestion,
             builder: (context, AsyncSnapshot<Question> snapshot) {
               if (snapshot.hasData) {
+                dontshow = snapshot.data!.dontshow;
+                firstQuestion = bloc.isFirst;
                 return Column(
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
@@ -114,13 +117,15 @@ class _Questions extends State<Questions> {
           Row(children: <Widget>[
             Expanded(
                 child: IconButton(
-                    icon: const Icon(Icons.arrow_left),
+                    icon: Icon(firstQuestion ? null : Icons.arrow_left),
                     onPressed: () {
-                      bloc.fetchRandomQuestion();
-                      setState(() {
-                        selected = false;
-                        dontshow = false;
-                      });
+                      if (!firstQuestion) {
+                        bloc.fetchPreviousQuestion();
+                        setState(() {
+                          selected = false;
+                          dontshow = false;
+                        });
+                      }
                     })),
             Expanded(
                 child: IconButton(
@@ -130,7 +135,9 @@ class _Questions extends State<Questions> {
                     })),
             Expanded(
                 child: IconButton(
-                    icon: Icon(dontshow ? Icons.visibility_off : Icons.visibility_off_outlined),
+                    icon: Icon(dontshow
+                        ? Icons.visibility_off
+                        : Icons.visibility_off_outlined),
                     onPressed: () {
                       dontshow ? bloc.addQuestion() : bloc.removeQuestion();
                       setState(() {
@@ -141,10 +148,11 @@ class _Questions extends State<Questions> {
                 child: IconButton(
                     icon: const Icon(Icons.arrow_right),
                     onPressed: () {
-                      bloc.fetchRandomQuestion();
+                      bloc.fetchNextQuestion();
                       setState(() {
                         selected = false;
                         dontshow = false;
+                        firstQuestion = false;
                       });
                     }))
           ]),

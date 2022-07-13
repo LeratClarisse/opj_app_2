@@ -10,7 +10,7 @@ import 'package:path_provider/path_provider.dart';
 
 class QuestionProvider {
   final questionsJson =
-      '{"questions": [{"id": 1, "file": 1, "label": "Question1", "answer": "Réponse1", "category": "DPG" },{"id": 2, "file": 2, "label": "Question2", "answer": "Réponse2", "category": "DPS" },{"id": 3, "file": 3, "label": "Question3", "answer": "Réponse3", "category": "DPG" },{"id": 4, "file": 4, "label": "Question4", "answer": "Réponse4", "category": "DPS" },{"id": 5, "file": 5, "label": "Question5", "answer": "Réponse5", "category": "PP"}]}';
+      '{"questions": [{"Id": 1, "File": "1", "Label": "Question1", "Answer": "Réponse1", "Category": "DPG" },{"Id": 2, "File": "2", "Label": "Question2", "Answer": "Réponse2", "Category": "DPS" },{"Id": 3, "File": "3", "Label": "Question3", "Answer": "Réponse3", "Category": "DPG" },{"Id": 4, "File": "4", "Label": "Question4", "Answer": "Réponse4", "Category": "DPS" },{"Id": 5, "File": "5", "Label": "Question5", "Answer": "Réponse5", "Category": "PP"}]}';
 
   Future<Database> init() async {
     io.Directory applicationDirectory =
@@ -35,7 +35,7 @@ class QuestionProvider {
   }
 
   Future<List<Question>> fetchAllQuestions() async {
-    if (!kIsWeb) {
+    if (kIsWeb) {
       Database db = await init();
       final List<Map<String, dynamic>> maps = await db.query('Question');
       return List.generate(maps.length, (i) {
