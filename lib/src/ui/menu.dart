@@ -13,6 +13,16 @@ class Menu extends StatelessWidget {
         child: ListView(
       padding: EdgeInsets.zero,
       children: [
+        const SizedBox(
+          height: 125,
+          child: DrawerHeader(
+            decoration: BoxDecoration(
+                color: Colors.black,
+                image: DecorationImage(
+                    image: AssetImage("assets/icon/logo_opj.png"))),
+            child: Text(''),
+          ),
+        ),
         ListTile(
           title: const Text('Accueil'),
           onTap: () {

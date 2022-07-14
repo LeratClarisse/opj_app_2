@@ -50,6 +50,7 @@ flutter:
   assets:
     - assets/db/opj_db.db
     - assets/documents/
+    - assets/icon/logo_opj.png
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
