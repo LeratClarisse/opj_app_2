@@ -19,7 +19,7 @@ class Courses extends StatelessWidget {
           stream: bloc.allCourses,
           builder: (context, AsyncSnapshot<List<Document>> snapshot) {
             if (snapshot.hasData) {
-              return buildList(snapshot);
+              return buildList(snapshot.data!);
             } else if (snapshot.hasError) {
               return Text(snapshot.error.toString());
             } else {
@@ -29,32 +29,26 @@ class Courses extends StatelessWidget {
         ));
   }
 
-  Widget buildList(AsyncSnapshot<List<Document>> snapshot) {
-    List<Document>? datas = snapshot.data;
-
+  Widget buildList(List<Document> documents) {
     return ListView.builder(
-        itemCount: snapshot.data?.length,
+        itemCount: documents.length,
         itemBuilder: (BuildContext context, int index) {
-          if (datas != null) {
-            Document doc = datas[index];
-            if (index == 0) {
-              return Column(children: [
-                Container(
-                  color: Colors.cyan,
-                  child: const ListTile(
-                    leading: Text('N°'),
-                    title: Text('Titre'),
-                    trailing: Text('Catégorie'),
-                  ),
-                ),
-                ListTile(leading: Text(doc.docNumber.toString()), title: Text(doc.title), trailing: Text(doc.category), onTap: () {})
-              ]);
-            } else {
-              return ListTile(leading: Text(doc.docNumber.toString()), title: Text(doc.title), trailing: Text(doc.category), onTap: () {});
-            }
-          } else {
-            return const Text("Aucun cours");
-          }
+			Document doc = documents[index];
+			if (index == 0) {
+			  return Column(children: [
+				Container(
+				  color: Colors.cyan,
+				  child: const ListTile(
+					leading: Text('Cat.'),
+					title: Text('Titre'),
+					trailing: Text('Sous-cat.'),
+				  ),
+				),
+				ListTile(leading: Text(doc.category), title: Text(doc.title), trailing: Text(doc.subcategory), onTap: () {})
+			  ]);
+			} else {
+			  return ListTile(leading: Text(doc.category), title: Text(doc.title), trailing: Text(doc.subcategory), onTap: () {bloc.getDocumentByName(doc.file);});
+			}
         });
   }
 }
