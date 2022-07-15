@@ -2,9 +2,17 @@ import 'package:flutter/material.dart';
 import 'menu.dart';
 import '../models/document.dart';
 import '../blocs/document_bloc.dart';
+import 'package:data_table_2/data_table_2.dart';
 
-class Courses extends StatelessWidget {
+class Courses extends StatefulWidget {
   const Courses({Key? key}) : super(key: key);
+  @override
+  State<Courses> createState() => _Courses();
+}
+
+class _Courses extends State<Courses> {
+  bool _sortAscending = true;
+  int? _sortColumnIndex;
 
   @override
   Widget build(BuildContext context) {
@@ -19,36 +27,83 @@ class Courses extends StatelessWidget {
           stream: bloc.allCourses,
           builder: (context, AsyncSnapshot<List<Document>> snapshot) {
             if (snapshot.hasData) {
-              return buildList(snapshot.data!);
+              return buildTable(snapshot.data!);
             } else if (snapshot.hasError) {
               return Text(snapshot.error.toString());
             } else {
-			  return const Center(child: Text("Aucun cours"));
-			}
+              return const Center(child: Text("Aucun cours"));
+            }
           },
         ));
   }
 
-  Widget buildList(List<Document> documents) {
-    return ListView.builder(
-        itemCount: documents.length,
-        itemBuilder: (BuildContext context, int index) {
-			Document doc = documents[index];
-			if (index == 0) {
-			  return Column(children: [
-				Container(
-				  color: Colors.cyan,
-				  child: const ListTile(
-					leading: Text('Cat.'),
-					title: Text('Titre'),
-					trailing: Text('Sous-cat.'),
-				  ),
-				),
-				ListTile(leading: Text(doc.category), title: Text(doc.title), trailing: Text(doc.subcategory), onTap: () {})
-			  ]);
-			} else {
-			  return ListTile(leading: Text(doc.category), title: Text(doc.title), trailing: Text(doc.subcategory), onTap: () {bloc.getDocumentByName(doc.file);});
-			}
-        });
+  List<DataColumn2> buildColumns(List<Document> documents) {
+    return <DataColumn2>[
+      DataColumn2(
+          label: const Text('Titre'),
+          onSort: (columnIndex, sortAsc) {
+            setState(() {
+              _sortColumnIndex = columnIndex;
+              _sortAscending = sortAsc;
+
+              bloc.sortDocument('Title', _sortAscending);
+            });
+          }),
+      DataColumn2(
+          label: const Text('Cat.'),
+          onSort: (columnIndex, sortAsc) {
+            setState(() {
+              _sortColumnIndex = columnIndex;
+              _sortAscending = sortAsc;
+
+              bloc.sortDocument('Category', _sortAscending);
+            });
+          }),
+      DataColumn2(
+          label: const Text('Sous-cat.'),
+          onSort: (columnIndex, sortAsc) {
+            setState(() {
+              _sortColumnIndex = columnIndex;
+              _sortAscending = sortAsc;
+
+              bloc.sortDocument('Subcategory', _sortAscending);
+            });
+          }),
+    ];
+  }
+
+  List<DataRow> buildRows(List<Document> documents) {
+    return List.generate(documents.length, (index) {
+      Document doc = documents[index];
+      return DataRow(
+          cells: <DataCell>[
+            DataCell(
+              Text(doc.title),
+            ),
+            DataCell(
+              Text(doc.category),
+            ),
+            DataCell(
+              Text(doc.subcategory),
+            )
+          ],
+          onSelectChanged: (selected) {
+            if (selected ?? false) {
+              bloc.getDocumentByName(doc.file);
+            }
+          });
+    });
+  }
+
+  Widget buildTable(List<Document> documents) {
+    List<DataColumn2> columns = buildColumns(documents);
+    List<DataRow> rows = buildRows(documents);
+
+    return DataTable2(
+        sortColumnIndex: _sortColumnIndex,
+        sortAscending: _sortAscending,
+        showCheckboxColumn: false,
+        columns: columns,
+        rows: rows);
   }
 }

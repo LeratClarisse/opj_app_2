@@ -36,51 +36,50 @@ class DocumentProvider {
 
     return openDatabase(dbPath);
   }
-  
+
   Future<List<Document>> fetchCourseList() async {
-	if (!kIsWeb) {
-		Database db = await init();
-		final List<Map<String, dynamic>> maps;
+    if (!kIsWeb) {
+      Database db = await init();
+      final List<Map<String, dynamic>> maps;
 
-		maps = await db.query('Document');
+      maps = await db.query('Document');
 
-		return List.generate(maps.length, (i) {
-			return Document.fromJson(maps[i]);
-		});
-	} else {
-		if (documentsJson.isNotEmpty) {
-		  Iterable l = json.decode(documentsJson)['documents'];
-		  List<Document> documents =
-			  List<Document>.from(l.map((model) => Document.fromJson(model)));
-		  return documents;
-		} else {
-		  throw Exception('Failed to load documents');
-		}
-	}
+      return List.generate(maps.length, (i) {
+        return Document.fromJson(maps[i]);
+      });
+    } else {
+      if (documentsJson.isNotEmpty) {
+        Iterable l = json.decode(documentsJson)['documents'];
+        List<Document> documents =
+            List<Document>.from(l.map((model) => Document.fromJson(model)));
+        return documents;
+      } else {
+        throw Exception('Failed to load documents');
+      }
+    }
   }
 
   Future<List<Document>> fetchSumUpList() async {
-	if (sumupsJson.isNotEmpty) {
-	  Iterable l = json.decode(sumupsJson)['sumups'];
-	  List<Document> sumups =
-		  List<Document>.from(l.map((model) => Document.fromJson(model)));
-	  return sumups;
-	} else {
-	  throw Exception('Failed to load documents');
-	}
+    if (sumupsJson.isNotEmpty) {
+      Iterable l = json.decode(sumupsJson)['sumups'];
+      List<Document> sumups =
+          List<Document>.from(l.map((model) => Document.fromJson(model)));
+      return sumups;
+    } else {
+      throw Exception('Failed to load documents');
+    }
   }
 
   Future getDocumentByName(String name) async {
     io.Directory applicationDirectory =
         await getApplicationDocumentsDirectory();
-    String filePath =
-        path.join(applicationDirectory.path, name + ".pdf");
+    String filePath = path.join(applicationDirectory.path, name + ".pdf");
     bool fileExists = await io.File(filePath).exists();
 
     if (!fileExists) {
       // Copy from asset
-      ByteData data =
-          await rootBundle.load(path.join("assets", "documents", name + ".pdf"));
+      ByteData data = await rootBundle
+          .load(path.join("assets", "documents", name + ".pdf"));
       List<int> bytes =
           data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
 
