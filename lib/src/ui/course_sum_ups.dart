@@ -47,14 +47,14 @@ class CourseSumUps extends StatelessWidget {
               ListTile(
                   leading: Text(doc.category),
                   title: Text(doc.title),
-                  trailing: Text(doc.subcategory ?? ''),
+                  trailing: Text(doc.subcategory),
                   onTap: () {})
             ]);
           } else {
             return ListTile(
                 leading: Text(doc.category),
                 title: Text(doc.title),
-                trailing: Text(doc.subcategory ?? ''),
+                trailing: Text(doc.subcategory),
                 onTap: () {});
           }
         });

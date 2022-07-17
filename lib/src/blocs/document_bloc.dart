@@ -1,4 +1,3 @@
-import 'package:flutter/scheduler.dart';
 import 'package:rxdart/rxdart.dart';
 import '../resources/repository.dart';
 import '../models/document.dart';
