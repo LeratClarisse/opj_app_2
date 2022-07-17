@@ -1,12 +1,14 @@
-﻿Id;File;Title;Category;Subcategory
-0;F61_01.pdf;F61_01;DPG;L'Infraction
-1;F61_02.pdf;F61_02;DPG;L'Infraction
-2;F61_03.pdf;F61_03;DPG;L'Infraction
-3;F61_04.pdf;F61_04;DPG;L'Infraction
-4;F61_08.pdf;F61_08;DPG;La peine
-5;F62_04.pdf;F62_04;PP;
-6;F62_16.pdf;F62_16;PP;
-7;F62_10.pdf;F62_10;PP;
-8;F62_08.pdf;F62_08;PP;
-9;F62_09.pdf;F62_09;PP;
-10;F62_24.pdf;F62_24;PP;
+Id,File,Title,Category,Subcategory
+0,F61_01,F61_01,DPG,L'Infraction
+1,F61_02,F61_02,DPG,L'Infraction
+2,F61_03,F61_03,DPG,L'Infraction
+3,F61_04,F61_04,DPG,L'Infraction
+4,F61_08,F61_08,DPG,La peine
+5,F62_04,F62_04,PP,
+6,F62_16,F62_16,PP,
+7,F62_10,F62_10,PP,
+8,F62_08,F62_08,PP,
+9,F62_09,F62_09,PP,
+10,F62_24,F62_24,PP,
+11,F62_01,F62_01,PP,
+12,F62_03,F62_03,PP,

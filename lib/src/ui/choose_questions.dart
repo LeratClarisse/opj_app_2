@@ -34,7 +34,7 @@ class _ChooseQuestion extends State<ChooseQuestion> {
                   }
                 });
               },
-              items: <String>['Tous', 'DPG', 'PP']
+              items: <String>['Tous', 'DPG', 'PP', 'DPS']
                   .map<DropdownMenuItem<String>>((String value) {
                 return DropdownMenuItem<String>(
                   value: value,

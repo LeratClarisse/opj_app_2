@@ -1,3 +1,4 @@
+import 'package:expandable_text/expandable_text.dart';
 import 'package:flutter/material.dart';
 import 'choose_questions.dart';
 import 'menu.dart';
@@ -20,6 +21,7 @@ class _Questions extends State<Questions> {
   bool selected = false;
   bool dontshow = false;
   double opacityLevel = 0.0;
+  final prefixStyle = const TextStyle(fontWeight: FontWeight.bold);
   final ButtonStyle style = ElevatedButton.styleFrom(
     textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
     fixedSize: const Size(100, 50),
@@ -50,8 +52,11 @@ class _Questions extends State<Questions> {
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       buildQuestion(context, snapshot.data!.label),
-                      buildReponse(
-                          context, snapshot.data!.answer, snapshot.data!.id),
+                      if (snapshot.data!.category == 'DPS')
+                        buildReponseDPS(context, snapshot.data!)
+                      else
+                        buildReponse(
+                            context, snapshot.data!.answer!, snapshot.data!.id),
                       const SizedBox(height: 30),
                       buildBottom(context, snapshot.data!.file)
                     ]);
@@ -117,6 +122,50 @@ class _Questions extends State<Questions> {
                 child: Text(response + "\n(${id.toString()})")),
           )),
     );
+  }
+
+  Widget buildReponseDPS(BuildContext context, Question question) {
+    return AnimatedOpacity(
+        opacity: opacityLevel,
+        duration: const Duration(milliseconds: 100),
+        child: SizedBox(
+          width: selected ? 300 : 0,
+          height: selected ? 300 : 0,
+          child: Center(
+              child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(question.dpsLongLabel ?? ''),
+                const SizedBox(height: 10),
+                Text(question.dpsArticle ?? ''),
+                const SizedBox(height: 10),
+                Text(question.dpsIntention ?? ''),
+                const SizedBox(height: 10),
+                Text('Punissable: ' + question.dpsPunissable!),
+                const SizedBox(height: 10),
+                if (question.dpsElemMat != null)
+                  buildExpandable('Elément matériel', question.dpsElemMat!),
+                const SizedBox(height: 10),
+                if (question.dpsDesc != null)
+                  buildExpandable('Description', question.dpsDesc!),
+              ],
+            ),
+          )),
+        ));
+  }
+
+  Widget buildExpandable(String prefixText, String text) {
+    return ExpandableText(text.replaceAll(r'\n', '\n'),
+        expandText: 'Voir plus',
+        collapseText: 'Voir moins',
+        animation: true,
+        collapseOnTextTap: true,
+        prefixText: prefixText + '\n',
+        prefixStyle: prefixStyle,
+        maxLines: 1,
+        linkColor: Colors.lightBlue);
   }
 
   /// Bottom side rendering (buttons)
