@@ -6,9 +6,10 @@ import '../blocs/question_bloc.dart';
 
 class Questions extends StatefulWidget {
   final String category;
-    final String subcategory;
+  final String subcategory;
 
-  const Questions(this.category, this.subcategory, {Key? key}) : super(key: key);
+  const Questions(this.category, this.subcategory, {Key? key})
+      : super(key: key);
 
   @override
   State<Questions> createState() => _Questions();

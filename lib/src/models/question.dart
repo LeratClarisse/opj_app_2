@@ -8,9 +8,24 @@ class Question {
   final String? type;
   bool dontshow;
 
-  Question({required this.id, required this.label, required this.answer, required this.file, required this.category, this.subcategory, this.type, this.dontshow = false});
+  Question(
+      {required this.id,
+      required this.label,
+      required this.answer,
+      required this.file,
+      required this.category,
+      this.subcategory,
+      this.type,
+      this.dontshow = false});
 
   factory Question.fromJson(Map<String, dynamic> json) {
-    return Question(id: json['Id'], label: json['Label'], answer: json['Answer'], file: json['File'], category: json['Category'], subcategory: json['Subcategory'], type: json['Type']);
+    return Question(
+        id: json['Id'],
+        label: json['Label'],
+        answer: json['Answer'],
+        file: json['File'],
+        category: json['Category'],
+        subcategory: json['Subcategory'],
+        type: json['Type']);
   }
 }

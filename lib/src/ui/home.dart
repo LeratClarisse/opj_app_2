@@ -49,7 +49,8 @@ class Home extends StatelessWidget {
               style: style,
               onPressed: () {
                 Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(builder: (context) => const ChooseQuestion()),
+                  MaterialPageRoute(
+                      builder: (context) => const ChooseQuestion()),
                 );
               },
               child: const Text('Questions'),
