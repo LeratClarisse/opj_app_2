@@ -111,6 +111,7 @@ class _Questions extends State<Questions> {
   Widget buildReponse(BuildContext context, String response, int id) {
     response = response.replaceAll(r'\n', '\n');
     return AnimatedOpacity(
+      key: ObjectKey(id),
       opacity: opacityLevel,
       duration: const Duration(milliseconds: 100),
       child: SizedBox(
@@ -126,6 +127,7 @@ class _Questions extends State<Questions> {
 
   Widget buildReponseDPS(BuildContext context, Question question) {
     return AnimatedOpacity(
+        key: ObjectKey(question.id),
         opacity: opacityLevel,
         duration: const Duration(milliseconds: 100),
         child: SizedBox(
