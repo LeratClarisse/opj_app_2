@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:opjapp/src/ui/choose_questions.dart';
+import 'about.dart';
 import 'home.dart';
 import 'courses.dart';
-import 'course_sum_ups.dart';
 
 class Menu extends StatelessWidget {
   const Menu({Key? key}) : super(key: key);
@@ -40,18 +40,18 @@ class Menu extends StatelessWidget {
           },
         ),
         ListTile(
-          title: const Text('Récap'),
-          onTap: () {
-            Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (context) => const CourseSumUps()),
-            );
-          },
-        ),
-        ListTile(
           title: const Text('Questions'),
           onTap: () {
             Navigator.of(context).pushReplacement(
               MaterialPageRoute(builder: (context) => const ChooseQuestion()),
+            );
+          },
+        ),
+        ListTile(
+          title: const Text('À propos'),
+          onTap: () {
+            Navigator.of(context).pushReplacement(
+              MaterialPageRoute(builder: (context) => const About()),
             );
           },
         ),

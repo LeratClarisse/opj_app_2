@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:opjapp/src/ui/choose_questions.dart';
 import 'menu.dart';
 import 'courses.dart';
-import 'course_sum_ups.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -33,16 +32,6 @@ class Home extends StatelessWidget {
                 );
               },
               child: const Text('Cours'),
-            ),
-            const SizedBox(height: 30),
-            ElevatedButton(
-              style: style,
-              onPressed: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(builder: (context) => const CourseSumUps()),
-                );
-              },
-              child: const Text('Récap'),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
