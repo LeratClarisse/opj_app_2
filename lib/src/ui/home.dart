@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:opjapp/src/ui/choose_questions.dart';
-import 'menu.dart';
-import 'courses.dart';
+import 'package:opjapp/src/ui/menu.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -9,8 +8,8 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ButtonStyle style = ElevatedButton.styleFrom(
-      textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-      fixedSize: const Size(200, 50),
+      textStyle: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+      fixedSize: const Size(200, 70),
       padding: const EdgeInsets.all(0),
     );
 
@@ -24,26 +23,16 @@ class Home extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
+            const SizedBox(height: 40),
             ElevatedButton(
               style: style,
               onPressed: () {
                 Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(builder: (context) => const Courses()),
+                  MaterialPageRoute(builder: (context) => const ChooseQuestion()),
                 );
               },
-              child: const Text('Cours'),
+              child: const Text('Quiz'),
             ),
-            const SizedBox(height: 30),
-            ElevatedButton(
-              style: style,
-              onPressed: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(
-                      builder: (context) => const ChooseQuestion()),
-                );
-              },
-              child: const Text('Questions'),
-            )
           ],
         ),
       ),

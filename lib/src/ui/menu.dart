@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:opjapp/src/ui/about.dart';
 import 'package:opjapp/src/ui/choose_questions.dart';
-import 'about.dart';
-import 'home.dart';
-import 'courses.dart';
+import 'package:opjapp/src/ui/home.dart';
 
 class Menu extends StatelessWidget {
   const Menu({Key? key}) : super(key: key);
@@ -16,10 +15,7 @@ class Menu extends StatelessWidget {
         const SizedBox(
           height: 125,
           child: DrawerHeader(
-            decoration: BoxDecoration(
-                color: Colors.black,
-                image: DecorationImage(
-                    image: AssetImage("assets/icon/logo_opj.png"))),
+            decoration: BoxDecoration(color: Colors.black, image: DecorationImage(image: AssetImage("assets/icon/logo_opj.png"))),
             child: Text(''),
           ),
         ),
@@ -28,14 +24,6 @@ class Menu extends StatelessWidget {
           onTap: () {
             Navigator.of(context).pushReplacement(
               MaterialPageRoute(builder: (context) => const Home()),
-            );
-          },
-        ),
-        ListTile(
-          title: const Text('Cours'),
-          onTap: () {
-            Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (context) => const Courses()),
             );
           },
         ),

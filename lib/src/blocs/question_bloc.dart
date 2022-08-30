@@ -1,6 +1,6 @@
+import 'package:opjapp/src/models/question.dart';
+import 'package:opjapp/src/resources/repository.dart';
 import 'package:rxdart/rxdart.dart';
-import '../resources/repository.dart';
-import '../models/question.dart';
 import 'dart:math';
 
 class QuestionsBloc {
@@ -12,10 +12,7 @@ class QuestionsBloc {
   final _randomQuestionFetcher = PublishSubject<Question?>();
 
   Stream<Question?> get randomQuestion => _randomQuestionFetcher.stream;
-  bool get isFirst =>
-      _pastQuestions.indexWhere((q) => q.id == _currentQuestion!.id) <= 0
-          ? true
-          : false;
+  bool get isFirst => _pastQuestions.indexWhere((q) => q.id == _currentQuestion!.id) <= 0 ? true : false;
 
   fetchAllQuestions(String category, String subcategory) async {
     _questions = await _repository.fetchAllQuestions(category, subcategory);
@@ -48,15 +45,13 @@ class QuestionsBloc {
   }
 
   fetchPreviousQuestion() async {
-    int indexCurrent =
-        _pastQuestions.indexWhere((q) => q.id == _currentQuestion!.id);
+    int indexCurrent = _pastQuestions.indexWhere((q) => q.id == _currentQuestion!.id);
     _currentQuestion = _pastQuestions[indexCurrent - 1];
     _randomQuestionFetcher.sink.add(_currentQuestion!);
   }
 
   fetchNextQuestion() async {
-    int indexCurrent =
-        _pastQuestions.indexWhere((q) => q.id == _currentQuestion!.id);
+    int indexCurrent = _pastQuestions.indexWhere((q) => q.id == _currentQuestion!.id);
     if (indexCurrent == _pastQuestions.length - 1) {
       await fetchRandomQuestion();
     } else {
@@ -65,20 +60,14 @@ class QuestionsBloc {
     }
   }
 
-  getDocumentByName(String name) async {
-    await _repository.getDocumentByName(name);
-  }
-
   addQuestion() async {
     _currentQuestion!.dontshow = false;
-    _pastQuestions.singleWhere((q) => q.id == _currentQuestion!.id).dontshow =
-        false;
+    _pastQuestions.singleWhere((q) => q.id == _currentQuestion!.id).dontshow = false;
   }
 
   removeQuestion() async {
     _currentQuestion!.dontshow = true;
-    _pastQuestions.singleWhere((q) => q.id == _currentQuestion!.id).dontshow =
-        true;
+    _pastQuestions.singleWhere((q) => q.id == _currentQuestion!.id).dontshow = true;
   }
 
   dispose() {

@@ -1,16 +1,15 @@
 import 'package:expandable_text/expandable_text.dart';
 import 'package:flutter/material.dart';
-import 'choose_questions.dart';
-import 'menu.dart';
-import '../models/question.dart';
-import '../blocs/question_bloc.dart';
+import 'package:opjapp/src/blocs/question_bloc.dart';
+import 'package:opjapp/src/models/question.dart';
+import 'package:opjapp/src/ui/choose_questions.dart';
+import 'package:opjapp/src/ui/menu.dart';
 
 class Questions extends StatefulWidget {
   final String category;
   final String subcategory;
 
-  const Questions(this.category, this.subcategory, {Key? key})
-      : super(key: key);
+  const Questions(this.category, this.subcategory, {Key? key}) : super(key: key);
 
   @override
   State<Questions> createState() => _Questions();
@@ -36,51 +35,52 @@ class _Questions extends State<Questions> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          title: const Text('OPJ Expert'),
-        ),
-        drawer: const Menu(),
-        body: StreamBuilder(
-            stream: bloc.randomQuestion,
-            builder: (context, AsyncSnapshot<Question?> snapshot) {
-              if (snapshot.hasData) {
-                dontshow = snapshot.data!.dontshow;
-                firstQuestion = bloc.isFirst;
-                return Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: <Widget>[
+    return WillPopScope(
+        onWillPop: () async {
+          Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (context) => const ChooseQuestion()),
+          );
+          return false;
+        },
+        child: Scaffold(
+            appBar: AppBar(
+              centerTitle: true,
+              title: const Text('Quiz'),
+            ),
+            drawer: const Menu(),
+            body: StreamBuilder(
+                stream: bloc.randomQuestion,
+                builder: (context, AsyncSnapshot<Question?> snapshot) {
+                  if (snapshot.hasData) {
+                    dontshow = snapshot.data!.dontshow;
+                    firstQuestion = bloc.isFirst;
+                    return Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
                       buildQuestion(context, snapshot.data!.label),
-                      if (snapshot.data!.category == 'DPS')
+                      if (snapshot.data!.category == 'DPS' && snapshot.data!.answer == null)
                         buildReponseDPS(context, snapshot.data!)
                       else
-                        buildReponse(
-                            context, snapshot.data!.answer!, snapshot.data!.id),
+                        buildReponse(context, snapshot.data!.answer!, snapshot.data!.id),
                       const SizedBox(height: 30),
                       buildBottom(context, snapshot.data!.file)
                     ]);
-              } else if (snapshot.hasError) {
-                return Text(snapshot.error.toString());
-              } else {
-                return Center(
-                    child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: <Widget>[
+                  } else if (snapshot.hasError) {
+                    return Text(snapshot.error.toString());
+                  } else {
+                    return Center(
+                        child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
                       const Text("Fin des questions"),
                       const SizedBox(height: 30),
                       ElevatedButton(
                         onPressed: () {
                           Navigator.of(context).pushReplacement(
-                            MaterialPageRoute(
-                                builder: (context) => const ChooseQuestion()),
+                            MaterialPageRoute(builder: (context) => const ChooseQuestion()),
                           );
                         },
                         child: const Text('Recommencer'),
                       ),
                     ]));
-              }
-            }));
+                  }
+                })));
   }
 
   Widget buildQuestion(BuildContext context, String question) {
@@ -111,18 +111,14 @@ class _Questions extends State<Questions> {
   Widget buildReponse(BuildContext context, String response, int id) {
     response = response.replaceAll(r'\n', '\n');
     return AnimatedOpacity(
-      key: ObjectKey(id),
-      opacity: opacityLevel,
-      duration: const Duration(milliseconds: 100),
-      child: SizedBox(
+        key: ObjectKey(id),
+        opacity: opacityLevel,
+        duration: const Duration(milliseconds: 100),
+        child: SizedBox(
           width: selected ? 300 : 0,
-          height: selected ? 300 : 0,
-          child: Center(
-            child: SingleChildScrollView(
-                scrollDirection: Axis.vertical,
-                child: Text(response + "\n(${id.toString()})")),
-          )),
-    );
+          height: selected ? 250 : 0,
+          child: Center(child: SingleChildScrollView(scrollDirection: Axis.vertical, child: Text(response + "\n(${id.toString()})"))),
+        ));
   }
 
   Widget buildReponseDPS(BuildContext context, Question question) {
@@ -132,7 +128,7 @@ class _Questions extends State<Questions> {
         duration: const Duration(milliseconds: 100),
         child: SizedBox(
           width: selected ? 300 : 0,
-          height: selected ? 300 : 0,
+          height: selected ? 250 : 0,
           child: Center(
               child: SingleChildScrollView(
             scrollDirection: Axis.vertical,
@@ -145,13 +141,11 @@ class _Questions extends State<Questions> {
                 const SizedBox(height: 10),
                 Text(question.dpsIntention ?? ''),
                 const SizedBox(height: 10),
-                Text('Punissable: ' + question.dpsPunissable!),
+                Text('Tentative: ' + question.dpsPunissable!),
                 const SizedBox(height: 10),
-                if (question.dpsElemMat != null)
-                  buildExpandable('Elément matériel', question.dpsElemMat!),
+                if (question.dpsElemMat != null) buildExpandable('Elément matériel', question.dpsElemMat!),
                 const SizedBox(height: 10),
-                if (question.dpsDesc != null)
-                  buildExpandable('Description', question.dpsDesc!),
+                if (question.dpsDesc != null) buildExpandable('Description', question.dpsDesc!),
               ],
             ),
           )),
@@ -199,15 +193,7 @@ class _Questions extends State<Questions> {
                     })),
             Expanded(
                 child: IconButton(
-                    icon: const Icon(Icons.document_scanner_outlined),
-                    onPressed: () {
-                      bloc.getDocumentByName(docName);
-                    })),
-            Expanded(
-                child: IconButton(
-                    icon: Icon(dontshow
-                        ? Icons.visibility_off
-                        : Icons.visibility_off_outlined),
+                    icon: Icon(dontshow ? Icons.visibility_off : Icons.visibility_off_outlined),
                     onPressed: () {
                       dontshow ? bloc.addQuestion() : bloc.removeQuestion();
                       setState(() {

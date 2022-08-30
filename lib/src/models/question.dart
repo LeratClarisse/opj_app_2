@@ -46,4 +46,20 @@ class Question {
         dpsElemMat: json['DPS_ElemMat'],
         dpsDesc: json['DPS_Desc']);
   }
+
+  Map toJson() => {
+        'Id': id,
+        'Label': label,
+        'Answer': answer,
+        'File': file,
+        'Category': category,
+        'Subcategory': subcategory,
+        'Type': type,
+        'DPS_LongLabel': dpsLongLabel,
+        'DPS_Article': dpsArticle,
+        'DPS_Punissable': dpsPunissable,
+        'DPS_Intention': dpsIntention,
+        'DPS_ElemMat': dpsElemMat,
+        'DPS_Desc': dpsDesc
+  };
 }

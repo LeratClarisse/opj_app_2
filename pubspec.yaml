@@ -52,7 +52,7 @@ flutter_native_splash:
 flutter:
   assets:
     - assets/db/opj_db.db
-    - assets/documents/
+    - assets/db/questions.json
     - assets/icon/logo_opj.png
 
   # The following line ensures that the Material Icons font is
