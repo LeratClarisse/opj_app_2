@@ -31,6 +31,8 @@ class QuestionProvider {
       // Extract questions as JSON
       // String jsonQuestions = json.encode(questions);
 
+      DbTools.deleteDB();
+
       return questions;
     } else {
       final questionsJson = await rootBundle.loadString('assets/db/questions.json');

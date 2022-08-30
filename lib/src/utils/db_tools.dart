@@ -14,15 +14,22 @@ class DbTools {
 
     if (!dbExists) {
       // Copy from asset
-      ByteData data =
-          await rootBundle.load(path.join("assets", "db", "opj_db.db"));
-      List<int> bytes =
-          data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
+      ByteData data = await rootBundle.load(path.join("assets", "db", "opj_db.db"));
+      List<int> bytes = data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
 
       // Write and flush the bytes written
       await File(dbPath).writeAsBytes(bytes, flush: true);
     }
 
     return openDatabase(dbPath);
+  }
+
+  static Future deleteDB() async {
+    Directory applicationDirectory = await getApplicationDocumentsDirectory();
+
+    String dbPath = path.join(applicationDirectory.path, "opj_db.db");
+    File dbFile = File(dbPath);
+
+    await dbFile.delete();
   }
 }
