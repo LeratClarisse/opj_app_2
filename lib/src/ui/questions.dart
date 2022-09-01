@@ -8,8 +8,9 @@ import 'package:opjapp/src/ui/menu.dart';
 class Questions extends StatefulWidget {
   final String category;
   final String subcategory;
+  final String course;
 
-  const Questions(this.category, this.subcategory, {Key? key}) : super(key: key);
+  const Questions(this.course, this.category, this.subcategory, {Key? key}) : super(key: key);
 
   @override
   State<Questions> createState() => _Questions();
@@ -29,7 +30,7 @@ class _Questions extends State<Questions> {
 
   @override
   void initState() {
-    bloc.fetchAllQuestions(widget.category, widget.subcategory);
+    bloc.fetchAllQuestions(widget.course, widget.category, widget.subcategory);
     super.initState();
   }
 

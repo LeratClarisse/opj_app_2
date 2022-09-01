@@ -7,17 +7,24 @@ import 'package:opjapp/src/utils/db_tools.dart';
 import 'package:sqflite/sqflite.dart';
 
 class QuestionProvider {
-  Future<List<Question>> fetchAllQuestions(String category, String subcategory) async {
+  Future<List<Question>> fetchAllQuestions(String course, String category, String subcategory) async {
     if (!kIsWeb) {
       Database db = await DbTools.initDB();
       final List<Map<String, dynamic>> maps;
+      String whereString = '';
+      List<Object> whereArgs = [];
 
-      if (category != 'Toutes') {
-        String whereString = 'Category = ?';
-        List<Object> whereArgs = [category];
-        if (subcategory != 'Toutes') {
-          whereString += ' AND Subcategory = ?';
-          whereArgs.add(subcategory);
+      if (course != 'Tous' || category != 'Toutes') {
+        if (course != 'Tous') {
+          whereString = 'File = ?';
+          whereArgs = [course];
+        } else if (category != 'Toutes') {
+          whereString = 'Category = ?';
+          whereArgs = [category];
+          if (subcategory != 'Toutes') {
+            whereString += ' AND Subcategory = ?';
+            whereArgs.add(subcategory);
+          }
         }
         maps = await db.query('Question', where: whereString, whereArgs: whereArgs);
       } else {
@@ -41,7 +48,9 @@ class QuestionProvider {
         Iterable l = json.decode(questionsJson)['questions'];
         List<Question> questions = List<Question>.from(l.map((model) => Question.fromJson(model)));
 
-        if (category != 'Toutes') {
+        if (course != 'Tous') {
+          questions = questions.where((q) => q.file == course).toList();
+        } else if (category != 'Toutes') {
           questions = questions.where((q) => q.category == category).toList();
           if (subcategory != 'Toutes') {
             questions = questions.where((q) => q.subcategory == subcategory).toList();
