@@ -3,7 +3,7 @@
         {
             "Id": 1,
             "Label": "Définissez le droit Pénal",
-            "Answer": "Le droit pénal est une source du droit positif. Ce droit est :\r\n -National\r\n- Sanctioné\r\n- Où le caractère privé ou public est largement débattu",
+            "Answer": "Le droit pénal est une source du droit positif. Ce droit est :\n -National\n- Sanctioné\n- Où le caractère privé ou public est largement débattu",
             "File": "F61_01",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -33,7 +33,7 @@
         {
             "Id": 3,
             "Label": "Quelles sont les branches du droit pénal ?",
-            "Answer": "-Droit pénal général \r\n-Procédure pénale, \r\n-Droit pénal comparé (Comparaison des droits pénaux nationaux, \r\n-Droit pénal spécial, \r\n-Science pénitentiaire (Etude des peines, natures et mode d'execution), \r\n-Criminologie (Etude des causes des infractions), \r\n-Criminalistique (Etablir les circonstances d'un crime / délit et identifier son auteur), \r\n-Sociologie criminelle (Etude des populations délinquantes)",
+            "Answer": "-Droit pénal général \n-Procédure pénale, \n-Droit pénal comparé (Comparaison des droits pénaux nationaux, \n-Droit pénal spécial, \n-Science pénitentiaire (Etude des peines, natures et mode d'execution), \n-Criminologie (Etude des causes des infractions), \n-Criminalistique (Etablir les circonstances d'un crime / délit et identifier son auteur), \n-Sociologie criminelle (Etude des populations délinquantes)",
             "File": "F61_01",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -48,7 +48,7 @@
         {
             "Id": 4,
             "Label": "Citez les différentes sources du droit",
-            "Answer": "\\nSource normative:\r\n\\nLa constitution du 4 octobre 1958 qui définit les institutions de l'état et régit leur relations\r\n\\nLa loi (article 34 de la Constitution.) Votée par le parlement. Fixe les règles pour déterminer un crime ou délit et les peines qui sont applicables Applicable de la publication à l'abrogation\r\n\\nordonnance : Article 38 de la C Prise par le Gvnt avec autorisation du parlement\r\n\\nLe règlement (Pouvoir executif ex : Décrets, arrêtés) \r\n\\nla circulaire (Au sein d'une entreprise par ex) \r\n\\nla coutume\r\n\r\n\\nSource extra normative:\r\n\\nJurisprudence: Ensemble des décisions rendues par les différentes juridictions\r\n\\nDoctrine: Opinion exprimée par les juristes résultant d'une réflexion portant sur une situation ou une règle",
+            "Answer": "\nSource normative:\n\nLa constitution du 4 octobre 1958 qui définit les institutions de l'état et régit leur relations\n\nLa loi (article 34 de la Constitution.) Votée par le parlement. Fixe les règles pour déterminer un crime ou délit et les peines qui sont applicables Applicable de la publication à l'abrogation\n\nordonnance : Article 38 de la C Prise par le Gvnt avec autorisation du parlement\n\nLe règlement (Pouvoir executif ex : Décrets, arrêtés) \n\nla circulaire (Au sein d'une entreprise par ex) \n\nla coutume\n\n\nSource extra normative:\n\nJurisprudence: Ensemble des décisions rendues par les différentes juridictions\n\nDoctrine: Opinion exprimée par les juristes résultant d'une réflexion portant sur une situation ou une règle",
             "File": "F61_01",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -93,7 +93,7 @@
         {
             "Id": 7,
             "Label": "Nul Crime Nul peine sans loi ( 111-3 du CP) Explicitez",
-            "Answer": "Du point de vue des infractions, Aucun comportement ne peut reproché à une personne s'il n'est pas expressément incriminé par un texte normatif\r\n\\nDu point de vue des peines, Auteur d'un acte réprimé ne peut se voir appliquer que le peines et mesures de sûretés qui sont expressément rattachés à cet acte.",
+            "Answer": "Du point de vue des infractions, Aucun comportement ne peut reproché à une personne s'il n'est pas expressément incriminé par un texte normatif\n\nDu point de vue des peines, Auteur d'un acte réprimé ne peut se voir appliquer que le peines et mesures de sûretés qui sont expressément rattachés à cet acte.",
             "File": "F61_01",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -123,7 +123,7 @@
         {
             "Id": 9,
             "Label": "La loi pénale est d'application stricte (Art 111-4 du CP) Définissez",
-            "Answer": "Le juge est dans un rôle d'application des normes et non de création. \r\n\\nExceptions : Analogie in favorem: Bénéfique aux intérêts de la personne poursuivie.\r\n\\nEn raison des progrès technique: le juge a le pouvoir d'étendre les dispositions répressives à des situations non prévisibles par le législateur au moment de l'élaboration du texte.En cas de texte imprécis le juge doit quand même appliquer le texte même si obscure ou incohérente.\r\n\\nAbsurde: la loi dit le contraire de ce qu'elle voulait dire. Le juge avec son pouvoir d'interprétation rend au texte sa véritable signification.\r\n\\nObscur: La loi a plusieurs interprétation possible. Le juge recherche la volonté réelle du législateur (travaux préparatoire), s'il n'y parvient pas alors il prend l'interprétation la plus favorable pour la personne incriminée.",
+            "Answer": "Le juge est dans un rôle d'application des normes et non de création. \n\nExceptions : Analogie in favorem: Bénéfique aux intérêts de la personne poursuivie.\n\nEn raison des progrès technique: le juge a le pouvoir d'étendre les dispositions répressives à des situations non prévisibles par le législateur au moment de l'élaboration du texte.En cas de texte imprécis le juge doit quand même appliquer le texte même si obscure ou incohérente.\n\nAbsurde: la loi dit le contraire de ce qu'elle voulait dire. Le juge avec son pouvoir d'interprétation rend au texte sa véritable signification.\n\nObscur: La loi a plusieurs interprétation possible. Le juge recherche la volonté réelle du législateur (travaux préparatoire), s'il n'y parvient pas alors il prend l'interprétation la plus favorable pour la personne incriminée.",
             "File": "F61_01",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -198,7 +198,7 @@
         {
             "Id": 14,
             "Label": "Définissez Loi pénale de fond et de forme + Leur effet rétroactif",
-            "Answer": "Loi pénale de fond: déterminer les conditions pour qu'un comportement soit soumis aux peines qu'elles fixent.Loi pénale de forme: relative à la constation et à la poursuite des infractions ainsi qu'à la procédure et à la compétence.Non rétroactivité des loi pénale de fond: Seul les faits érigés en infraction au moment des faits sont punissables et seules les peines en vigueur à la date de la commission sont applicables.Sauf si une loi nouvelle plus douce (supprime l'infraction/disparition d'une circonstance aggravante,admet un fait justificatif, abaisse le taux de la peine,cause d'exemption ou atténuation de la peine)Loi expressément rétroactive ou loi interprétative qui précise une loi antérieur.Loi pénale de forme sont définis par (112-2 al 1 et 4)\\n• Loi compétence et d'organisation judiciaire\\n• Loi fixe les modalités des poursuites et les formes de la procédure\\n• Loi relative à l'application et mode d'exécution des peines\\nloi relative à la prescription de l'action publique et des peines.Les lois pénales s'appliquent immédiatement même au fait commis avant l' entrée en vigueur.Pas immédiat : - s'il existe un droit acquis par la personne poursuivie- acte accompli avec l'ancienne loi toujours valable",
+            "Answer": "Loi pénale de fond: déterminer les conditions pour qu'un comportement soit soumis aux peines qu'elles fixent.Loi pénale de forme: relative à la constation et à la poursuite des infractions ainsi qu'à la procédure et à la compétence.Non rétroactivité des loi pénale de fond: Seul les faits érigés en infraction au moment des faits sont punissables et seules les peines en vigueur à la date de la commission sont applicables.Sauf si une loi nouvelle plus douce (supprime l'infraction/disparition d'une circonstance aggravante,admet un fait justificatif, abaisse le taux de la peine,cause d'exemption ou atténuation de la peine)Loi expressément rétroactive ou loi interprétative qui précise une loi antérieur.Loi pénale de forme sont définis par (112-2 al 1 et 4)\n• Loi compétence et d'organisation judiciaire\n• Loi fixe les modalités des poursuites et les formes de la procédure\n• Loi relative à l'application et mode d'exécution des peines\nloi relative à la prescription de l'action publique et des peines.Les lois pénales s'appliquent immédiatement même au fait commis avant l' entrée en vigueur.Pas immédiat : - s'il existe un droit acquis par la personne poursuivie- acte accompli avec l'ancienne loi toujours valable",
             "File": "F61_01",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -213,7 +213,7 @@
         {
             "Id": 15,
             "Label": "Parlez de la territorialité de la loi pénale française",
-            "Answer": "Infractions commises en France (113-2 du CP) : territorialité de la loi pénale française. Applicable aux infractions commises sur le territoire de la république dès lors qu'un des faits constitutifs a lieu sur le territoire national. 3 éléments: CP Art 113-1\\n• Territoire terrestre: ensemble des terres émergés(île de Clipperton/terres australes, antarctiques française, DOM/TOM, collectivités d'outre mer)\\n• Espaces maritimes: zone de 12 Miles marin au maximum à partir des lignes de basse mer sauf infraction à bord à l'encontre d'un navire militaire étranger\\n• Espace aérien: situé au-dessus de l'espace terrestre et maritime sauf si infraction par rapport à l'encontre d'un aéronef militaire étranger.",
+            "Answer": "Infractions commises en France (113-2 du CP) : territorialité de la loi pénale française. Applicable aux infractions commises sur le territoire de la république dès lors qu'un des faits constitutifs a lieu sur le territoire national. 3 éléments: CP Art 113-1\n• Territoire terrestre: ensemble des terres émergés(île de Clipperton/terres australes, antarctiques française, DOM/TOM, collectivités d'outre mer)\n• Espaces maritimes: zone de 12 Miles marin au maximum à partir des lignes de basse mer sauf infraction à bord à l'encontre d'un navire militaire étranger\n• Espace aérien: situé au-dessus de l'espace terrestre et maritime sauf si infraction par rapport à l'encontre d'un aéronef militaire étranger.",
             "File": "F61_01",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -228,7 +228,7 @@
         {
             "Id": 16,
             "Label": "Où s'applique le droit français ?",
-            "Answer": "Territoire terrestre: ensemble des terres émergés (Métropole, île de Clipperton, terres australes, antarctiques française, DOM (Guadeloupe, Guyane, Martinique, Réunion, Mayotte), collectivités d'outre mer(Polynesie FR, St Pierre et Miquelon, Wallis et Futuna, Saint Barthélémy, Saint Martin), Nouvelle Calédonie)\\n• Espaces maritimes: zone de 12 Miles marin au maximum à partir des lignes de basse mer sauf infraction à bord ou à l'encontre d'un navire militaire étranger\\n• Espace aérien: situé au-dessus de l'espace terrestre et maritime sauf si infraction par rapport à l'encontre d'un aéronef militaire étranger.",
+            "Answer": "Territoire terrestre: ensemble des terres émergés (Métropole, île de Clipperton, terres australes, antarctiques française, DOM (Guadeloupe, Guyane, Martinique, Réunion, Mayotte), collectivités d'outre mer(Polynesie FR, St Pierre et Miquelon, Wallis et Futuna, Saint Barthélémy, Saint Martin), Nouvelle Calédonie)\n• Espaces maritimes: zone de 12 Miles marin au maximum à partir des lignes de basse mer sauf infraction à bord ou à l'encontre d'un navire militaire étranger\n• Espace aérien: situé au-dessus de l'espace terrestre et maritime sauf si infraction par rapport à l'encontre d'un aéronef militaire étranger.",
             "File": "F61_01",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -243,7 +243,7 @@
         {
             "Id": 17,
             "Label": "Parlez de la compétence des tribunaux français + cas particuliers de la complicité",
-            "Answer": "Tribunaux compétents à partir du moment un fait constitutif a lieu sur le territoire français art 113-2 al 2.(Sauf infraction d'habitude => 2 faits minimum) \\n• Cas particulier de la complicité:\\n• Acte de complicité commis sur le territoire de la république d'un crime ou d'un délit commis à l'étranger\\n• C/D puni par la loi française et étrangère principe de réciprocité\\n• constaté par une décision définitive de la juridiction étrangère\\n• Au complice d'une infraction dont l'acte principal a été commis en France( peu importe le lieu de commission et la nationalité) \\n• Actes de complicité commis sur le territoire de la République lorsqu'ils sont commis à l'étranger des crimes sur les personnes.",
+            "Answer": "Tribunaux compétents à partir du moment un fait constitutif a lieu sur le territoire français art 113-2 al 2.(Sauf infraction d'habitude => 2 faits minimum) \n• Cas particulier de la complicité:\n• Acte de complicité commis sur le territoire de la république d'un crime ou d'un délit commis à l'étranger\n• C/D puni par la loi française et étrangère principe de réciprocité\n• constaté par une décision définitive de la juridiction étrangère\n• Au complice d'une infraction dont l'acte principal a été commis en France( peu importe le lieu de commission et la nationalité) \n• Actes de complicité commis sur le territoire de la République lorsqu'ils sont commis à l'étranger des crimes sur les personnes.",
             "File": "F61_01",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -273,7 +273,7 @@
         {
             "Id": 19,
             "Label": "La loi française s'applique-t-elle aux infractions à l'étranger ? Citez",
-            "Answer": "\\n• Crime ou délit commis par un français même si nationalité postérieur 113-6 du CP \\n• Crime : application systématique\\n• Délit: système de réciprocité\\n• Crime ou délit puni d' emprisonnement commis à l'encontre d'un français Art 113-7 Nationalité acquise au moment des faits.\\n• Infraction limitativement énuméré:\\n• C/D portant atteintes aux intérêts fondamentaux de la nation\\n• Falsification ou contre façon du sceau de l'état\\n• Falsification ou contrefaçon de billet, monnaie ou effet public\\n• C/D commis à l'encontre des agents ou locaux corps diplomatiques consulaires\\n• Infraction expressément définit dans le cadre d'une convention internationale\\n• Acte de terrorisme\\n• financement du terrorisme\\n• détournement d'aéronef\\n• barbarie torture\\n• Crime ou délit puni d'au moins 5 ans d'emprisonnement commis par un étranger dont l'extradition a été refusé par l 'état français\\n• Crime ou délit d'acte de terrorisme commis par un français ou une personne résidant habituellement en France.",
+            "Answer": "\n• Crime ou délit commis par un français même si nationalité postérieur 113-6 du CP \n• Crime : application systématique\n• Délit: système de réciprocité\n• Crime ou délit puni d' emprisonnement commis à l'encontre d'un français Art 113-7 Nationalité acquise au moment des faits.\n• Infraction limitativement énuméré:\n• C/D portant atteintes aux intérêts fondamentaux de la nation\n• Falsification ou contre façon du sceau de l'état\n• Falsification ou contrefaçon de billet, monnaie ou effet public\n• C/D commis à l'encontre des agents ou locaux corps diplomatiques consulaires\n• Infraction expressément définit dans le cadre d'une convention internationale\n• Acte de terrorisme\n• financement du terrorisme\n• détournement d'aéronef\n• barbarie torture\n• Crime ou délit puni d'au moins 5 ans d'emprisonnement commis par un étranger dont l'extradition a été refusé par l 'état français\n• Crime ou délit d'acte de terrorisme commis par un français ou une personne résidant habituellement en France.",
             "File": "F61_01",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -303,7 +303,7 @@
         {
             "Id": 21,
             "Label": "Définissez les responsabilités Civile/Pénale et Disciplinaire",
-            "Answer": "Civile :C'est l'obligation de réparation de tout préjudice causé à un tiers. Elle résulte de tout fait qui cause un dommage à autrui. Elle n'existe que si le fait à causé un dommage à une autre personne. Elle oblige à réparation (Dommages et interets) \\nPénale : C'est l'obligation de réparation du trouble à l'ordre social causé à la société. Elle résulte d'un acte prévu et réprimé par la loi pénale. Elle existe à partir du moment ou l'acte est commis indépendamment de la réalisation d'un dommage. Elle entraîne une sanction : peine fixée par la loi pénale. \\nDisciplinaire : Elle entraîne une sanction, elle résulte d'un manquement aux règles d'une profession. Elle existe à partir du moment ou l'acte est commis, indépendamment de la réalisation d'un dommage. Elle entraîne une mesure disciplinaire spécifique a chaque profession.",
+            "Answer": "Civile :C'est l'obligation de réparation de tout préjudice causé à un tiers. Elle résulte de tout fait qui cause un dommage à autrui. Elle n'existe que si le fait à causé un dommage à une autre personne. Elle oblige à réparation (Dommages et interets) \nPénale : C'est l'obligation de réparation du trouble à l'ordre social causé à la société. Elle résulte d'un acte prévu et réprimé par la loi pénale. Elle existe à partir du moment ou l'acte est commis indépendamment de la réalisation d'un dommage. Elle entraîne une sanction : peine fixée par la loi pénale. \nDisciplinaire : Elle entraîne une sanction, elle résulte d'un manquement aux règles d'une profession. Elle existe à partir du moment ou l'acte est commis, indépendamment de la réalisation d'un dommage. Elle entraîne une mesure disciplinaire spécifique a chaque profession.",
             "File": "F61_02",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -393,7 +393,7 @@
         {
             "Id": 27,
             "Label": "Définissez l'élément moral. Développer.",
-            "Answer": "L'article 121-3 distingue : La faute intentionnelle Acte + Volonté du résultat \\nLa mise en danger délibérée d'autrui : Volonté de violer une obligation de prudence + Absence de volonté du résultat \\nLa faute non intentionnelle : Faute simple / Faute qualifié (Faute délibérée + exposant autrui à un risque d'une particulière gravité)\\nFaute contraventionnelle (Violation de la prescription légale volontaire ou non)",
+            "Answer": "L'article 121-3 distingue : La faute intentionnelle Acte + Volonté du résultat \nLa mise en danger délibérée d'autrui : Volonté de violer une obligation de prudence + Absence de volonté du résultat \nLa faute non intentionnelle : Faute simple / Faute qualifié (Faute délibérée + exposant autrui à un risque d'une particulière gravité)\nFaute contraventionnelle (Violation de la prescription légale volontaire ou non)",
             "File": "F61_02",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -453,7 +453,7 @@
         {
             "Id": 31,
             "Label": "Quelles sont les peines en matière contraventionnelle ?",
-            "Answer": "Pour les personnes physiques : Amandes selon 5 degrés donc les maximales sont : 38 euros / 150 euros / 450 euros / 750 euros / 1500 euros (3000 si récidive)   (CP art 131-13) \\nPour les personnes morales : Amende maximale = 5x le montant prévu pour les personnes physiques",
+            "Answer": "Pour les personnes physiques : Amandes selon 5 degrés donc les maximales sont : 38 euros / 150 euros / 450 euros / 750 euros / 1500 euros (3000 si récidive)   (CP art 131-13) \nPour les personnes morales : Amende maximale = 5x le montant prévu pour les personnes physiques",
             "File": "F61_03",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -468,7 +468,7 @@
         {
             "Id": 32,
             "Label": "Quelles sont les peines en matière correctionnelle ?",
-            "Answer": "Pour les personnes physiques Amende supérieure ou égale a 3750 euros \\nEmprisonnement selon un échelle à 8 degrés : 2 mois, 6 mois, 1 an, 2 ans, 3 ans, 5 ans, 7 ans et 10 ans (CP art 131-4 et CPP art 381) \\nPour les personnes morales : 5x le montant prévu pour les personnes physiques si crime non prévu par une amende = 1 000 000 euros d'amende",
+            "Answer": "Pour les personnes physiques Amende supérieure ou égale a 3750 euros \nEmprisonnement selon un échelle à 8 degrés : 2 mois, 6 mois, 1 an, 2 ans, 3 ans, 5 ans, 7 ans et 10 ans (CP art 131-4 et CPP art 381) \nPour les personnes morales : 5x le montant prévu pour les personnes physiques si crime non prévu par une amende = 1 000 000 euros d'amende",
             "File": "F61_03",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -498,7 +498,7 @@
         {
             "Id": 34,
             "Label": "Quelles sont les juridictions compétentes de chaque catégorie d'infraction ?",
-            "Answer": "Contravention = Tribunal de police \\nDélit = Tribunal correctionnel \\nCrime= Cour d'assises",
+            "Answer": "Contravention = Tribunal de police \nDélit = Tribunal correctionnel \nCrime= Cour d'assises",
             "File": "F61_03",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -528,7 +528,7 @@
         {
             "Id": 36,
             "Label": "Prescription de l'action publique pour chaque catégorie d'infraction ?",
-            "Answer": "Contravention =1an \\nDélit = 6ans (délais dérogatoires pour les atteintes sexuelles commises sur mineurs 10ans à la majorité des victimes)  \\nCrime= 20 ans (30 ans pour le terrorisme, et les viols) Imprescriptibilité pour : crime contre l'humanité, l'espèce humaine et les disparitions forcées",
+            "Answer": "Contravention =1an \nDélit = 6ans (délais dérogatoires pour les atteintes sexuelles commises sur mineurs 10ans à la majorité des victimes)  \nCrime= 20 ans (30 ans pour le terrorisme, et les viols) Imprescriptibilité pour : crime contre l'humanité, l'espèce humaine et les disparitions forcées",
             "File": "F61_03",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -543,7 +543,7 @@
         {
             "Id": 37,
             "Label": "Prescription de la peine pour chaque catégorie d'infraction ?",
-            "Answer": "Contravention = 3 ans \\nDélit = 6ans (sauf textes particuliers) \\nCrime= 20 (sauf testes particuliers) (CP art 133-2 à 133-4)",
+            "Answer": "Contravention = 3 ans \nDélit = 6ans (sauf textes particuliers) \nCrime= 20 (sauf testes particuliers) (CP art 133-2 à 133-4)",
             "File": "F61_03",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -558,7 +558,7 @@
         {
             "Id": 38,
             "Label": "Quelles sont les catégories d'infractions spécifiques ?",
-            "Answer": "Les infractions politiques (porte atteinte à l'ordre politique et constitutionnel de l'Etat) \\nLes infractions militaires (Commises par un militaire ou constituent la violation d'un devoir militaire) Les infractions de terrorisme (Intentionnellement en relation avec une entreprise individuelle ou collective ayant pour but de troubler gravement l'ordre public par l'intimidation ou la terreur) \\nLes crimes et délits constitutifs de la criminalité organisée (Infraction d'une particulière gravité et commises dans la plupart des cas en bande organisée.",
+            "Answer": "Les infractions politiques (porte atteinte à l'ordre politique et constitutionnel de l'Etat) \nLes infractions militaires (Commises par un militaire ou constituent la violation d'un devoir militaire) Les infractions de terrorisme (Intentionnellement en relation avec une entreprise individuelle ou collective ayant pour but de troubler gravement l'ordre public par l'intimidation ou la terreur) \nLes crimes et délits constitutifs de la criminalité organisée (Infraction d'une particulière gravité et commises dans la plupart des cas en bande organisée.",
             "File": "F61_03",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -573,7 +573,7 @@
         {
             "Id": 39,
             "Label": "Quelles sont les catégories d'infractions fondées sur le contenu des actes d’exécution (Commission...)",
-            "Answer": "Infraction de commission : Acte positif qui consiste à faire ce que la loi prohibe. \\nInfraction d'omission : Consiste à ne pas accomplir ce que la loi commande de faire. \\nInfraction de commission par omission : Un acte négatif sanctionné par la loi comme s'il s'agissait d'un acte positif (Ex : délaissement d'une personne vulnérable)\\nInfraction simple : Acte matériel unique (ex : meurtre)\\nInfraction complexe : Nécessite l'accomplissement de plusieurs actes matériels de nature différentes qui concourent à une fin unique (Ex : Escroquerie) \\nInfraction d'habitude : Suppose la réalisation de plusieurs actes matériels semblables donc chacun isolément n'est pas punissable. (Ex : Exercice illégal de la médecine)",
+            "Answer": "Infraction de commission : Acte positif qui consiste à faire ce que la loi prohibe. \nInfraction d'omission : Consiste à ne pas accomplir ce que la loi commande de faire. \nInfraction de commission par omission : Un acte négatif sanctionné par la loi comme s'il s'agissait d'un acte positif (Ex : délaissement d'une personne vulnérable)\nInfraction simple : Acte matériel unique (ex : meurtre)\nInfraction complexe : Nécessite l'accomplissement de plusieurs actes matériels de nature différentes qui concourent à une fin unique (Ex : Escroquerie) \nInfraction d'habitude : Suppose la réalisation de plusieurs actes matériels semblables donc chacun isolément n'est pas punissable. (Ex : Exercice illégal de la médecine)",
             "File": "F61_03",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -588,7 +588,7 @@
         {
             "Id": 40,
             "Label": "Quelles sont les catégories d'infractions fondées sur le résultat (matérielle..)",
-            "Answer": "Infraction matérielle : N'est consommée que par la réalisation d'un dommage (Meurtre : mort effective de la personne) \\nInfraction formelle : L'atteinte du résultat dommageable est indifférente (L'infraction est consommée même si le résultat n'est pas obtenu Ex : L'empoisonnement)",
+            "Answer": "Infraction matérielle : N'est consommée que par la réalisation d'un dommage (Meurtre : mort effective de la personne) \nInfraction formelle : L'atteinte du résultat dommageable est indifférente (L'infraction est consommée même si le résultat n'est pas obtenu Ex : L'empoisonnement)",
             "File": "F61_03",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -603,7 +603,7 @@
         {
             "Id": 41,
             "Label": "Quelles sont les catégories d'infractions fondées sur la durée ?",
-            "Answer": "Infraction instantanée : S’exécute en un instant \\nInfraction continue : Action ou omission qui se prolonge dans le temps : L'infraction n'est consommée que si elle se prolonge dans le temps (Ex : Recel)",
+            "Answer": "Infraction instantanée : S’exécute en un instant \nInfraction continue : Action ou omission qui se prolonge dans le temps : L'infraction n'est consommée que si elle se prolonge dans le temps (Ex : Recel)",
             "File": "F61_03",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -618,7 +618,7 @@
         {
             "Id": 42,
             "Label": "Quelles sont les catégories d'infractions fondées sur le moment de la constatation ?",
-            "Answer": "Infraction flagrante (CP art 53) : Est flagrant le crime ou le délit (PAS CONTRAVENTION) qui se commet actuellement ou vient de se commettre ; \\nDont la personne soupçonnée est poursuivie par la clameur publique, dans un temps très voisin de l'action ; \\nDont la personne soupçonnée est trouvée en possession d'objets, ou présente des traces et indices laissant penser qu'elle y a participé. \\nL'infraction non flagrante : Toute infraction qui ne répond pas aux critères de l'infraction flagrante",
+            "Answer": "Infraction flagrante (CP art 53) : Est flagrant le crime ou le délit (PAS CONTRAVENTION) qui se commet actuellement ou vient de se commettre ; \nDont la personne soupçonnée est poursuivie par la clameur publique, dans un temps très voisin de l'action ; \nDont la personne soupçonnée est trouvée en possession d'objets, ou présente des traces et indices laissant penser qu'elle y a participé. \nL'infraction non flagrante : Toute infraction qui ne répond pas aux critères de l'infraction flagrante",
             "File": "F61_03",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -633,7 +633,7 @@
         {
             "Id": 43,
             "Label": "Quelles sont les catégories d'infractions fondées sur l’élément moral ?",
-            "Answer": "Infraction intentionnelle : Concerne les crimes et délits. L'intention implique que l'auteur Sait que le comportement est interdit par la loi et pénalement sanctionné ; \\nAdopte volontairement ce comportement en vue du résultat. \\nInfraction non intentionnelle : Lorsqu'il y a faute d'imprudence, de négligence ou un manquement à une obligation de prudence ou de sécurité ; Une faute de mise en danger délibéré ou une faute caractérisée ; Une infraction contraventionnelle : Violation de loi pénale par son auteur, l'intention qui l'animait est indifférente à l'existence de l'infraction (Ex : Franchissement d'une ligne continue)",
+            "Answer": "Infraction intentionnelle : Concerne les crimes et délits. L'intention implique que l'auteur Sait que le comportement est interdit par la loi et pénalement sanctionné ; \nAdopte volontairement ce comportement en vue du résultat. \nInfraction non intentionnelle : Lorsqu'il y a faute d'imprudence, de négligence ou un manquement à une obligation de prudence ou de sécurité ; Une faute de mise en danger délibéré ou une faute caractérisée ; Une infraction contraventionnelle : Violation de loi pénale par son auteur, l'intention qui l'animait est indifférente à l'existence de l'infraction (Ex : Franchissement d'une ligne continue)",
             "File": "F61_03",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -723,7 +723,7 @@
         {
             "Id": 49,
             "Label": "Caractériser le commencement d’exécution",
-            "Answer": "1) Un acte tendant à la consommation de l'infraction : Non seulement accomplissement d'un acte matériel mais cet acte doit être proche de la consommation par sa proximité temporelle et du rapport de causalité. 2) L'intention de commettre l'infraction (L'acte accompli est généralement suffisamment révélateur. \\nIl y a commencement d'exécution quand l'auteur accomplit des actes tels que ceux-ci attestent de sa volonté irrévocable de consommer une infraction nettement déterminée.",
+            "Answer": "1) Un acte tendant à la consommation de l'infraction : Non seulement accomplissement d'un acte matériel mais cet acte doit être proche de la consommation par sa proximité temporelle et du rapport de causalité. 2) L'intention de commettre l'infraction (L'acte accompli est généralement suffisamment révélateur. \nIl y a commencement d'exécution quand l'auteur accomplit des actes tels que ceux-ci attestent de sa volonté irrévocable de consommer une infraction nettement déterminée.",
             "File": "F61_04",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -753,7 +753,7 @@
         {
             "Id": 51,
             "Label": "Les conditions de la répression de la tentative",
-            "Answer": "Crime = Toujours punissable \\nDélit = Punissable que dans les cas expressément et limitativement prévus par la loi. \\nContravention= Jamais punissable – L'auteur d'une infraction tentée est considérée comme un auteur. Il est puni des mêmes peines.",
+            "Answer": "Crime = Toujours punissable \nDélit = Punissable que dans les cas expressément et limitativement prévus par la loi. \nContravention= Jamais punissable – L'auteur d'une infraction tentée est considérée comme un auteur. Il est puni des mêmes peines.",
             "File": "F61_04",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -783,7 +783,7 @@
         {
             "Id": 53,
             "Label": "Quels sont les éléments constitutifs de la tentative punissable ?",
-            "Answer": "Élément légal (CP 121-4 2°) Un crime ou un délit lorsque la loi exprime expressément et limitativement la tentative de ce délit. \\nÉlément matériel : Commencement d’exécution et absence de désistement volontaire. \\nÉlément moral : Une intention coupable.",
+            "Answer": "Élément légal (CP 121-4 2°) Un crime ou un délit lorsque la loi exprime expressément et limitativement la tentative de ce délit. \nÉlément matériel : Commencement d’exécution et absence de désistement volontaire. \nÉlément moral : Une intention coupable.",
             "File": "F61_04",
             "Category": "DPG",
             "Subcategory": "L'Infraction",
@@ -858,7 +858,7 @@
         {
             "Id": 58,
             "Label": "Classification des peines en fonction de leurs rapports entre elles",
-            "Answer": "PEINES PRINCIPALES – ALTERNATIVES – COMPLEMENTAIRES. \\nPeines principales : Elles sont prévues par la loi, s'appliquent directement aux infractions et peuvent être l'unique sanction prononcée par le juge. On distingues les peines principales de références (Réclusion, détention criminelle, emprisonnement, amende) et les peines principales alternatives (prononcées à titre principal à la place des peines de référence avec lesquelles elles sont incompatibles, Ex : Stage / TIG/ jour=amende – CORRECTIONNEL OU CONTRAVENTIONNEL) \\nPeines complémentaires : S'ajoutent aux peines principales (On distingue les OBLIGATOIRES et les FACULTATIVES)",
+            "Answer": "PEINES PRINCIPALES – ALTERNATIVES – COMPLEMENTAIRES. \nPeines principales : Elles sont prévues par la loi, s'appliquent directement aux infractions et peuvent être l'unique sanction prononcée par le juge. On distingues les peines principales de références (Réclusion, détention criminelle, emprisonnement, amende) et les peines principales alternatives (prononcées à titre principal à la place des peines de référence avec lesquelles elles sont incompatibles, Ex : Stage / TIG/ jour=amende – CORRECTIONNEL OU CONTRAVENTIONNEL) \nPeines complémentaires : S'ajoutent aux peines principales (On distingue les OBLIGATOIRES et les FACULTATIVES)",
             "File": "F61_08",
             "Category": "DPG",
             "Subcategory": "La peine",
@@ -903,7 +903,7 @@
         {
             "Id": 61,
             "Label": "Quelles sont les peines correctionnelles ?",
-            "Answer": "Art 131-3 du CP : L'emprisonnement \\nLa détention à domicile sous surveillance électronique \\nLe travail d’intérêt général \\nL'amende (Min 3750e) \\nLe jour-amende \\nLes peines de stage \\nLes peines restrictives ou privatives de liberté prévues à l'art 131-6 du CP \\nLa sanction réparation \\nInterdiction, déchéance ou incapacité d'exercer certains droits ou retrait de tels droits \\nInjonction de soin \\nImmobilisation ou confiscation (Objet ou animal) \\nFermeture d'un établissement \\nAffichage de la décision ou diffusion.",
+            "Answer": "Art 131-3 du CP : L'emprisonnement \nLa détention à domicile sous surveillance électronique \nLe travail d’intérêt général \nL'amende (Min 3750e) \nLe jour-amende \nLes peines de stage \nLes peines restrictives ou privatives de liberté prévues à l'art 131-6 du CP \nLa sanction réparation \nInterdiction, déchéance ou incapacité d'exercer certains droits ou retrait de tels droits \nInjonction de soin \nImmobilisation ou confiscation (Objet ou animal) \nFermeture d'un établissement \nAffichage de la décision ou diffusion.",
             "File": "F61_08",
             "Category": "DPG",
             "Subcategory": "La peine",
@@ -933,7 +933,7 @@
         {
             "Id": 63,
             "Label": "Classification des peines en fonction du domaine de leur effet afflictif (Privatives de liberté...)",
-            "Answer": "PRIVATIVES DE LIBERTE – RESTRICTIVE DE LIBERTE – EXERCICE DE CERTAINS DROITS – PATRIMONIALE – MORALES - OBLIGATIONS  \\nPrivative de liberté : Incarcération. \\nRestrictive de liberté : Interdiction de séjour, Interdiction de participer à des manifs sur la voie publique, Interdiction du territoire français, Interdiction de quitter le territoire français (5ans max) \\nPatrimoniales : Amende, Jour amende (Verser au TP montant fixé par le juge d'une contribution quotidienne pendant un certain nombre de jours), Confiscation d'un bien mobilier ou immobilier, La sanction réparation (Obligation pour le condamné à indemniser le préjudice de la victime. Obligation de la remise en état du bien, réalisé par le condamné ou par un professionnel de son choix rémunéré par lui), Fermeture de l'établissement. \\nExercice de certains droits : Interdiction des droits civiques, civils, de famille et autres. (Ne peuvent être utilement appliqués qu'a ceux qui possèdent les droits dont elles interdisent l'exercice) \\nMorales : Porte atteinte à la réputation du condamné. Ex : Publicité de la décision, affichage, presse. \\nObligations : TIG, stages, suivi socio-judiciaire (Infraction limitativement définies, sexuelles, meurtre, assassinat. - Mesures de surveillance et d'assistance pour prévenir la récidive, assurer suivi post carcéral)",
+            "Answer": "PRIVATIVES DE LIBERTE – RESTRICTIVE DE LIBERTE – EXERCICE DE CERTAINS DROITS – PATRIMONIALE – MORALES - OBLIGATIONS  \nPrivative de liberté : Incarcération. \nRestrictive de liberté : Interdiction de séjour, Interdiction de participer à des manifs sur la voie publique, Interdiction du territoire français, Interdiction de quitter le territoire français (5ans max) \nPatrimoniales : Amende, Jour amende (Verser au TP montant fixé par le juge d'une contribution quotidienne pendant un certain nombre de jours), Confiscation d'un bien mobilier ou immobilier, La sanction réparation (Obligation pour le condamné à indemniser le préjudice de la victime. Obligation de la remise en état du bien, réalisé par le condamné ou par un professionnel de son choix rémunéré par lui), Fermeture de l'établissement. \nExercice de certains droits : Interdiction des droits civiques, civils, de famille et autres. (Ne peuvent être utilement appliqués qu'a ceux qui possèdent les droits dont elles interdisent l'exercice) \nMorales : Porte atteinte à la réputation du condamné. Ex : Publicité de la décision, affichage, presse. \nObligations : TIG, stages, suivi socio-judiciaire (Infraction limitativement définies, sexuelles, meurtre, assassinat. - Mesures de surveillance et d'assistance pour prévenir la récidive, assurer suivi post carcéral)",
             "File": "F61_08",
             "Category": "DPG",
             "Subcategory": "La peine",
@@ -948,7 +948,7 @@
         {
             "Id": 64,
             "Label": "Quelles sont les peines applicables aux personnes morales ?",
-            "Answer": "Classification bipartite : Criminelles et correctionnelles – Contraventionnelles. \\nCriminelles et correctionnelles : Amende (5 fois le montant fixé pour les personnes physiques) \\nDissolution (Min 3ans d'emprisonnement pour les personnes physiques) \\nInterdiction d'exercer une ou plusieurs activités professionnelles ou sociales \\nPlacement sous surveillance judiciaire \\nFermeture \\nExclusion des marchés publics \\nInterdiction de procéder à une offre de titre financiers \\nInterdiction d’émettre des chèques \\nConfiscation \\nAffichage de la décision \\nConfiscation d'animaux \\nInterdiction de détenir un animal \\nInterdiction de percevoir toute aide publique. \\nCONTRAVENTIONNELLES : Amende, Interdiction d’émettre des chèques, confiscation, Peines complémentaires si le règlement l'a prévu. Peine de sanction réparation pour les contraventions 5eme classe",
+            "Answer": "Classification bipartite : Criminelles et correctionnelles – Contraventionnelles. \nCriminelles et correctionnelles : Amende (5 fois le montant fixé pour les personnes physiques) \nDissolution (Min 3ans d'emprisonnement pour les personnes physiques) \nInterdiction d'exercer une ou plusieurs activités professionnelles ou sociales \nPlacement sous surveillance judiciaire \nFermeture \nExclusion des marchés publics \nInterdiction de procéder à une offre de titre financiers \nInterdiction d’émettre des chèques \nConfiscation \nAffichage de la décision \nConfiscation d'animaux \nInterdiction de détenir un animal \nInterdiction de percevoir toute aide publique. \nCONTRAVENTIONNELLES : Amende, Interdiction d’émettre des chèques, confiscation, Peines complémentaires si le règlement l'a prévu. Peine de sanction réparation pour les contraventions 5eme classe",
             "File": "F61_08",
             "Category": "DPG",
             "Subcategory": "La peine",
@@ -978,7 +978,7 @@
         {
             "Id": 66,
             "Label": "Une fois l'action publique en mouvement qu'est-ce que le ministère public ne peut pas faire ?",
-            "Answer": "Transiger \\nSe désister \\nAcquiescer (renoncer à l'exercice des voies de recours en accord avec la personne poursuivie)",
+            "Answer": "Transiger \nSe désister \nAcquiescer (renoncer à l'exercice des voies de recours en accord avec la personne poursuivie)",
             "File": "F62_04",
             "Category": "PP",
             "Subcategory": null,
@@ -993,7 +993,7 @@
         {
             "Id": 67,
             "Label": "Quelles sont les caractéristiques du ministère public lors du procès pénal ?",
-            "Answer": "IRRÉCUSABILITÉ (il incarne la permanence de l'Etat) \\nIRRESPONSABILITÉ (ne peuvent pas être condamnés envers une personne qui a été relaxee' acquittée ou poursuivie a tort)",
+            "Answer": "IRRÉCUSABILITÉ (il incarne la permanence de l'Etat) \nIRRESPONSABILITÉ (ne peuvent pas être condamnés envers une personne qui a été relaxee' acquittée ou poursuivie a tort)",
             "File": "F62_04",
             "Category": "PP",
             "Subcategory": null,
@@ -1008,7 +1008,7 @@
         {
             "Id": 68,
             "Label": "Quelles sont les cas où le magistrat engage sa responsabilité ?",
-            "Answer": "En cas de faute personnelle du magistrat l'état peut exercer une action récursoire a son encontre. \\nEn cas de violation des mesures protectrices de la liberté individuelle, d'inobservation des formalités prescrites pour les mandats de recherches, d'arrêt d'amener et de dépôt ou d'atteinte à la l'inviolabilité du domicile, des sanctions disciplinaires peuvent lui être infligées. \\nEn cas de commission d'infraction, hors ou dans l'exercice de ses fonctions, le magistrat est susceptible d'être pénalement poursuivie. Ces poursuites pouvant être renvoyées devant une autre juridiction.",
+            "Answer": "En cas de faute personnelle du magistrat l'état peut exercer une action récursoire a son encontre. \nEn cas de violation des mesures protectrices de la liberté individuelle, d'inobservation des formalités prescrites pour les mandats de recherches, d'arrêt d'amener et de dépôt ou d'atteinte à la l'inviolabilité du domicile, des sanctions disciplinaires peuvent lui être infligées. \nEn cas de commission d'infraction, hors ou dans l'exercice de ses fonctions, le magistrat est susceptible d'être pénalement poursuivie. Ces poursuites pouvant être renvoyées devant une autre juridiction.",
             "File": "F62_04",
             "Category": "PP",
             "Subcategory": null,
@@ -1023,7 +1023,7 @@
         {
             "Id": 69,
             "Label": "Quelles sont les caractéristiques du ministère public ?",
-            "Answer": "INDIVISIBILITÉ (chaque membre d'un même parquet parle au nom du parquet tout entier. L'acte qu'il accomplit a la même autorité et le même effet que s'il émanait du chef de parquet. Les magistrats peuvent se succéder au cours d'une même procédure voire audience) \\nINDÉPENDANCE (absolue par rapport aux juridictions: il ne peut recevoir aucun ordre, blâme ou injonction de la part des juges. À l'audience il ne peut se voir ni refuser ni retirer la parole par le président/ a l'égard des justiciables: il n'est pas tenu d'agir sur simple plainte, une fois l'action en mouvement il et seul maître de son exercice. Il n'est pas tenu par un retrait de plainte (sauf exception = diffamation) Il peut conclure a l'absence de fondement de la poursuite. \\nSUBORDINATION HIÉRARCHIQUE (Tous les membres sont unis par un lien hierachique au sommet duquel se trouve le Garde des Sceaux - Sauf le parquet général de la Cour de Cass)",
+            "Answer": "INDIVISIBILITÉ (chaque membre d'un même parquet parle au nom du parquet tout entier. L'acte qu'il accomplit a la même autorité et le même effet que s'il émanait du chef de parquet. Les magistrats peuvent se succéder au cours d'une même procédure voire audience) \nINDÉPENDANCE (absolue par rapport aux juridictions: il ne peut recevoir aucun ordre, blâme ou injonction de la part des juges. À l'audience il ne peut se voir ni refuser ni retirer la parole par le président/ a l'égard des justiciables: il n'est pas tenu d'agir sur simple plainte, une fois l'action en mouvement il et seul maître de son exercice. Il n'est pas tenu par un retrait de plainte (sauf exception = diffamation) Il peut conclure a l'absence de fondement de la poursuite. \nSUBORDINATION HIÉRARCHIQUE (Tous les membres sont unis par un lien hierachique au sommet duquel se trouve le Garde des Sceaux - Sauf le parquet général de la Cour de Cass)",
             "File": "F62_04",
             "Category": "PP",
             "Subcategory": null,
@@ -1053,7 +1053,7 @@
         {
             "Id": 71,
             "Label": "Quels sont les caractères généraux de l'instruction ?",
-            "Answer": "Selon les regles de la procédure inquisitoire ECRIT - SECRET – NON CONTRADICTOIRE. \\nEcrit : Tous les actes du JI sont consignés par écrit, chaque copie est certifié conforme. Le greffier doit être présent à chaque acte d'instruction et authentifie les actes du juge. \\nSECRET : Le caractère secret est affirmé par le CPP Art 11. Toute personne qui concourt a cette procédure est tenue au secret. Exceptions (Afin d'éviter la propagation d'informations parcellaire ou fausse et mettre fin à un trouble à l'ordre public / En matière de détention provisoire, le débat contradictoire se déroule en audience publique pour les majeurs). Devant la chambre d'instruction seul le délibéré peut être considéré comme secret.",
+            "Answer": "Selon les regles de la procédure inquisitoire ECRIT - SECRET – NON CONTRADICTOIRE. \nEcrit : Tous les actes du JI sont consignés par écrit, chaque copie est certifié conforme. Le greffier doit être présent à chaque acte d'instruction et authentifie les actes du juge. \nSECRET : Le caractère secret est affirmé par le CPP Art 11. Toute personne qui concourt a cette procédure est tenue au secret. Exceptions (Afin d'éviter la propagation d'informations parcellaire ou fausse et mettre fin à un trouble à l'ordre public / En matière de détention provisoire, le débat contradictoire se déroule en audience publique pour les majeurs). Devant la chambre d'instruction seul le délibéré peut être considéré comme secret.",
             "File": "F62_16",
             "Category": "PP",
             "Subcategory": null,
@@ -1068,7 +1068,7 @@
         {
             "Id": 72,
             "Label": "Quel est le statut du juge d'instruction ?",
-            "Answer": "Il exerce ses fonctions au siège du tribunal, il peut siéger aux audiences civiles et pénales, hors les affaires qu'il a instruites. Il est INDEPENDANT et INAMOVIBLE (Ne peut recevoir de nouvelle affectation sans son consentement). Il exerce sous le contrôle de la Chambre d'instruction (pour les délais) \\nSa responsabilité civile peut etre engagée en cas de faute personnelle.",
+            "Answer": "Il exerce ses fonctions au siège du tribunal, il peut siéger aux audiences civiles et pénales, hors les affaires qu'il a instruites. Il est INDEPENDANT et INAMOVIBLE (Ne peut recevoir de nouvelle affectation sans son consentement). Il exerce sous le contrôle de la Chambre d'instruction (pour les délais) \nSa responsabilité civile peut etre engagée en cas de faute personnelle.",
             "File": "F62_16",
             "Category": "PP",
             "Subcategory": null,
@@ -1113,7 +1113,7 @@
         {
             "Id": 75,
             "Label": "Quelles sont les compétences de la chambre de l'instruction ?",
-            "Answer": "La chambre a en cours d'information la compétence exclusive pour apprécier les nullités éventuelles de la procédure. \\nLa chambre apprécie la régularité des procédures qui lui sont soumises. \\nContrôle de l'activité des OPJ/APJ/APJA/ OFNForets / Douanes Jud \\nReglement de juges et renvoi d'un tribunal à un autre \\nRequêtes en réhabilitation \\nExtraditions \\nMandat d’arrêt européen \\nIncident relatifs à l’exécution des peines prononcées par la cour d'assise \\nRectification du casier judiciaire et des arrets (identité et amnistie)",
+            "Answer": "La chambre a en cours d'information la compétence exclusive pour apprécier les nullités éventuelles de la procédure. \nLa chambre apprécie la régularité des procédures qui lui sont soumises. \nContrôle de l'activité des OPJ/APJ/APJA/ OFNForets / Douanes Jud \nReglement de juges et renvoi d'un tribunal à un autre \nRequêtes en réhabilitation \nExtraditions \nMandat d’arrêt européen \nIncident relatifs à l’exécution des peines prononcées par la cour d'assise \nRectification du casier judiciaire et des arrets (identité et amnistie)",
             "File": "F62_16",
             "Category": "PP",
             "Subcategory": null,
@@ -1128,7 +1128,7 @@
         {
             "Id": 76,
             "Label": "Comment est saisie la Chambre de l'instruction en cas d'erreur d'un OPJ, et comment se passe l'enquête ?",
-            "Answer": "Par le Procureure général \\nPar le président de la chambre de l'instruction \\nD'office à l'occasion de l'examen d'une procédure. Elle fait procéder à une enquête, elle entend le Proc général et l'OPJ en cause, assisté de son avocat s'il le souhaite Il se voit remettre le dossier concernant l'OPJ tenu par le parquet.  Il décide a effet immédiat d'adresser des observations à l'OPJ ou l'APJ en cause / Interdit à titre temporaire ou définitif l'exercice des fonctions d'OPJ sur le ressort de la cour d'appel ou sur le territoire national. - Les décisions sont transmises aux autorités hiérarchiques dont dépend l'OPJ (A la diligence du Proc général)",
+            "Answer": "Par le Procureure général \nPar le président de la chambre de l'instruction \nD'office à l'occasion de l'examen d'une procédure. Elle fait procéder à une enquête, elle entend le Proc général et l'OPJ en cause, assisté de son avocat s'il le souhaite Il se voit remettre le dossier concernant l'OPJ tenu par le parquet.  Il décide a effet immédiat d'adresser des observations à l'OPJ ou l'APJ en cause / Interdit à titre temporaire ou définitif l'exercice des fonctions d'OPJ sur le ressort de la cour d'appel ou sur le territoire national. - Les décisions sont transmises aux autorités hiérarchiques dont dépend l'OPJ (A la diligence du Proc général)",
             "File": "F62_16",
             "Category": "PP",
             "Subcategory": null,
@@ -1173,7 +1173,7 @@
         {
             "Id": 79,
             "Label": "Quels sont les critères généraux de compétence du juge d'instruction",
-            "Answer": "\\nLe lieu de l'infraction (Lieu ou l'ordre public à été troublé) \r\n\\nLa résidende de l'une des personnes soupsonnées\r\n\\nLe lieu d'ARRESTATION\r\n\\nle lieu de DETENTION\r\nPour les personnes morales: Lieu du siege également",
+            "Answer": "\nLe lieu de l'infraction (Lieu ou l'ordre public à été troublé) \n\nLa résidende de l'une des personnes soupsonnées\n\nLe lieu d'ARRESTATION\n\nle lieu de DETENTION\nPour les personnes morales: Lieu du siege également",
             "File": "F62_16",
             "Category": "PP",
             "Subcategory": null,
@@ -1203,7 +1203,7 @@
         {
             "Id": 81,
             "Label": "Quelles sont les juridictions spécialisées des JI ?",
-            "Answer": "\\nDomaine économique et financier \r\n\\nDomaine sanitaire \r\n\\nTerrorisme \r\n\\nDomaine des pollutions maritimes \r\n\\nEn matière de criminalité organisée. \r\nSi un juge appartient à une de ces juridiction spécialisées alors il pourra se saisir de faits a condition qu'elles ai eu lieu à l'interieur du ressort de la juridiction spécialisé (Et non plus compétence de la cour d'appel)",
+            "Answer": "\nDomaine économique et financier \n\nDomaine sanitaire \n\nTerrorisme \n\nDomaine des pollutions maritimes \n\nEn matière de criminalité organisée. \nSi un juge appartient à une de ces juridiction spécialisées alors il pourra se saisir de faits a condition qu'elles ai eu lieu à l'interieur du ressort de la juridiction spécialisé (Et non plus compétence de la cour d'appel)",
             "File": "F62_16",
             "Category": "PP",
             "Subcategory": null,
@@ -1233,7 +1233,7 @@
         {
             "Id": 83,
             "Label": "Comment est saisi un JI ?",
-            "Answer": "Soit par un requisitoire du Procureur de la République, soit par une plainte avec constitution de partie civile. \r\n\\nLe JI constitue donc une voie de recours pour mettre en mouvement l'action publique si une partie civile considere qu'un plainte a été classée sans suites à tord par le parquet.",
+            "Answer": "Soit par un requisitoire du Procureur de la République, soit par une plainte avec constitution de partie civile. \n\nLe JI constitue donc une voie de recours pour mettre en mouvement l'action publique si une partie civile considere qu'un plainte a été classée sans suites à tord par le parquet.",
             "File": "F62_16",
             "Category": "PP",
             "Subcategory": null,
@@ -1248,7 +1248,7 @@
         {
             "Id": 84,
             "Label": "Quelle est l'étendue de la saisine d'un JI ?",
-            "Answer": "Il est saisi \"In rem\" (dans les faits) il n'est pas tenu à la qualification donné par le parquet ni par les personnes alors souspconnées au moment du réquisitoire. \r\n\\nS'il découvre des faits distinct = NE PEUX PAS LES INSTRUIRE. Mais le Procureur peux étendre sa saisine par un réquisitoire supplétif. \r\n\\nNe constitue pas des faits distinct les circonstances aggravantes et les faits indivisibles.",
+            "Answer": "Il est saisi \"In rem\" (dans les faits) il n'est pas tenu à la qualification donné par le parquet ni par les personnes alors souspconnées au moment du réquisitoire. \n\nS'il découvre des faits distinct = NE PEUX PAS LES INSTRUIRE. Mais le Procureur peux étendre sa saisine par un réquisitoire supplétif. \n\nNe constitue pas des faits distinct les circonstances aggravantes et les faits indivisibles.",
             "File": "F62_16",
             "Category": "PP",
             "Subcategory": null,
@@ -1263,7 +1263,7 @@
         {
             "Id": 85,
             "Label": "Comment est saisie la Chambre de l'instruction ?",
-            "Answer": "Le ministère public dispose d'un droit d'appel général: Il peux contester toute ordonnance du juge d'instruction ou du JLD\r\n\\nLes parties peuvent former des appels mais ils sont \"filtrés\" par le président de la chambre afin de limiter les procédures abusives.",
+            "Answer": "Le ministère public dispose d'un droit d'appel général: Il peux contester toute ordonnance du juge d'instruction ou du JLD\n\nLes parties peuvent former des appels mais ils sont \"filtrés\" par le président de la chambre afin de limiter les procédures abusives.",
             "File": "F62_16",
             "Category": "PP",
             "Subcategory": null,
@@ -1293,7 +1293,7 @@
         {
             "Id": 87,
             "Label": "Dans quels cas le JI peut-il mettre une personne en examen ?",
-            "Answer": "Seulement si il estime ne pas pouvoir recourir à la procédure de témoin assisté. - SEULEMENT S'IL APPARAIT DES INDICES GRAVES ET CONCORDANTS. \r\n\\nDeux cas de figure: \r\n\\nLa personne était témoin assisté, le JI peut demander la mise en examen. \r\n\\nLa personne n'était pas témoin assisté, le JI doit convoquer la personne pour un interrogatoire de première comparution.",
+            "Answer": "Seulement si il estime ne pas pouvoir recourir à la procédure de témoin assisté. - SEULEMENT S'IL APPARAIT DES INDICES GRAVES ET CONCORDANTS. \n\nDeux cas de figure: \n\nLa personne était témoin assisté, le JI peut demander la mise en examen. \n\nLa personne n'était pas témoin assisté, le JI doit convoquer la personne pour un interrogatoire de première comparution.",
             "File": "F62_16",
             "Category": "PP",
             "Subcategory": null,
@@ -1308,7 +1308,7 @@
         {
             "Id": 88,
             "Label": "Qui PEUT être entendu en qualité de témoin assisté ?",
-            "Answer": "Toute personne visé par une plainte avec constitution de partie civile ou mise en cause par la victime + Qui ne demande pas ce statut au juge. \r\n\\nToute personne mise en cause par un témoin \r\n\\nToute personne contre laquelle il existe des indices vraisemblables qu'elle ait pu participer.",
+            "Answer": "Toute personne visé par une plainte avec constitution de partie civile ou mise en cause par la victime + Qui ne demande pas ce statut au juge. \n\nToute personne mise en cause par un témoin \n\nToute personne contre laquelle il existe des indices vraisemblables qu'elle ait pu participer.",
             "File": "F62_16",
             "Category": "PP",
             "Subcategory": null,
@@ -1323,7 +1323,7 @@
         {
             "Id": 89,
             "Label": "Qui DOIT être entendu en qualité de témoin assisté ?",
-            "Answer": "Toute personne nommément cité par un réquisitoire introductif ou supplétif et qui n'est pas mise en examen. \r\n\\nToute personne visé par une victime + Qui a demandé ce statut au juge \r\n\\nToute personne qui n'a pas été mis en examen à la suite d'un interrogatoire de première comparution\r\n\\nToute personne dont la mise en examen a été annulé par la chambre de l'instruction.",
+            "Answer": "Toute personne nommément cité par un réquisitoire introductif ou supplétif et qui n'est pas mise en examen. \n\nToute personne visé par une victime + Qui a demandé ce statut au juge \n\nToute personne qui n'a pas été mis en examen à la suite d'un interrogatoire de première comparution\n\nToute personne dont la mise en examen a été annulé par la chambre de l'instruction.",
             "File": "F62_16",
             "Category": "PP",
             "Subcategory": null,
@@ -1353,7 +1353,7 @@
         {
             "Id": 91,
             "Label": "Quelles sont les obligations d'un témoin ?",
-            "Answer": "Comparaitre \r\n\\nPreter serment de dire la vérité, excepté s'il est agé de moins de 16 ans\r\n\\nDéposer (Reveler ce qu'il sait même contre son interet Exception faite des journalistes et du secret professionnel)",
+            "Answer": "Comparaitre \n\nPreter serment de dire la vérité, excepté s'il est agé de moins de 16 ans\n\nDéposer (Reveler ce qu'il sait même contre son interet Exception faite des journalistes et du secret professionnel)",
             "File": "F62_16",
             "Category": "PP",
             "Subcategory": null,
@@ -1368,7 +1368,7 @@
         {
             "Id": 92,
             "Label": "Qui le JI peut il requérir par CR ?",
-            "Answer": "Tout juge de son tribunal\r\n\\nTout juge d'instruction \r\n\\nTout OPJ \r\n\\nUn agent de la douane judiciaire",
+            "Answer": "Tout juge de son tribunal\n\nTout juge d'instruction \n\nTout OPJ \n\nUn agent de la douane judiciaire",
             "File": "F62_16",
             "Category": "PP",
             "Subcategory": null,
@@ -1383,7 +1383,7 @@
         {
             "Id": 93,
             "Label": "Quelles sont les carractéristiques des commissions rogatoires délivrées ?",
-            "Answer": "Il ne peux délivrer une commission rogatoires générale quant aux infractions visées: La CR doit préciser la nature de l'infraction et le JI ne peux instruire que sur des faits dont il est saisi. Elle peut être GENERALE quant aux actes sollicités, à condition qu'elle ne constitue pas une délégation générale de pouvoirs. \r\n\r\n\\nLes actes demandés doivent être suffisamment précis et se rattacher directement à la répression de l'infraction visée. \r\n\\nLa CR doit être datée et signée\r\n\\nLe JI doit fixer un délai dans lequel elle doit lui être retournée. A defaut, dans les 8 jours suivant la fin des opérations éxécutées.",
+            "Answer": "Il ne peux délivrer une commission rogatoires générale quant aux infractions visées: La CR doit préciser la nature de l'infraction et le JI ne peux instruire que sur des faits dont il est saisi. Elle peut être GENERALE quant aux actes sollicités, à condition qu'elle ne constitue pas une délégation générale de pouvoirs. \n\n\nLes actes demandés doivent être suffisamment précis et se rattacher directement à la répression de l'infraction visée. \n\nLa CR doit être datée et signée\n\nLe JI doit fixer un délai dans lequel elle doit lui être retournée. A defaut, dans les 8 jours suivant la fin des opérations éxécutées.",
             "File": "F62_16",
             "Category": "PP",
             "Subcategory": null,
@@ -1398,7 +1398,7 @@
         {
             "Id": 94,
             "Label": "Quels sont les actes qu'un OPJ ne peut pas accomplir dans le cadre d'une CR ?",
-            "Answer": "Les OPJ contrairement aux juges saisi ne peuvent pas procéder: \r\n\\nAux interrogatoires et confrontations des personnes mises en examen\r\n\\nAux auditions de la partie civile ou du témoin assisté, sauf s'ils le demandent",
+            "Answer": "Les OPJ contrairement aux juges saisi ne peuvent pas procéder: \n\nAux interrogatoires et confrontations des personnes mises en examen\n\nAux auditions de la partie civile ou du témoin assisté, sauf s'ils le demandent",
             "File": "F62_16",
             "Category": "PP",
             "Subcategory": null,
@@ -1413,7 +1413,7 @@
         {
             "Id": 95,
             "Label": "Quels sont les actes que le JI ne peut pas déléguer ?",
-            "Answer": "La délivrance de mandats\r\nLa décision d'ordonner une écoute téléphonique\r\nLes visites domiciliaires\r\nLes perquisitions et saisies dans certains locaux professionnels.",
+            "Answer": "La délivrance de mandats\nLa décision d'ordonner une écoute téléphonique\nLes visites domiciliaires\nLes perquisitions et saisies dans certains locaux professionnels.",
             "File": "F62_16",
             "Category": "PP",
             "Subcategory": null,
@@ -1443,7 +1443,7 @@
         {
             "Id": 97,
             "Label": "Lister les APJ",
-            "Answer": "Les gendarmes n'ayant pas la qualif OPJ + Eleves gendarmes \r\n\\n fonctionnaires actifs de la PN\r\n\\nLes anciens OPJ ou APJ (+  5ans) reservistes",
+            "Answer": "Les gendarmes n'ayant pas la qualif OPJ + Eleves gendarmes \n\n fonctionnaires actifs de la PN\n\nLes anciens OPJ ou APJ (+  5ans) reservistes",
             "File": "F62_10",
             "Category": "PP",
             "Subcategory": null,
@@ -1458,7 +1458,7 @@
         {
             "Id": 98,
             "Label": "Lister les APJA",
-            "Answer": "Les fonctionnires de la police ne remplissant pas les conditions de l'Art 20 du CPP\r\n\\nLes volontaires servant en police ou Gendarmerie\r\n\\nLes membres de la réserve opérationnelle ne remplissant pas les conditions de l'Art 20-1 du CPP\r\n\\nLes policiers adjoints\r\n\\nLes controleurs de la préfecture de police exercant leurs fonctions dans la spécialité voie publique \r\n\\nLes agents de urveillance de la ville de Paris\r\n\\nLes agents de police Municipale \r\n\\nLes gardes champetres",
+            "Answer": "Les fonctionnires de la police ne remplissant pas les conditions de l'Art 20 du CPP\n\nLes volontaires servant en police ou Gendarmerie\n\nLes membres de la réserve opérationnelle ne remplissant pas les conditions de l'Art 20-1 du CPP\n\nLes policiers adjoints\n\nLes controleurs de la préfecture de police exercant leurs fonctions dans la spécialité voie publique \n\nLes agents de urveillance de la ville de Paris\n\nLes agents de police Municipale \n\nLes gardes champetres",
             "File": "F62_10",
             "Category": "PP",
             "Subcategory": null,
@@ -1488,7 +1488,7 @@
         {
             "Id": 100,
             "Label": "Quelles sont les missions des APJ ?",
-            "Answer": "CONSTATER les crimes, les délits et les contraventions et en dresser procès verbal.\r\n\\nNOTIFIER les droits à une personne placée en garde à vue sous le contrôle d'un OPJ \r\n\\nDIRIGER en enquête préli ou Flag, l'audition ou la confrontation des personnes gardées à vue. \r\n\\nEFFECTUER DES ENQUÊTES PRELI: Soit d'office, soit sur instruction du Proc ou des chefs hierarchiques, qu'ils diligent sous le contrôle d'un OPJ.\r\n\\nENTENDRE: En flag, decouverte de cadavre, personne disparue, sous le controle d'un OPJ des personnes susceptibles de fournir des renseignements.",
+            "Answer": "CONSTATER les crimes, les délits et les contraventions et en dresser procès verbal.\n\nNOTIFIER les droits à une personne placée en garde à vue sous le contrôle d'un OPJ \n\nDIRIGER en enquête préli ou Flag, l'audition ou la confrontation des personnes gardées à vue. \n\nEFFECTUER DES ENQUÊTES PRELI: Soit d'office, soit sur instruction du Proc ou des chefs hierarchiques, qu'ils diligent sous le contrôle d'un OPJ.\n\nENTENDRE: En flag, decouverte de cadavre, personne disparue, sous le controle d'un OPJ des personnes susceptibles de fournir des renseignements.",
             "File": "F62_10",
             "Category": "PP",
             "Subcategory": null,
@@ -1503,7 +1503,7 @@
         {
             "Id": 101,
             "Label": "Qelles sont les missions communes des APJ et APJA ?",
-            "Answer": "SECONDER: dans l'exercice de leurs fonctions les OPJ\r\n\\nNOTIFIER ET ASSURER L'EXECUTION: Des mesures de contraintes contre les témoins / Des mandats de comparution, d'arret, d'amener, de recherche, de depôt et des ordonnances de prise de corps / Des arrets et des jugements de condamnation / Des contraintes judiciaires. \r\n\\nAPPREHENDER: Comme toute personne, l'auteur d'un crime ou d'un délit flagrant puni d'une peine d'emprisonnement afin de le conduire devant l'OPJ.",
+            "Answer": "SECONDER: dans l'exercice de leurs fonctions les OPJ\n\nNOTIFIER ET ASSURER L'EXECUTION: Des mesures de contraintes contre les témoins / Des mandats de comparution, d'arret, d'amener, de recherche, de depôt et des ordonnances de prise de corps / Des arrets et des jugements de condamnation / Des contraintes judiciaires. \n\nAPPREHENDER: Comme toute personne, l'auteur d'un crime ou d'un délit flagrant puni d'une peine d'emprisonnement afin de le conduire devant l'OPJ.",
             "File": "F62_10",
             "Category": "PP",
             "Subcategory": null,
@@ -1518,7 +1518,7 @@
         {
             "Id": 102,
             "Label": "Quelles sont les missions propres aux APJA ?",
-            "Answer": "RENDRE COMPTE sous forme de rapports\r\n\\nCONSTATER se conformants aux ordres, les infractions à la loi pénale et recueillir tous renseignements. \r\n\\nCONSTATER PAR PV: Les infractions au code de la Route qui sont de leur compétences. Ils peuvent receuillir les observations du contrevenant, ils peuvent également relever leurs identités",
+            "Answer": "RENDRE COMPTE sous forme de rapports\n\nCONSTATER se conformants aux ordres, les infractions à la loi pénale et recueillir tous renseignements. \n\nCONSTATER PAR PV: Les infractions au code de la Route qui sont de leur compétences. Ils peuvent receuillir les observations du contrevenant, ils peuvent également relever leurs identités",
             "File": "F62_10",
             "Category": "PP",
             "Subcategory": null,
@@ -1533,7 +1533,7 @@
         {
             "Id": 103,
             "Label": "Quelle est la compétence territoriale des APJ et APJA ?",
-            "Answer": "Dans les limites territoriales ou ils exercent leurs fonctions habituelles\r\n\\nLes limites terriroriales de l'OPJ duquel ils ont été nominativement mis à disposition temporaire. \r\n\\nDans les limites territoriales ou l'OPJ qu'ils secondent exerce ses attributions \r\n\\nSi affecté dans les transports de voyageusr alors compétence étendue sur l'étendue de la zone de defense de leur service d'affectation. \r\n\\nPartout en cas de force majeur. Il relevera par procès verbal l'infraction qu'il transmettra à l'OPJ TC",
+            "Answer": "Dans les limites territoriales ou ils exercent leurs fonctions habituelles\n\nLes limites terriroriales de l'OPJ duquel ils ont été nominativement mis à disposition temporaire. \n\nDans les limites territoriales ou l'OPJ qu'ils secondent exerce ses attributions \n\nSi affecté dans les transports de voyageusr alors compétence étendue sur l'étendue de la zone de defense de leur service d'affectation. \n\nPartout en cas de force majeur. Il relevera par procès verbal l'infraction qu'il transmettra à l'OPJ TC",
             "File": "F62_10",
             "Category": "PP",
             "Subcategory": null,
@@ -1563,7 +1563,7 @@
         {
             "Id": 105,
             "Label": "Quelles sanctions peuvent être prise à l'encontre d'un APJ/ APJA?",
-            "Answer": "Si infraction pénale, alors selon les regles du droit commun + Possibilité d'encourir l'interdiction d'exercer une fonction publique. \r\n\\nEn matière hierachique: Observation ou mises au point adressées par le Procureur de la République. \r\n\\nAvertissement adressé par le procureur général et transmis aux chefs hierachiques \r\n\\nObservations ou suspension des fonctions par la chambre de l'instruction\r\n\\nSanctions disciplinaires ordonnés par l'autorité hiérarchique.",
+            "Answer": "Si infraction pénale, alors selon les regles du droit commun + Possibilité d'encourir l'interdiction d'exercer une fonction publique. \n\nEn matière hierachique: Observation ou mises au point adressées par le Procureur de la République. \n\nAvertissement adressé par le procureur général et transmis aux chefs hierachiques \n\nObservations ou suspension des fonctions par la chambre de l'instruction\n\nSanctions disciplinaires ordonnés par l'autorité hiérarchique.",
             "File": "F62_10",
             "Category": "PP",
             "Subcategory": null,
@@ -1593,7 +1593,7 @@
         {
             "Id": 107,
             "Label": "Quelles sont les 5 missions de la police judiciaire ?",
-            "Answer": "Constater les infractions à la loi pénale\r\n\\nRassembler les preuves des infractions \r\n\\nRechercher les auteurs des infractions\r\nAprès ouverture d'info: Executer les délégations des juridictions d'instruction\r\n\\nDéferer à leurs réquisitions.",
+            "Answer": "Constater les infractions à la loi pénale\n\nRassembler les preuves des infractions \n\nRechercher les auteurs des infractions\nAprès ouverture d'info: Executer les délégations des juridictions d'instruction\n\nDéferer à leurs réquisitions.",
             "File": "F62_08",
             "Category": "PP",
             "Subcategory": null,
@@ -1623,7 +1623,7 @@
         {
             "Id": 109,
             "Label": "Quelles sont les 7 saisines de la Police Judiciaire ?",
-            "Answer": "Constatation par procès verbal \r\n\\nAvis \r\n\\nDénonciation \r\n\\nPlainte \r\n\\nRéquisition \r\n\\nDirectives du procureur de la République \r\n\\nInstructions des chefs hierachiques \r\n\\nPrescriptions du juge d'instruction",
+            "Answer": "Constatation par procès verbal \n\nAvis \n\nDénonciation \n\nPlainte \n\nRéquisition \n\nDirectives du procureur de la République \n\nInstructions des chefs hierachiques \n\nPrescriptions du juge d'instruction",
             "File": "F62_08",
             "Category": "PP",
             "Subcategory": null,
@@ -1683,7 +1683,7 @@
         {
             "Id": 113,
             "Label": "Quelles diffusions sont rigoureusement interdites ?",
-            "Answer": "Les divulgations prohibées en vertu de textes spéciaux (Ex: Tout ce qui concerne les mineurs)\r\n\\nLa diffusion de photographies d'une personne menotté\r\n\\nDes circonstances d'un crime ou d'un délit portant gravement atteinte à la dignité de la victime sans son accord \r\n\\nDes renseignements ou l'image concernant l'identité de la victime d'une agression ou d'une atteinte sexuelle. \r\n\\nLes communications qui heurteraient certaines considerations",
+            "Answer": "Les divulgations prohibées en vertu de textes spéciaux (Ex: Tout ce qui concerne les mineurs)\n\nLa diffusion de photographies d'une personne menotté\n\nDes circonstances d'un crime ou d'un délit portant gravement atteinte à la dignité de la victime sans son accord \n\nDes renseignements ou l'image concernant l'identité de la victime d'une agression ou d'une atteinte sexuelle. \n\nLes communications qui heurteraient certaines considerations",
             "File": "F62_08",
             "Category": "PP",
             "Subcategory": null,
@@ -1698,7 +1698,7 @@
         {
             "Id": 114,
             "Label": "Qui sont les OPJ (Légalement)",
-            "Answer": "Les maires et leurs adjoints\r\n\\nDans la GN: Le DG et le Major général / Les officiers et les gradés / Les Gendarmes avec trois ans de service nominativement désignés par arreté des ministres de la justice et de l'interieur après avis conforme d'une commission. \r\n\\nDans la PN: Le DG et le Chef de la Sous-direction de la PJ / les inspecteurs généraux / Les sous directeurs de police active / Les controleurs généraux / Les commissaires de police / Les officiers de police / Les fonctionnaires du corps d'encadrement et d'application avec 3 ans de service et idem aux GD. \r\n\\nLes reservistes peuvent conserver leur habilitation s'il suivent une formation et pour uen durée de 5 ans après leurs départ. \r\n\\nLes officiers de douane judiciaires. (liste limitative d'infraction + Le blanchiment de ces dernières + Infractions connexes)\r\n\\nLes officiers fiscaux judiciaires (liste limitative d'infraction + Le blanchiment de ces dernières + Infractions connexes)",
+            "Answer": "Les maires et leurs adjoints\n\nDans la GN: Le DG et le Major général / Les officiers et les gradés / Les Gendarmes avec trois ans de service nominativement désignés par arreté des ministres de la justice et de l'interieur après avis conforme d'une commission. \n\nDans la PN: Le DG et le Chef de la Sous-direction de la PJ / les inspecteurs généraux / Les sous directeurs de police active / Les controleurs généraux / Les commissaires de police / Les officiers de police / Les fonctionnaires du corps d'encadrement et d'application avec 3 ans de service et idem aux GD. \n\nLes reservistes peuvent conserver leur habilitation s'il suivent une formation et pour uen durée de 5 ans après leurs départ. \n\nLes officiers de douane judiciaires. (liste limitative d'infraction + Le blanchiment de ces dernières + Infractions connexes)\n\nLes officiers fiscaux judiciaires (liste limitative d'infraction + Le blanchiment de ces dernières + Infractions connexes)",
             "File": "F62_09",
             "Category": "PP",
             "Subcategory": null,
@@ -1728,7 +1728,7 @@
         {
             "Id": 116,
             "Label": "Quelles sont les conditions pour être OPJ ?",
-            "Answer": "3 ans de service \r\n\\nRéussite de l'examen technique \r\n\\nEtre affecté à un emploi comportant l'exercice effectif de la PJ\r\n\\nRecevoir une habilitation personnelle du Procureur Général près la cour d'appel",
+            "Answer": "3 ans de service \n\nRéussite de l'examen technique \n\nEtre affecté à un emploi comportant l'exercice effectif de la PJ\n\nRecevoir une habilitation personnelle du Procureur Général près la cour d'appel",
             "File": "F62_09",
             "Category": "PP",
             "Subcategory": null,
@@ -1788,7 +1788,7 @@
         {
             "Id": 120,
             "Label": "Quelles sont les missions des OPJ ?",
-            "Answer": "Tant qu'une information n'est pas ouverte, ils constatent les infractions à la loi pénale, en rassemblent les preuves, en recherchent les auteurs. Lorsqu'une information est ouverte, ils e=écutent les délégations des juridictions d'instruction et défèrent à leurs réquisitions. \r\n\\nRecevoir les plaintes \r\n\\nProceder à des enquêtes Préli / Flag\r\n\\nPeuvent requerir le concours de la force publique pour l'execution de leur mission\r\n\\nPeuvent executer ou faire executer des contrôles d'identité, des visites de vehicules, des fouilles de bagages\r\n\\nPeuvent proceder à des vérifications d'identité \r\n\\nPeuvent requerir toute personne qualifiée\r\n\\nPeuvent requérir l'assistance de la PM, des gardes champêtres, des agents de ONF. \r\n\\nPeuvent être désignés par le juge pour assister à des visites en tous lieux, mêmes privés faites par le fisc.",
+            "Answer": "Tant qu'une information n'est pas ouverte, ils constatent les infractions à la loi pénale, en rassemblent les preuves, en recherchent les auteurs. Lorsqu'une information est ouverte, ils e=écutent les délégations des juridictions d'instruction et défèrent à leurs réquisitions. \n\nRecevoir les plaintes \n\nProceder à des enquêtes Préli / Flag\n\nPeuvent requerir le concours de la force publique pour l'execution de leur mission\n\nPeuvent executer ou faire executer des contrôles d'identité, des visites de vehicules, des fouilles de bagages\n\nPeuvent proceder à des vérifications d'identité \n\nPeuvent requerir toute personne qualifiée\n\nPeuvent requérir l'assistance de la PM, des gardes champêtres, des agents de ONF. \n\nPeuvent être désignés par le juge pour assister à des visites en tous lieux, mêmes privés faites par le fisc.",
             "File": "F62_09",
             "Category": "PP",
             "Subcategory": null,
@@ -1818,7 +1818,7 @@
         {
             "Id": 122,
             "Label": "Quelle sont les extensions de la compétence territoriale des OPJ ?",
-            "Answer": "\\nLes officiers de police judiciaire ont compétence dans les limites territoriales où ils exercent leurs fonctions habituelles.\r\n\\nLes officiers de police judiciaire, mis temporairement à disposition d'un service autre que celui dans lequel ils sont affectés, ont la même compétence territoriale que celle des officiers de police judiciaire du service d'accueil.\r\n\r\n\\nLes officiers de police judiciaire peuvent se transporter sur toute l'étendue du territoire national, à l'effet d'y poursuivre leurs investigations et de procéder à des auditions, perquisitions et saisies, après en avoir informé le procureur de la République saisi de l'enquête ou le juge d'instruction. Ils sont tenus d'être assistés d'un officier de police judiciaire territorialement compétent si ce magistrat le décide. Le procureur de la République du tribunal judiciaire dans le ressort duquel les investigations sont réalisées est également informé par l'officier de police judiciaire de ce transport. L'information des magistrats mentionnés au présent alinéa n'est cependant pas nécessaire lorsque le transport s'effectue dans un ressort limitrophe à celui dans lequel l'officier exerce ses fonctions, Paris et les départements des Hauts-de-Seine, de Seine-Saint-Denis et du Val-de-Marne étant à cette fin considérés comme un seul département.\r\n\r\n\\nAvec l'accord des autorités compétentes de l'Etat concerné, les officiers de police judiciaire peuvent, sur commission rogatoire expresse du juge d'instruction ou sur réquisitions du procureur de la République, procéder à des auditions sur le territoire d'un Etat étranger.\r\n\r\n\\nLes officiers ou agents de police judiciaire exerçant habituellement leur mission dans les véhicules affectés au transport collectif de voyageurs ou dans les lieux destinés à l'accès à ces moyens de transport sont compétents pour opérer sur l'étendue de la zone de défense de leur service d'affectation, dans des conditions déterminées par décret en Conseil d'Etat. Lorsque les réquisitions prises par le procureur de la République en application de l'article 78-7 le prévoient expressément, ces officiers ou agents de police judiciaire sont compétents pour les mettre en œuvre sur l'ensemble du trajet d'un véhicule de transport ferroviaire de voyageurs.",
+            "Answer": "\nLes officiers de police judiciaire ont compétence dans les limites territoriales où ils exercent leurs fonctions habituelles.\n\nLes officiers de police judiciaire, mis temporairement à disposition d'un service autre que celui dans lequel ils sont affectés, ont la même compétence territoriale que celle des officiers de police judiciaire du service d'accueil.\n\n\nLes officiers de police judiciaire peuvent se transporter sur toute l'étendue du territoire national, à l'effet d'y poursuivre leurs investigations et de procéder à des auditions, perquisitions et saisies, après en avoir informé le procureur de la République saisi de l'enquête ou le juge d'instruction. Ils sont tenus d'être assistés d'un officier de police judiciaire territorialement compétent si ce magistrat le décide. Le procureur de la République du tribunal judiciaire dans le ressort duquel les investigations sont réalisées est également informé par l'officier de police judiciaire de ce transport. L'information des magistrats mentionnés au présent alinéa n'est cependant pas nécessaire lorsque le transport s'effectue dans un ressort limitrophe à celui dans lequel l'officier exerce ses fonctions, Paris et les départements des Hauts-de-Seine, de Seine-Saint-Denis et du Val-de-Marne étant à cette fin considérés comme un seul département.\n\n\nAvec l'accord des autorités compétentes de l'Etat concerné, les officiers de police judiciaire peuvent, sur commission rogatoire expresse du juge d'instruction ou sur réquisitions du procureur de la République, procéder à des auditions sur le territoire d'un Etat étranger.\n\n\nLes officiers ou agents de police judiciaire exerçant habituellement leur mission dans les véhicules affectés au transport collectif de voyageurs ou dans les lieux destinés à l'accès à ces moyens de transport sont compétents pour opérer sur l'étendue de la zone de défense de leur service d'affectation, dans des conditions déterminées par décret en Conseil d'Etat. Lorsque les réquisitions prises par le procureur de la République en application de l'article 78-7 le prévoient expressément, ces officiers ou agents de police judiciaire sont compétents pour les mettre en œuvre sur l'ensemble du trajet d'un véhicule de transport ferroviaire de voyageurs.",
             "File": "F62_09",
             "Category": "PP",
             "Subcategory": null,
@@ -1833,7 +1833,7 @@
         {
             "Id": 123,
             "Label": "Quelles sont les sanctions hiérarchiques auquelles s'expose un OPJ ?",
-            "Answer": "Observations ou mises au point adressées par le procureur de la République\r\n\\nAverstissement adressé par le procureur général et transmis aux chefs hierachiques\r\n\\nSuspension ou retrait de l'habilitation dans le ressort de la cour d'appel ou sur le territoire national dans les cas extremes\r\n\\nPrise de sanction par la chambre de l'instruction en cas de fautes graves.",
+            "Answer": "Observations ou mises au point adressées par le procureur de la République\n\nAverstissement adressé par le procureur général et transmis aux chefs hierachiques\n\nSuspension ou retrait de l'habilitation dans le ressort de la cour d'appel ou sur le territoire national dans les cas extremes\n\nPrise de sanction par la chambre de l'instruction en cas de fautes graves.",
             "File": "F62_09",
             "Category": "PP",
             "Subcategory": null,
@@ -1893,7 +1893,7 @@
         {
             "Id": 127,
             "Label": "Quels sont les principes qui découlent de la présomption d'innocence ?",
-            "Answer": "La charge de la preuve incombe au demandeur. \r\n\\nLe doute profite à l'accusé.",
+            "Answer": "La charge de la preuve incombe au demandeur. \n\nLe doute profite à l'accusé.",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -1953,7 +1953,7 @@
         {
             "Id": 131,
             "Label": "Citez les trois types de constatations materielles",
-            "Answer": "Le transport sur les lieux \r\n\\nLes saisies perquisitions \r\n\\nLes examens techniques et les expertises",
+            "Answer": "Le transport sur les lieux \n\nLes saisies perquisitions \n\nLes examens techniques et les expertises",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -1968,7 +1968,7 @@
         {
             "Id": 132,
             "Label": "Quels sont les deux types de présomptions ?",
-            "Answer": "La présomption de FAIT: (Raisonnement par induction) Methode admise mais qui releve plus de la probabilité \r\n\\nLa présomption LEGALE: Ce sont les présomptions ou indices auxquels la loi donne une force probante, c'est à la personne mise en cause de prouver son innocence.",
+            "Answer": "La présomption de FAIT: (Raisonnement par induction) Methode admise mais qui releve plus de la probabilité \n\nLa présomption LEGALE: Ce sont les présomptions ou indices auxquels la loi donne une force probante, c'est à la personne mise en cause de prouver son innocence.",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -1983,7 +1983,7 @@
         {
             "Id": 133,
             "Label": "Quels sont les personnes qui ne peuvent pas témoigner lors des phases d'instruction et de jugement ?",
-            "Answer": "Les mineurs de moins de 16 ans \r\n\\nLes personnes ayant un lien de parenté proche avec l'accusé\r\n\\nEn cas d'indignité tenant à l'interdiction d'exercer des droits civils, civiques ou de famille \r\n\\nEn cas d'incompatibilité avec une fonction ( Membres du tribunal, juré etc...)",
+            "Answer": "Les mineurs de moins de 16 ans \n\nLes personnes ayant un lien de parenté proche avec l'accusé\n\nEn cas d'indignité tenant à l'interdiction d'exercer des droits civils, civiques ou de famille \n\nEn cas d'incompatibilité avec une fonction ( Membres du tribunal, juré etc...)",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -1998,7 +1998,7 @@
         {
             "Id": 134,
             "Label": "Dans quels cas le témoin doit il préter serment ?",
-            "Answer": "Au cours de la phase d'enquete, PAS DE SERMENT\r\n\\nAu cours de la phase d'instruction, SOUS SERMENT\r\n\\nAu cours de la phase de jugement, SOUS SERMENT",
+            "Answer": "Au cours de la phase d'enquete, PAS DE SERMENT\n\nAu cours de la phase d'instruction, SOUS SERMENT\n\nAu cours de la phase de jugement, SOUS SERMENT",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -2058,7 +2058,7 @@
         {
             "Id": 138,
             "Label": "Quels sont les trois types d'écrits admis comme mode de preuve ?",
-            "Answer": "Les écrits qui constituent le corps même du délit\r\n\\nLes écrits qui servent à prouver le délit \r\n\\nLes procès verbaux et les rapports (Valeur probante, seulement s'ils sont réguliers dans la forme, que l'auteur a agi dans l'exercice de ses fonctions et qu'il a rapporté ce qu'il a vu, entendu ou constaté personnellement.",
+            "Answer": "Les écrits qui constituent le corps même du délit\n\nLes écrits qui servent à prouver le délit \n\nLes procès verbaux et les rapports (Valeur probante, seulement s'ils sont réguliers dans la forme, que l'auteur a agi dans l'exercice de ses fonctions et qu'il a rapporté ce qu'il a vu, entendu ou constaté personnellement.",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -2073,7 +2073,7 @@
         {
             "Id": 139,
             "Label": "Comment est alimenté le FAED ?",
-            "Answer": "Par le prelevement d'empreintes digitales et palmaires\r\n\\nPar l'insertion de traces latentes relevées par les TIC ou les TICP",
+            "Answer": "Par le prelevement d'empreintes digitales et palmaires\n\nPar l'insertion de traces latentes relevées par les TIC ou les TICP",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -2088,7 +2088,7 @@
         {
             "Id": 140,
             "Label": "Dans quel cas les empreintes digitales sont conservées dans le FAED ?",
-            "Answer": "Lorsqu'elles concernent des personnes à l'encontre desquelles il existe des indices graves et concordants rendant vraisemblable qu'elles aient pu participer comme auteurs ou complices à la commission d'un crime ou d'un délit. \r\n\\nOu des personnes mises en cause dans une procédure criminelle ou délictuelle dont l'identification certaine s'avère nécessaire.",
+            "Answer": "Lorsqu'elles concernent des personnes à l'encontre desquelles il existe des indices graves et concordants rendant vraisemblable qu'elles aient pu participer comme auteurs ou complices à la commission d'un crime ou d'un délit. \n\nOu des personnes mises en cause dans une procédure criminelle ou délictuelle dont l'identification certaine s'avère nécessaire.",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -2103,7 +2103,7 @@
         {
             "Id": 141,
             "Label": "Quelles sont les deux conditions pour relever le délit de refus de se soumettre aux opérations de prélevement ?",
-            "Answer": "Le prelevement doit être ordonné par un OPJ\r\n\\nLe refus est commis par une personne à l'encontre de laquelle il existe une ou plusieurs raisons plausibles de soupconner qu'elle a commis ou tenté de commettre une infraction.",
+            "Answer": "Le prelevement doit être ordonné par un OPJ\n\nLe refus est commis par une personne à l'encontre de laquelle il existe une ou plusieurs raisons plausibles de soupconner qu'elle a commis ou tenté de commettre une infraction.",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -2118,7 +2118,7 @@
         {
             "Id": 142,
             "Label": "Prélevement FAED par la contrainte ? Dans quels cas ?",
-            "Answer": "Pour les majeurs: Lorsque cela represente le seul moyen d'identifier une personne entendue en audition libre ou en GAV. Sur demande écrite du Procureur de la République. Seulement pour CRIME ET DELIT + 3ANS. \r\n\\nPour les mineurs: CRIME ET DELIT + 5ANS et PREVENIR AVOCATS OU PARENTS et MINEURS DE + 13ANS",
+            "Answer": "Pour les majeurs: Lorsque cela represente le seul moyen d'identifier une personne entendue en audition libre ou en GAV. Sur demande écrite du Procureur de la République. Seulement pour CRIME ET DELIT + 3ANS. \n\nPour les mineurs: CRIME ET DELIT + 5ANS et PREVENIR AVOCATS OU PARENTS et MINEURS DE + 13ANS",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -2148,7 +2148,7 @@
         {
             "Id": 144,
             "Label": "Quels types de correspondances peuvent être interceptées ?",
-            "Answer": "Conversations téléphoniques\r\n\\nEchanges de SMS et MMS\r\n\\nEchanges de courriers électroniques",
+            "Answer": "Conversations téléphoniques\n\nEchanges de SMS et MMS\n\nEchanges de courriers électroniques",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -2163,7 +2163,7 @@
         {
             "Id": 145,
             "Label": "Dans quels cas peut-on effectuer des interceptions judiciaires lors d'une CR ?",
-            "Answer": "Sur décision ECRITE du JI: Un crime / Délit +3ans / Délit avec prison commis par voie de communications sur la ligne de la victime / x 4 mois renouvelables sans pouvoir dépasser UN AN. (2 ANS POUR LA BO)\r\n\\nDans le cadre de recherche des causes de la mort ou de la disparition: 2 mois renouvelables.",
+            "Answer": "Sur décision ECRITE du JI: Un crime / Délit +3ans / Délit avec prison commis par voie de communications sur la ligne de la victime / x 4 mois renouvelables sans pouvoir dépasser UN AN. (2 ANS POUR LA BO)\n\nDans le cadre de recherche des causes de la mort ou de la disparition: 2 mois renouvelables.",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -2208,7 +2208,7 @@
         {
             "Id": 148,
             "Label": "Quelles lignes téléphoniques ne peuvent pas faire l'objet d'interceptions ?",
-            "Answer": "Ligne d'un député, sénateur sans prévenir le président d'assemblée.\r\n\\nLigne du cabinet ou domicile d'un avocat sans en informer le batonier \r\n\\nLigne du cabinet ou domicile d'un magistrat sans en informer le premier président ou le procureur général.",
+            "Answer": "Ligne d'un député, sénateur sans prévenir le président d'assemblée.\n\nLigne du cabinet ou domicile d'un avocat sans en informer le batonier \n\nLigne du cabinet ou domicile d'un magistrat sans en informer le premier président ou le procureur général.",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -2253,7 +2253,7 @@
         {
             "Id": 151,
             "Label": "Quels actes les enquêteurs sous pseudonymes peuvent effectuer sans être pénalement responsables ?",
-            "Answer": "Participer à des échanges electroniques avec les personnes susceptibles d'etre les auteurs\r\n\\nExtraire ou conserver des données sur les personnes susceptibles d'etre les auteurs\r\n\\nAprès autorisation du PR ou JI, acquerir contenu, produit, substance, prélèvement ou service y compris illicite ou transmettre en réponse à une demande expresse des contenus illicites.",
+            "Answer": "Participer à des échanges electroniques avec les personnes susceptibles d'etre les auteurs\n\nExtraire ou conserver des données sur les personnes susceptibles d'etre les auteurs\n\nAprès autorisation du PR ou JI, acquerir contenu, produit, substance, prélèvement ou service y compris illicite ou transmettre en réponse à une demande expresse des contenus illicites.",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -2268,7 +2268,7 @@
         {
             "Id": 152,
             "Label": "Comment peuvent être utilisées les images issues d'un système de vidéoprotection ?",
-            "Answer": "Lors de la commission de l’infraction: Constater la commission en direct, confirmer a posteriori la commission d'une infraction \r\n\\nLors de la phase d'enquête: Identifier l'auteur / Apporter des elements / Aider à la surveillance ou filature / Aider à l'interpellation",
+            "Answer": "Lors de la commission de l’infraction: Constater la commission en direct, confirmer a posteriori la commission d'une infraction \n\nLors de la phase d'enquête: Identifier l'auteur / Apporter des elements / Aider à la surveillance ou filature / Aider à l'interpellation",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -2328,7 +2328,7 @@
         {
             "Id": 156,
             "Label": "Dans quel cadre d'enquête poeut-on avoir recours à la géolocalisation en temps réel ?",
-            "Answer": "Dans le cadre d'une enquête préliminaire ou flagrante ou d'une instruction relative à certaines infractions. \r\n\\nCRIME ou DELIT +3ANS\r\n\\nRecherche des causes de la mort ou personne en fuite",
+            "Answer": "Dans le cadre d'une enquête préliminaire ou flagrante ou d'une instruction relative à certaines infractions. \n\nCRIME ou DELIT +3ANS\n\nRecherche des causes de la mort ou personne en fuite",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -2343,7 +2343,7 @@
         {
             "Id": 157,
             "Label": "Qui autorise l'introduction dans des locaux privés aux fins de placer ou retirer des balises ?",
-            "Answer": "Lors d'une enquête diligenté par le PR: Le JLD \r\n\\nLors d'une instruction: Si l'opération doit avoir lieu entre 21h et 6h alors le JLD sinon, le JI.",
+            "Answer": "Lors d'une enquête diligenté par le PR: Le JLD \n\nLors d'une instruction: Si l'opération doit avoir lieu entre 21h et 6h alors le JLD sinon, le JI.",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -2358,7 +2358,7 @@
         {
             "Id": 158,
             "Label": "Quels sont les lieux dans lesquels il est impossible de placer ou retirer des balises ?",
-            "Answer": "Cabinet ou domicile d'un avocat\r\n\\nLocaux de l'ordre des avocats\r\n\\n Caisse de reglement des avocats\r\n\\nEntreprise de presse, communication\r\n\\nCabinet d'un medecin, notaire, huissier\r\n\\nLieu couvert par le secret de la défense\r\n\\nLocaux d'une juridiction ou domicile d'une personne exercant des missions juridictionnelles\r\n\\nCabinet et domicile d'un magistrat, bureau ou domicile d'un député / sénateur.",
+            "Answer": "Cabinet ou domicile d'un avocat\n\nLocaux de l'ordre des avocats\n\n Caisse de reglement des avocats\n\nEntreprise de presse, communication\n\nCabinet d'un medecin, notaire, huissier\n\nLieu couvert par le secret de la défense\n\nLocaux d'une juridiction ou domicile d'une personne exercant des missions juridictionnelles\n\nCabinet et domicile d'un magistrat, bureau ou domicile d'un député / sénateur.",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -2373,7 +2373,7 @@
         {
             "Id": 159,
             "Label": "Quels sont les modes de preuves spécifiques à la bande organisée ?",
-            "Answer": "Opérations d'infiltration\r\n\\nAccès à distance aux correspondances stockées\r\n\\nRecueil des données techniques de connexion\r\n\\nSonorisation de lieux ou vehicules privés ou publics et fixation d'images dans des lieux privés\r\n\\nCaptation de données informatiques (Telles qu'elles s'affichent à l'écran) \r\n\\nGéolocalisation",
+            "Answer": "Opérations d'infiltration\n\nAccès à distance aux correspondances stockées\n\nRecueil des données techniques de connexion\n\nSonorisation de lieux ou vehicules privés ou publics et fixation d'images dans des lieux privés\n\nCaptation de données informatiques (Telles qu'elles s'affichent à l'écran) \n\nGéolocalisation",
             "File": "F62_24",
             "Category": "PP",
             "Subcategory": null,
@@ -2432,7 +2432,7 @@
         },
         {
             "Id": 163,
-            "Label": "Qu'appelle t'on un \"quasi délit civil\" ? \r\n",
+            "Label": "Qu'appelle t'on un \"quasi délit civil\" ? \n",
             "Answer": "Une faute non intentionnelle",
             "File": "F62_01",
             "Category": "PP",
@@ -2568,7 +2568,7 @@
         {
             "Id": 172,
             "Label": "Comment la partie civile peut mettre en mouvement l'action civile ?",
-            "Answer": "La citation directe par huissier (Contravention+ Delit) \n\\nLa plainte avec constitution de partie civile devant le JI.",
+            "Answer": "La citation directe par huissier (Contravention+ Delit) \n\nLa plainte avec constitution de partie civile devant le JI.",
             "File": "F62_03",
             "Category": "PP",
             "Subcategory": null,
@@ -2583,7 +2583,7 @@
         {
             "Id": 173,
             "Label": "Quelles sont les causes d'extinction de l'action civile ? ",
-            "Answer": "Le paiement de la créance par le debiteur\r\n\\nLa renonciation de la partie civile\r\n\\nLe désistement\r\n\\nLa transaction\r\n\\nL'acquiescement\r\n\\nL'autorité de la chose jugée au civil \r\n\\nLa prescription de l'action civile. ",
+            "Answer": "Le paiement de la créance par le debiteur\n\nLa renonciation de la partie civile\n\nLe désistement\n\nLa transaction\n\nL'acquiescement\n\nL'autorité de la chose jugée au civil \n\nLa prescription de l'action civile. ",
             "File": "F62_03",
             "Category": "PP",
             "Subcategory": null,
@@ -2607,7 +2607,7 @@
             "DPS_Article": "DELIT Art 322-1 al 1 du CP 2 ans et 35000 euros",
             "DPS_Punissable": "Punissable",
             "DPS_Intention": "Intention coupable : volonté de détruire, dégrader ou détériorer tout en sachant que le bien appartient à autrui",
-            "DPS_ElemMat": "Il faut que la destruction, dégradation ou détérioration: \\nDestruction => objet visé est rendu inapte à rendre les services attendus  \\nDégradations ou détérioration => fait du dommage qu'il subit l'objet perd de son utilité ou de sa valeur mais après réparation ou sans il est apte à remplir son rôle. \\n1) Soit commise par n'importe quel moyen \\n2) Porte sur un objet mobilier ou un bien immobilier→ meubles par nature→ meubles par détermination de la loi (actions, obligations, rentes, propriétés intellectuelles)→ immeubles par nature→ immeubles par destination : biens meubles liés à l'immeuble (statue de niche, cuisine intégrée, etc)→ immeubles par l'objet : droit portant sur des immeubles (usufruit, servitudes, etc.) \\n3) Cause un préjudice à autrui",
+            "DPS_ElemMat": "Il faut que la destruction, dégradation ou détérioration: \nDestruction => objet visé est rendu inapte à rendre les services attendus  \nDégradations ou détérioration => fait du dommage qu'il subit l'objet perd de son utilité ou de sa valeur mais après réparation ou sans il est apte à remplir son rôle. \n1) Soit commise par n'importe quel moyen \n2) Porte sur un objet mobilier ou un bien immobilier→ meubles par nature→ meubles par détermination de la loi (actions, obligations, rentes, propriétés intellectuelles)→ immeubles par nature→ immeubles par destination : biens meubles liés à l'immeuble (statue de niche, cuisine intégrée, etc)→ immeubles par l'objet : droit portant sur des immeubles (usufruit, servitudes, etc.) \n3) Cause un préjudice à autrui",
             "DPS_Desc": "La destruction, la dégradation ou la détérioration d'un bien appartenant à autrui …… Sauf s'il n'en est résulté qu'un dommage léger"
         },
         {
@@ -2622,7 +2622,7 @@
             "DPS_Article": "DELIT Art 322-5 du CP 1 an et 15 000 euros",
             "DPS_Punissable": "Pas prévue",
             "DPS_Intention": "Faute non intentionnelle mais spécifique (manquement à une obligation)",
-            "DPS_ElemMat": "Il faut qu'il y ait une destruction, dégradation ou détérioration par l'effet : \\n1) D'une explosion, d'un incendie  \\n2) Que cette destruction, dégradation ou détérioration porte sur un bien mobilier ou immobilier, servant ou non à l'habitation, habité ou non \\n3) Que ce bien appartienne à autrui \\n4) Que l'explosion ou l'incendie soit provoqué par manquement à une obligation de sécurité ou de prudence imposée par la loi ou le règlement",
+            "DPS_ElemMat": "Il faut qu'il y ait une destruction, dégradation ou détérioration par l'effet : \n1) D'une explosion, d'un incendie  \n2) Que cette destruction, dégradation ou détérioration porte sur un bien mobilier ou immobilier, servant ou non à l'habitation, habité ou non \n3) Que ce bien appartienne à autrui \n4) Que l'explosion ou l'incendie soit provoqué par manquement à une obligation de sécurité ou de prudence imposée par la loi ou le règlement",
             "DPS_Desc": null
         },
         {
@@ -2637,7 +2637,7 @@
             "DPS_Article": "DELIT Art 322-6 du CP 10 an et 150 000 euros",
             "DPS_Punissable": "Punissable",
             "DPS_Intention": "Intention coupable : le coupable a voulu agir, tout en connaissant l'efficacité du moyen utilisé et le danger représenté pour les personnes",
-            "DPS_ElemMat": "Il faut une destruction, dégradation ou détérioration : \\n1) Par l'effet d'une explosion, d'un incendie ou de tout autre moyen de nature à créer un danger pour les personnes \\n2) Portant sur un bien mobilier ou immobilier, ou de tout autre nature appartenant à autrui",
+            "DPS_ElemMat": "Il faut une destruction, dégradation ou détérioration : \n1) Par l'effet d'une explosion, d'un incendie ou de tout autre moyen de nature à créer un danger pour les personnes \n2) Portant sur un bien mobilier ou immobilier, ou de tout autre nature appartenant à autrui",
             "DPS_Desc": null
         },
         {
@@ -2652,7 +2652,7 @@
             "DPS_Article": "DELIT Art 322-12 du CP 6 mois et 7500 euros",
             "DPS_Punissable": "Pas prévue",
             "DPS_Intention": "Intention coupable : caractérisée par le fait de réitérer la menace ou de la matérialiser. INTENTIONNELLE",
-            "DPS_ElemMat": "Il faut : \\n1) Qu'il y ait une menace de commettre une destruction, une dégradation ou une détérioration \\n2) Que cette menace soit réitérée ou matérialisée par un écrit, une image ou tout autre objet  \\n3) Que la destruction, la dégradation ou la détérioration, objet de la menace, soit dangereuse pour les personnes",
+            "DPS_ElemMat": "Il faut : \n1) Qu'il y ait une menace de commettre une destruction, une dégradation ou une détérioration \n2) Que cette menace soit réitérée ou matérialisée par un écrit, une image ou tout autre objet  \n3) Que la destruction, la dégradation ou la détérioration, objet de la menace, soit dangereuse pour les personnes",
             "DPS_Desc": "La menace de commettre une destruction, une dégradation ou une détérioration dangereuse pour les personnes ….. lorsqu'elle est soit réitérée, soit matérialisée par un écrit, une image ou tout autre objet"
         },
         {
@@ -2667,7 +2667,7 @@
             "DPS_Article": "DELIT Art 322-13 du CP 1 an et 15 000 euros",
             "DPS_Punissable": "Pas prévue",
             "DPS_Intention": "Intention coupable : intention d'effrayer la victime et de la contraindre à obtempérer",
-            "DPS_ElemMat": "Il faut : \\n1) Qu'il y ait une menace de commettre une destruction, une dégradation ou une détérioration \\n2) Que la menace soit proférée par quelque moyen que ce soit \\n3) Que la menace soit accompagnée d'un ordre de remplir une condition",
+            "DPS_ElemMat": "Il faut : \n1) Qu'il y ait une menace de commettre une destruction, une dégradation ou une détérioration \n2) Que la menace soit proférée par quelque moyen que ce soit \n3) Que la menace soit accompagnée d'un ordre de remplir une condition",
             "DPS_Desc": "La menace par quelque moyen que ce soit, de commettre une destruction, une dégradation ou une détérioration ….. lorsqu'elle est faite avec l'ordre de remplir une condition."
         },
         {
@@ -2682,7 +2682,7 @@
             "DPS_Article": "DELIT Art 322-6-1 al 1 du CP 3 ans et 45 000 euros",
             "DPS_Punissable": "N'est pas expressement prévue par le CP",
             "DPS_Intention": "Intention coupable : Volonté de diffusion.",
-            "DPS_ElemMat": "Il faut : \\n1) La diffusion par tout moyen, de procédés de fabrication d'engins de destruction \\n2) Que ces engins soient élaborés à partir de poudres ou de substances explosives, de matières nucléaires, biologiques ou chimiques, ou de tout autre produit à usage domestique, industriel ou agricole.",
+            "DPS_ElemMat": "Il faut : \n1) La diffusion par tout moyen, de procédés de fabrication d'engins de destruction \n2) Que ces engins soient élaborés à partir de poudres ou de substances explosives, de matières nucléaires, biologiques ou chimiques, ou de tout autre produit à usage domestique, industriel ou agricole.",
             "DPS_Desc": "Le fait de diffuser par tout moyen, sauf à destination des professionnels, des procédés permettant la fabrication d'engins de destruction élaborés à partir de poudre ou de substances explosives, de matières nucléaires, biologiques ou chimiques, ou à partir de tout autre produit destiné à l'usage domestique, industriel ou agricole"
         },
         {
@@ -2697,7 +2697,7 @@
             "DPS_Article": "DELIT Art 322-1 al 2 du CP 3750 euros + TIG",
             "DPS_Punissable": "Punissable",
             "DPS_Intention": "Infraction intentionnelle",
-            "DPS_ElemMat": "1)Tracer sans autorisation préalable des inscriptions, des signes ou des dessins sur les façades, les véhicules, les voies publiques ou le mobilier urbain. \\n2) Qu'il n'en résulte qu'un dommage léger",
+            "DPS_ElemMat": "1)Tracer sans autorisation préalable des inscriptions, des signes ou des dessins sur les façades, les véhicules, les voies publiques ou le mobilier urbain. \n2) Qu'il n'en résulte qu'un dommage léger",
             "DPS_Desc": "Fait de tracer des inscriptions, des signes ou des dessins, sans autorisation préalable, sur les façades, les véhicules, les voies publiques ou le mobilier urbain"
         },
         {
@@ -2712,7 +2712,7 @@
             "DPS_Article": "DELIT Art 322-4-1 du CP 6 mois et 3750 euros",
             "DPS_Punissable": "Punissable",
             "DPS_Intention": "Intention coupable : conscience de s'installer sans autorisation sur un terrai d'autrui",
-            "DPS_ElemMat": "1) Installationde plusieurs personnes : au moins deux mais un seul véhicule suffit  \\n2) En vue d'y établir une habitation même temporaire, le cas échéant avec un véhicule destiné à l'habitation mobile ( mobile-home, camping- car)  \\n3) Dans une commune qui s'est conformée à ses obligations légales ou qui n'est pas concernée par le schéma départemental",
+            "DPS_ElemMat": "1) Installationde plusieurs personnes : au moins deux mais un seul véhicule suffit  \n2) En vue d'y établir une habitation même temporaire, le cas échéant avec un véhicule destiné à l'habitation mobile ( mobile-home, camping- car)  \n3) Dans une commune qui s'est conformée à ses obligations légales ou qui n'est pas concernée par le schéma départemental",
             "DPS_Desc": "Fait de s'installer en réunion, en vue d'y établir une habitation même temporaire, sur un terrain appartenant soit à une commune qui s'est conformée aux obligations relatives à l'accueil des gens du voyage, soit à tout autre propriétaire autre qu'une commune, sans être en mesure de justifier de son autorisation ou de celle du titulaire du droit d'usage du terrain."
         },
         {
@@ -2727,7 +2727,7 @@
             "DPS_Article": "DELIT prévu et réprimé par l'art 322-14 du CP (Empr 2ans + 30 000E)",
             "DPS_Punissable": "Pas prévue",
             "DPS_Intention": "Intention coupable: Volonté de tromper, en divulguant, ou communiquant une fausse information. ",
-            "DPS_ElemMat": "1) Communication ou disvulgation d'une information \\n2) Que l'information soit connue pour être fausse de l'auteur, tende à faire croire qu'une destruction, une degradation ou une deterioration dangereuse pour les personnes va être ou a été commise ou tende à faire croire à l'existence d'un sinistre dans le but de provoquer l'intervention inutile des secours. ",
+            "DPS_ElemMat": "1) Communication ou disvulgation d'une information \n2) Que l'information soit connue pour être fausse de l'auteur, tende à faire croire qu'une destruction, une degradation ou une deterioration dangereuse pour les personnes va être ou a été commise ou tende à faire croire à l'existence d'un sinistre dans le but de provoquer l'intervention inutile des secours. ",
             "DPS_Desc": null
         },
         {
@@ -2748,7 +2748,7 @@
         {
             "Id": 185,
             "Label": "Quelles sont les différences entre l’action publique et l’action civile ? ",
-            "Answer": "Différence de but  \\nPublique : Réparation du trouble social et condamnation de l’auteur.  \\nCivile : Réparation du préjudice individuel par des dommages et intérêts   \\nDifférence de fondement :  \\nPublique : repose sur le texte de loi réprimant l’infraction  \\nRepose sur les articles 1240, 1241, 1242 du Code civil qui traite de la responsabilité civile délictuelle.   \\nDifférence portant sur les sujets à l’action :  \\nPorte uniquement sur l’auteur ou son complice (responsabilité individuelle) \\nL’action civile peut porter sur le fait individuel ou sur le fait d’autrui. (Responsable légal, dettes, héritage...)",
+            "Answer": "Différence de but  \nPublique : Réparation du trouble social et condamnation de l’auteur.  \nCivile : Réparation du préjudice individuel par des dommages et intérêts   \nDifférence de fondement :  \nPublique : repose sur le texte de loi réprimant l’infraction  \nRepose sur les articles 1240, 1241, 1242 du Code civil qui traite de la responsabilité civile délictuelle.   \nDifférence portant sur les sujets à l’action :  \nPorte uniquement sur l’auteur ou son complice (responsabilité individuelle) \nL’action civile peut porter sur le fait individuel ou sur le fait d’autrui. (Responsable légal, dettes, héritage...)",
             "File": "F62_02",
             "Category": "PP",
             "Subcategory": null,
@@ -2763,7 +2763,7 @@
         {
             "Id": 186,
             "Label": "Quels sont les moyens de mise en mouvement de l’action publique ? ",
-            "Answer": "Si le PR estime que des poursuites doivent être engagées :  \\nLa citation directe \\nL’avertissement suivi de comparution volontaire \\nLa convocation par procès verbal  \\nLa comparution immédiate \\nL’ordonnance pénale \\nLa comparution avec reconnaissance préalable de culpabilité \\nLe réquisitoire introductif adressé au juge d’instruction",
+            "Answer": "Si le PR estime que des poursuites doivent être engagées :  \nLa citation directe \nL’avertissement suivi de comparution volontaire \nLa convocation par procès verbal  \nLa comparution immédiate \nL’ordonnance pénale \nLa comparution avec reconnaissance préalable de culpabilité \nLe réquisitoire introductif adressé au juge d’instruction",
             "File": "F62_02",
             "Category": "PP",
             "Subcategory": null,
@@ -2778,7 +2778,7 @@
         {
             "Id": 187,
             "Label": "Quelles administrations peuvent mettre en mouvement l’action publique (infractions commises au détriment des intérêts qu’elles protègent)",
-            "Answer": "L’administration fiscale  \\nLes douanes  \\nL’administration des Eaux et Forets  \\nLes directeurs départementaux de l’équipement en matière de voiries routières \\nLe Défenseur des droits en matière de discrimination",
+            "Answer": "L’administration fiscale  \nLes douanes  \nL’administration des Eaux et Forets  \nLes directeurs départementaux de l’équipement en matière de voiries routières \nLe Défenseur des droits en matière de discrimination",
             "File": "F62_02",
             "Category": "PP",
             "Subcategory": null,
@@ -2808,7 +2808,7 @@
         {
             "Id": 189,
             "Label": "Quelles procédures la victime peut-elle mettre en œuvre pour engager les poursuites ? ",
-            "Answer": "La citation directe de l’auteur présumé pour les délits et contraventions  \\nLa plainte avec constitution de partie civile devant le JI. (Crimes et délits)",
+            "Answer": "La citation directe de l’auteur présumé pour les délits et contraventions  \nLa plainte avec constitution de partie civile devant le JI. (Crimes et délits)",
             "File": "F62_02",
             "Category": "PP",
             "Subcategory": null,
@@ -2823,7 +2823,7 @@
         {
             "Id": 190,
             "Label": "Quelles juridictions peuvent mettre en mouvement l’action publique ? ",
-            "Answer": "Juridiction d’instruction : La chambre de l’instruction a le pouvoir d’ordonner les poursuites d’office.  \\nJuridiction de jugement : Exceptionnellement lors d’infractions commises à l’audience. \\nCas particuliers : La Cour de Justice de la République compétente pour juger les crimes et délits commis par les membres du gouvernement dans l’exercice de leur fonction => Après examen de la plainte par une commission des requêtes",
+            "Answer": "Juridiction d’instruction : La chambre de l’instruction a le pouvoir d’ordonner les poursuites d’office.  \nJuridiction de jugement : Exceptionnellement lors d’infractions commises à l’audience. \nCas particuliers : La Cour de Justice de la République compétente pour juger les crimes et délits commis par les membres du gouvernement dans l’exercice de leur fonction => Après examen de la plainte par une commission des requêtes",
             "File": "F62_02",
             "Category": "PP",
             "Subcategory": null,
@@ -2853,7 +2853,7 @@
         {
             "Id": 192,
             "Label": "Quels sont les obstacles à l’exercice de l’action publique ? ",
-            "Answer": "Qualité de la personne : Président, agents diplomatiques, membre du parlement (Accord du bureau de l’assemblé nécéssaire SAUF Crime et Délit FLAGRANT) \\nNature de l’infraction : Pour certaines infractions l’exercice de l’action publique est subordonné au dépôt d’une plainte de la partie lésée. ",
+            "Answer": "Qualité de la personne : Président, agents diplomatiques, membre du parlement (Accord du bureau de l’assemblé nécéssaire SAUF Crime et Délit FLAGRANT) \nNature de l’infraction : Pour certaines infractions l’exercice de l’action publique est subordonné au dépôt d’une plainte de la partie lésée. ",
             "File": "F62_02",
             "Category": "PP",
             "Subcategory": null,
@@ -2868,7 +2868,7 @@
         {
             "Id": 193,
             "Label": "Quelles sont les causes d’extinction de l’action publique ? ",
-            "Answer": "Le décès de l’auteur \\nL’abrogation de la loi pénale \\nL’amnistie  \\nLa transaction \\nL’execution de la composition pénale \\nLe retrait de la plainte (lorsque celle ci conditionne le déclenchement de l’action publique)  \\nL’autorité de la chose jugée \\nLa prescription de l’action publique",
+            "Answer": "Le décès de l’auteur \nL’abrogation de la loi pénale \nL’amnistie  \nLa transaction \nL’execution de la composition pénale \nLe retrait de la plainte (lorsque celle ci conditionne le déclenchement de l’action publique)  \nL’autorité de la chose jugée \nLa prescription de l’action publique",
             "File": "F62_02",
             "Category": "PP",
             "Subcategory": null,
@@ -2898,7 +2898,7 @@
         {
             "Id": 195,
             "Label": "Quel est le point de départ de la prescription ? ",
-            "Answer": "Le délai de la prescription court à compter du jour où l’infraction a été commise (Tous les éléments constitutifs ont été réunis)  \\nPour les mineurs : La prescription court à compter de leur majorité. ",
+            "Answer": "Le délai de la prescription court à compter du jour où l’infraction a été commise (Tous les éléments constitutifs ont été réunis)  \nPour les mineurs : La prescription court à compter de leur majorité. ",
             "File": "F62_02",
             "Category": "PP",
             "Subcategory": null,
@@ -2913,7 +2913,7 @@
         {
             "Id": 196,
             "Label": "Qu’est-ce que l’interruption de la prescription ? ",
-            "Answer": "Lorsqu’il y a interruption de l’action publique, delai repart à zero : \\nLes actes de poursuite : La partie poursuivante manifeste de manière non équivoque son intention de poursuite l’auteur des faits.  \\nLes actes d’instruction : Tous les actes accomplis par le juge d’instruction ou l’OPJ. ",
+            "Answer": "Lorsqu’il y a interruption de l’action publique, delai repart à zero : \nLes actes de poursuite : La partie poursuivante manifeste de manière non équivoque son intention de poursuite l’auteur des faits.  \nLes actes d’instruction : Tous les actes accomplis par le juge d’instruction ou l’OPJ. ",
             "File": "F62_02",
             "Category": "PP",
             "Subcategory": null,
@@ -2928,7 +2928,7 @@
         {
             "Id": 197,
             "Label": "Qu’est-ce que la suspension de l’action publique ? ",
-            "Answer": "Lorsqu’il y a suspension, le délai qui s’est écoulé demeure et doit être pris en compte pour le calcul du délai global de la prescription.  \\nDe fait : Guerre, altération des facultés mentales etc.) \\nDe droit : Durée de mandat, mesure alternative aux poursuites…",
+            "Answer": "Lorsqu’il y a suspension, le délai qui s’est écoulé demeure et doit être pris en compte pour le calcul du délai global de la prescription.  \nDe fait : Guerre, altération des facultés mentales etc.) \nDe droit : Durée de mandat, mesure alternative aux poursuites…",
             "File": "F62_02",
             "Category": "PP",
             "Subcategory": null,
@@ -2943,7 +2943,7 @@
         {
             "Id": 198,
             "Label": "Quelles sont les conditions à réunir pour mettre en place une composition pénale ? ",
-            "Answer": "Il faut que l’action publique ne soit pas mise en mouvement \\nIl faut que le mis en cause reconnaisse les faits  \\nIl faut avoir commis un ou plusieurs délits punis d’une amende ou d’une peine d’emprisonnement d’une durée inferieure ou égale à 5 ans. ",
+            "Answer": "Il faut que l’action publique ne soit pas mise en mouvement \nIl faut que le mis en cause reconnaisse les faits  \nIl faut avoir commis un ou plusieurs délits punis d’une amende ou d’une peine d’emprisonnement d’une durée inferieure ou égale à 5 ans. ",
             "File": "F62_02",
             "Category": "PP",
             "Subcategory": null,
@@ -2958,7 +2958,7 @@
         {
             "Id": 199,
             "Label": "Comment est décomposé le Code pénal ? ",
-            "Answer": "La première partie : Législative \\nLa seconde : Partie réglementaire (Décrets) \\n \\n7 livres déclinés en Titres \\nIl distingue les infractions selon qu’elles sont dirigées contre les personnes, les biens ou l’état. ",
+            "Answer": "La première partie : Législative \nLa seconde : Partie réglementaire (Décrets) \n \n7 livres déclinés en Titres \nIl distingue les infractions selon qu’elles sont dirigées contre les personnes, les biens ou l’état. ",
             "File": "F23_00",
             "Category": "DPS",
             "Subcategory": null,
@@ -2973,7 +2973,7 @@
         {
             "Id": 200,
             "Label": "Qu’est-ce que le DOL GENERAL ? ",
-            "Answer": "« La volonté de commettre le délit tel qu’il est déterminé par la loi » \\nLe dol général est la conscience pour l'auteur de violer la loi, de commettre un fait incriminé, ajoutée à la volonté de commettre une infraction.",
+            "Answer": "« La volonté de commettre le délit tel qu’il est déterminé par la loi » \nLe dol général est la conscience pour l'auteur de violer la loi, de commettre un fait incriminé, ajoutée à la volonté de commettre une infraction.",
             "File": "F23_00",
             "Category": "DPS",
             "Subcategory": null,
@@ -3003,7 +3003,7 @@
         {
             "Id": 202,
             "Label": "Quels articles qui « PREVOIENT » l’infraction doivent être visés ?",
-            "Answer": "Les articles qui prévoient l’infraction de base \\nCeux qui prévoient les circonstances aggravantes afférentes aux faits \\nCeux qui prévoient les circonstances aggravantes afférentes à la commission de l’infraction",
+            "Answer": "Les articles qui prévoient l’infraction de base \nCeux qui prévoient les circonstances aggravantes afférentes aux faits \nCeux qui prévoient les circonstances aggravantes afférentes à la commission de l’infraction",
             "File": "F23_00",
             "Category": "DPS",
             "Subcategory": null,
@@ -3018,7 +3018,7 @@
         {
             "Id": 203,
             "Label": "Quels articles qui «REPRIMENT» l’infraction doivent être visés ?",
-            "Answer": "Citez les articles qui mentionnent la peine principale  \\nLes peines complémentaires éventuelles",
+            "Answer": "Citez les articles qui mentionnent la peine principale  \nLes peines complémentaires éventuelles",
             "File": "F23_00",
             "Category": "DPS",
             "Subcategory": null,
@@ -3033,7 +3033,7 @@
         {
             "Id": 210,
             "Label": "Que prévoit l'article 17 du CPP ?",
-            "Answer": "Les officiers de police judiciaire exercent les pouvoirs définis à l'article 14 ; ils reçoivent les plaintes et dénonciations ;\n\\r\\nils procèdent à des enquêtes préliminaires dans les conditions prévues par les articles 75 à 78.\n\\r\\nEn cas de crimes et délits flagrants, ils exercent les pouvoirs qui leur sont conférés par les articles 53 à 67.\n\\r\\nIls ont le droit de requérir directement le concours de la force publique pour l'exécution de leur mission.",
+            "Answer": "Les officiers de police judiciaire exercent les pouvoirs définis à l'article 14 ; ils reçoivent les plaintes et dénonciations ;\n\\r\nils procèdent à des enquêtes préliminaires dans les conditions prévues par les articles 75 à 78.\n\\r\nEn cas de crimes et délits flagrants, ils exercent les pouvoirs qui leur sont conférés par les articles 53 à 67.\n\\r\nIls ont le droit de requérir directement le concours de la force publique pour l'exécution de leur mission.",
             "File": "F62_40",
             "Category": "PP",
             "Subcategory": null,
@@ -3108,7 +3108,7 @@
         {
             "Id": 215,
             "Label": "Que prévoit l'article 73 du CPP ?",
-            "Answer": "Dans les cas de crime flagrant ou de délit flagrant puni d'une peine d'emprisonnement, toute personne a\nqualité pour en appréhender l'auteur et le conduire devant l'officier de police judiciaire le plus proche.\n\\r\\nLorsque la personne est présentée devant l'officier de police judiciaire, son placement en garde à vue, lorsque\nles conditions de cette mesure prévues par le présent code sont réunies, n'est pas obligatoire dès lors qu'elle\nn'est pas tenue sous la contrainte de demeurer à la disposition des enquêteurs et qu'elle a été informée qu'elle\npeut à tout moment quitter les locaux de police ou de gendarmerie. Le présent alinéa n'est toutefois pas\napplicable si la personne a été conduite, sous contrainte, par la force publique devant l'officier de police\nJudiciaire.",
+            "Answer": "Dans les cas de crime flagrant ou de délit flagrant puni d'une peine d'emprisonnement, toute personne a\nqualité pour en appréhender l'auteur et le conduire devant l'officier de police judiciaire le plus proche.\n\\r\nLorsque la personne est présentée devant l'officier de police judiciaire, son placement en garde à vue, lorsque\nles conditions de cette mesure prévues par le présent code sont réunies, n'est pas obligatoire dès lors qu'elle\nn'est pas tenue sous la contrainte de demeurer à la disposition des enquêteurs et qu'elle a été informée qu'elle\npeut à tout moment quitter les locaux de police ou de gendarmerie. Le présent alinéa n'est toutefois pas\napplicable si la personne a été conduite, sous contrainte, par la force publique devant l'officier de police\nJudiciaire.",
             "File": "F62_40",
             "Category": "PP",
             "Subcategory": null,
@@ -3138,7 +3138,7 @@
         {
             "Id": 217,
             "Label": "Quel article prévoit les conditions de la Flagrance ?",
-            "Answer": "Article 53 du CPP\n\\r\\nEst qualifié crime ou délit flagrant le crime ou le délit qui se commet actuellement, ou qui vient de se\ncommettre. Il y a aussi crime ou délit flagrant lorsque, dans un temps très voisin de l'action, la personne\nsoupçonnée est poursuivie par la clameur publique, ou est trouvée en possession d'objets, ou présente des\ntraces ou indices, laissant penser qu'elle a participé au crime ou au délit.\n\\r\\nA la suite de la constatation d'un crime ou d'un délit flagrant, l'enquête menée sous le contrôle du procureur\nde la République dans les conditions prévues par le présent chapitre peut se poursuivre sans discontinuer\npendant une durée de huit jours.\n\\r\\nLorsque des investigations nécessaires à la manifestation de la vérité pour un crime ou un délit puni\nd'une peine supérieure ou égale à cinq ans d'emprisonnement ne peuvent être différées, le procureur de la\nRépublique peut décider la prolongation, dans les mêmes conditions, de l'enquête pour une durée maximale\nde huit jours.",
+            "Answer": "Article 53 du CPP\n\\r\nEst qualifié crime ou délit flagrant le crime ou le délit qui se commet actuellement, ou qui vient de se\ncommettre. Il y a aussi crime ou délit flagrant lorsque, dans un temps très voisin de l'action, la personne\nsoupçonnée est poursuivie par la clameur publique, ou est trouvée en possession d'objets, ou présente des\ntraces ou indices, laissant penser qu'elle a participé au crime ou au délit.\n\\r\nA la suite de la constatation d'un crime ou d'un délit flagrant, l'enquête menée sous le contrôle du procureur\nde la République dans les conditions prévues par le présent chapitre peut se poursuivre sans discontinuer\npendant une durée de huit jours.\n\\r\nLorsque des investigations nécessaires à la manifestation de la vérité pour un crime ou un délit puni\nd'une peine supérieure ou égale à cinq ans d'emprisonnement ne peuvent être différées, le procureur de la\nRépublique peut décider la prolongation, dans les mêmes conditions, de l'enquête pour une durée maximale\nde huit jours.",
             "File": "F62_40",
             "Category": "PP",
             "Subcategory": null,
@@ -3198,7 +3198,7 @@
         {
             "Id": 221,
             "Label": "Quel est le délai initial accordé pour une enquête préliminaire ?",
-            "Answer": "Lorsque le PR donne instruction d’effectuer une enquête alors il en fixe le délai. Lorsque l’enquête est faite d’initiative, alors l’enquêteur doit rendre compte de ses investigations dans un délai de 6 mois.\n\\nLe délai peut le proroger au vu des justifications fournies par les enquêteurs.\n\\nLe délai ne peut dépasser deux ans SAUF sur autorisation écrite et motivée du procureur de la République, qui\nest versée au dossier de la procédure – PROLONGATION D’UN AN",
+            "Answer": "Lorsque le PR donne instruction d’effectuer une enquête alors il en fixe le délai. Lorsque l’enquête est faite d’initiative, alors l’enquêteur doit rendre compte de ses investigations dans un délai de 6 mois.\n\nLe délai peut le proroger au vu des justifications fournies par les enquêteurs.\n\nLe délai ne peut dépasser deux ans SAUF sur autorisation écrite et motivée du procureur de la République, qui\nest versée au dossier de la procédure – PROLONGATION D’UN AN",
             "File": "F62_40",
             "Category": "PP",
             "Subcategory": null,
@@ -3228,7 +3228,7 @@
         {
             "Id": 223,
             "Label": "Que prévoit l’article 19 du CPP ?",
-            "Answer": "Les officiers de police judiciaire sont tenus d'informer sans délai le procureur de la République des crimes,\ndélits et contraventions dont ils ont connaissance.\n\\r\\nDès la clôture de leurs opérations, ils doivent lui faire parvenir directement l'original ainsi qu'une copie des procès-verbaux qu'ils ont dressés ; tous actes et\ndocuments y relatifs lui sont en même temps adressés ; les objets saisis sont mis à sa disposition.\n\\r\\nLes procès-verbaux doivent énoncer la qualité d'officier de police judiciaire de leur rédacteur.\n\\r\\nLe procureur de la République peut autoriser que les procès-verbaux, actes et documents lui soient transmis sous forme électronique.",
+            "Answer": "Les officiers de police judiciaire sont tenus d'informer sans délai le procureur de la République des crimes,\ndélits et contraventions dont ils ont connaissance.\n\\r\nDès la clôture de leurs opérations, ils doivent lui faire parvenir directement l'original ainsi qu'une copie des procès-verbaux qu'ils ont dressés ; tous actes et\ndocuments y relatifs lui sont en même temps adressés ; les objets saisis sont mis à sa disposition.\n\\r\nLes procès-verbaux doivent énoncer la qualité d'officier de police judiciaire de leur rédacteur.\n\\r\nLe procureur de la République peut autoriser que les procès-verbaux, actes et documents lui soient transmis sous forme électronique.",
             "File": "F62_40",
             "Category": "PP",
             "Subcategory": null,
@@ -3288,7 +3288,7 @@
         {
             "Id": 227,
             "Label": "Quelles sont les caractéristiques des commissions rogatoires ?",
-            "Answer": "C’est une délégation de pouvoir\n\\r\\nElle donne tous les pouvoirs du juge d’instruction (dans les limites des missions fixées)\n\\r\\nElle est écrite (désigne la fonction de la personne délégué, indique la nature de l’infraction, etre datée, être signée)\n\\r\\nElle fixe un délai (A défaut 8 jours après la fin de la mission)",
+            "Answer": "C’est une délégation de pouvoir\n\\r\nElle donne tous les pouvoirs du juge d’instruction (dans les limites des missions fixées)\n\\r\nElle est écrite (désigne la fonction de la personne délégué, indique la nature de l’infraction, etre datée, être signée)\n\\r\nElle fixe un délai (A défaut 8 jours après la fin de la mission)",
             "File": "F62_40",
             "Category": "PP",
             "Subcategory": null,
@@ -3318,7 +3318,7 @@
         {
             "Id": 229,
             "Label": "Quels actes ne peuvent être délégués lors d’une CR ?",
-            "Answer": "Une mission consitant une décision d’expertise\n\\r\\nL’audition d’un mis en cause s’il y a des indices graves et concordants\n\\r\\nL’audition d’une personne mise en examen\n\\r\\nL’audition de la partie civile (Si elle n’en a pas fait la demande)\n\\r\\nL’audition du témoin assisté\n\\r\\nUne perquisition dans les lieux particuliers (définis aux Art 56-1 à 56-5 du CPP)\n\\r\\nDécision d’une interception de communications",
+            "Answer": "Une mission consitant une décision d’expertise\n\\r\nL’audition d’un mis en cause s’il y a des indices graves et concordants\n\\r\nL’audition d’une personne mise en examen\n\\r\nL’audition de la partie civile (Si elle n’en a pas fait la demande)\n\\r\nL’audition du témoin assisté\n\\r\nUne perquisition dans les lieux particuliers (définis aux Art 56-1 à 56-5 du CPP)\n\\r\nDécision d’une interception de communications",
             "File": "F62_40",
             "Category": "PP",
             "Subcategory": null,
@@ -3348,7 +3348,7 @@
         {
             "Id": 231,
             "Label": "Citez les« lieux particuliers » pour les perquisitions et leurs articles ?",
-            "Answer": "Cabinet ou domicile d’un avocat (56-1 CPP)\n\\r\\nLocaux d’une entreprise de presse (56-2 CPP)\n\\r\\nCabinet d’un médecin, notaire ou d’un huissier (56-3 CPP)\n\\r\\nLieu avec éléments couverts par le secret de la défense nationale (56-4 CPP)\n\\r\\nLocaux ou domicile d’une personne exerçant des fonctions juridictionnelles (56-5 CPP)",
+            "Answer": "Cabinet ou domicile d’un avocat (56-1 CPP)\n\\r\nLocaux d’une entreprise de presse (56-2 CPP)\n\\r\nCabinet d’un médecin, notaire ou d’un huissier (56-3 CPP)\n\\r\nLieu avec éléments couverts par le secret de la défense nationale (56-4 CPP)\n\\r\nLocaux ou domicile d’une personne exerçant des fonctions juridictionnelles (56-5 CPP)",
             "File": "F62_40",
             "Category": "PP",
             "Subcategory": null,
@@ -3393,7 +3393,7 @@
         {
             "Id": 234,
             "Label": "Quels peuvent être les magistrats mandants ?",
-            "Answer": "Un JI dans le cadre d’une information judiciaire\n\\r\\nLa chambre de l’instruction pour un supplément d’information\n\\r\\nLe président de la cour d’assises ou un assesseur qui ordonne des actes d’instruction complémentaires\n\\r\\nToute juridiction de jugement qui ordonne des actes d’instruction utiles à la manifestation de la vérité",
+            "Answer": "Un JI dans le cadre d’une information judiciaire\n\\r\nLa chambre de l’instruction pour un supplément d’information\n\\r\nLe président de la cour d’assises ou un assesseur qui ordonne des actes d’instruction complémentaires\n\\r\nToute juridiction de jugement qui ordonne des actes d’instruction utiles à la manifestation de la vérité",
             "File": "F62_40",
             "Category": "PP",
             "Subcategory": null,
@@ -3408,7 +3408,7 @@
         {
             "Id": 235,
             "Label": "Quels sont les trois types de commissions rogatoires ?",
-            "Answer": "Générale\n\\nSpéciale\n\\nInternationale",
+            "Answer": "Générale\n\nSpéciale\n\nInternationale",
             "File": "F62_40",
             "Category": "PP",
             "Subcategory": null,
@@ -3423,7 +3423,7 @@
         {
             "Id": 236,
             "Label": "Quel article définit une « arme » ?",
-            "Answer": "Art 132-75 du CP – 4 types d’arme :\n\\r\\nPar nature\n\\r\\nPar destination\n\\r\\nL’arme factice\n\\r\\nL’animal utilisé pour tuer, blesser ou menacer",
+            "Answer": "Art 132-75 du CP – 4 types d’arme :\n\\r\nPar nature\n\\r\nPar destination\n\\r\nL’arme factice\n\\r\nL’animal utilisé pour tuer, blesser ou menacer",
             "File": "F23_32",
             "Category": "DPS",
             "Subcategory": null,
@@ -3438,7 +3438,7 @@
         {
             "Id": 237,
             "Label": "Quels sont les types de circonstances aggravantes pour le vol ?",
-            "Answer": "Tenant à la personne de la victime\n\\r\\nTenant à la personne de l’auteur\n\\r\\nTenant aux conditions dans lesquelles l’infraction a été commise (réunion, BO, avec arme, avec ou suivi de destruction etc.)\n\\r\\nTenant aux conséquences (Avec ITT < 8 jours, >8 jours, infimité permanentes, entrainant la mort)\n\\r\\nTenant au lieu de commission (Etablissement scolaire, transport de voyageurs, local d’habitation…)\n\\r\\nTenant à l’objet soustrait (Materiel de premier secours, objet classé, inscrit, découverte archéologique, bien culturel)",
+            "Answer": "Tenant à la personne de la victime\n\\r\nTenant à la personne de l’auteur\n\\r\nTenant aux conditions dans lesquelles l’infraction a été commise (réunion, BO, avec arme, avec ou suivi de destruction etc.)\n\\r\nTenant aux conséquences (Avec ITT < 8 jours, >8 jours, infimité permanentes, entrainant la mort)\n\\r\nTenant au lieu de commission (Etablissement scolaire, transport de voyageurs, local d’habitation…)\n\\r\nTenant à l’objet soustrait (Materiel de premier secours, objet classé, inscrit, découverte archéologique, bien culturel)",
             "File": "F23_32",
             "Category": "DPS",
             "Subcategory": null,
@@ -3468,7 +3468,7 @@
         {
             "Id": 239,
             "Label": "Quels sont les trois cadres d'enquêtes spécifiques ?",
-            "Answer": "Découverte de cadavre ou découverte de personne grièvement blessée (Art 74 CPP)\n\\r\\nDisparition inquietante (Art 74-1 CPP)\n\\r\\nRecherche de personne en fuite (CPP Art 74-2)",
+            "Answer": "Découverte de cadavre ou découverte de personne grièvement blessée (Art 74 CPP)\n\\r\nDisparition inquietante (Art 74-1 CPP)\n\\r\nRecherche de personne en fuite (CPP Art 74-2)",
             "File": "F62_41",
             "Category": "PP",
             "Subcategory": null,
@@ -3513,7 +3513,7 @@
         {
             "Id": 242,
             "Label": "Quelles sont les missions de l'OPJ dans le cadre d'une enquête de découverte de cadavre ou découverte de personne grièvement blessée ? ",
-            "Answer": "Informer immédiatement le PR (Après receuil des premiers elements et vérification de la véracité des faits)\n\\r\\nSe transporter sur les lieux (Gel des lieux - Porter secours - Prevenir le maire - Faire appel à un medecin - Previent la famille de la victime)\n\\r\\nProcéder aux premières constatations \n\\r\\nL'OPJ A LES MEMES DROITS QU'EN FLAGRANCE SAUF GARDE A VUE",
+            "Answer": "Informer immédiatement le PR (Après receuil des premiers elements et vérification de la véracité des faits)\n\\r\nSe transporter sur les lieux (Gel des lieux - Porter secours - Prevenir le maire - Faire appel à un medecin - Previent la famille de la victime)\n\\r\nProcéder aux premières constatations \n\\r\nL'OPJ A LES MEMES DROITS QU'EN FLAGRANCE SAUF GARDE A VUE",
             "File": "F62_41",
             "Category": "PP",
             "Subcategory": null,
@@ -3543,7 +3543,7 @@
         {
             "Id": 244,
             "Label": "Quand est déclenchée une enquête de disparition inquiétante ? ",
-            "Answer": "Lorsque la disparition d'un mineur ou d'un majeur protégé vient d'intervenir ou d'etre constatée ou en cas de disparition d'un majeur présentant un caractère inquietant ou suspect eu égards aux circonstances, à l'age de l'interessé ou à son état de santé. \n\\r\\nLorsque la disparition vient d'intervenir ou d'etre constatée",
+            "Answer": "Lorsque la disparition d'un mineur ou d'un majeur protégé vient d'intervenir ou d'etre constatée ou en cas de disparition d'un majeur présentant un caractère inquietant ou suspect eu égards aux circonstances, à l'age de l'interessé ou à son état de santé. \n\\r\nLorsque la disparition vient d'intervenir ou d'etre constatée",
             "File": "F62_41",
             "Category": "PP",
             "Subcategory": null,
@@ -3558,7 +3558,7 @@
         {
             "Id": 245,
             "Label": "Quelles sont les missions de l'OPJ dans le cadre d'une enquête de disparition inquiétante ? ",
-            "Answer": "Inscription immédiate au FPR sauf avis contraire du PR\n\\r\\nL'OPJ A LES MÊMES DROITS QU'EN FLAG SAUF GAV",
+            "Answer": "Inscription immédiate au FPR sauf avis contraire du PR\n\\r\nL'OPJ A LES MÊMES DROITS QU'EN FLAG SAUF GAV",
             "File": "F62_41",
             "Category": "PP",
             "Subcategory": null,
@@ -3633,7 +3633,7 @@
         {
             "Id": 250,
             "Label": "A quel moment l'OPJ doit il rendre compte au magistrat ? ",
-            "Answer": "Dès qu'il a connaissance d'une infraction (Crime, delit, contravention)\n\\r\\nAu bout de 6 mois rendre compte de l'avancement de la procédure\n\\r\\nDès qu'il a identifié une personne a l'encontre de laquelle il existe des indices faisant présumer qu'il a commis ou tenté de commettre le crime ou le délit objet de l'enquête qu'il conduit",
+            "Answer": "Dès qu'il a connaissance d'une infraction (Crime, delit, contravention)\n\\r\nAu bout de 6 mois rendre compte de l'avancement de la procédure\n\\r\nDès qu'il a identifié une personne a l'encontre de laquelle il existe des indices faisant présumer qu'il a commis ou tenté de commettre le crime ou le délit objet de l'enquête qu'il conduit",
             "File": "F62_42",
             "Category": "PP",
             "Subcategory": null,
@@ -3663,7 +3663,7 @@
         {
             "Id": 252,
             "Label": "Quels sont les actes à réaliser lors d'un transport sur les lieux en FLAG ? ",
-            "Answer": "Gel des lieux \n\\r\\nReceuillir les identité de toutes les personnes présentes (Art 78-2 al 1 à 4 CPP)\n\\r\\nSaisir les armes et instruments qui ont servi à commettre l'infraction ou ce qui parait en être le produit direct ou indirect ou qui peut être utile a la manifestation de la vérité. (art 54 al 2 et 3 CPP)\nPeut défendre aux personnes présentes de s'éloigner sans pouvoir les placer en GAV en cas de refus d'obtempérer (Art 61 al 1 CPP)",
+            "Answer": "Gel des lieux \n\\r\nReceuillir les identité de toutes les personnes présentes (Art 78-2 al 1 à 4 CPP)\n\\r\nSaisir les armes et instruments qui ont servi à commettre l'infraction ou ce qui parait en être le produit direct ou indirect ou qui peut être utile a la manifestation de la vérité. (art 54 al 2 et 3 CPP)\nPeut défendre aux personnes présentes de s'éloigner sans pouvoir les placer en GAV en cas de refus d'obtempérer (Art 61 al 1 CPP)",
             "File": "F62_42",
             "Category": "PP",
             "Subcategory": null,
@@ -3693,7 +3693,7 @@
         {
             "Id": 254,
             "Label": "Quels renseignements doit on trouver dans la partie Saisine d'un PV de transport constat ?",
-            "Answer": "Date heure et origine de l'enquête (Determine la date et l'heure du debut de l'enquête et donc de l'état de flagrance)\n\\r\\n Mention du transport sur les lieux de l'OPJ - Raisons du transport - Comment l'OPJ est averti = Elements receuillis lors de l'alerte",
+            "Answer": "Date heure et origine de l'enquête (Determine la date et l'heure du debut de l'enquête et donc de l'état de flagrance)\n\\r\n Mention du transport sur les lieux de l'OPJ - Raisons du transport - Comment l'OPJ est averti = Elements receuillis lors de l'alerte",
             "File": "F62_42",
             "Category": "PP",
             "Subcategory": null,
@@ -3708,7 +3708,7 @@
         {
             "Id": 255,
             "Label": "Quels renseignements doit on trouver dans la partie Situation à l'arrivée des enquêteurs d'un PV de transport constat ?",
-            "Answer": "Identifier les personnes présentes (Identité précise et complète)\n\\r\\n Décrire les premiers élements receuillis \n\\r\\n Mention porter secours ou appel pompiers \n\\r\\n Mention du gel des lieux \n\\r\\n Informer les appelants de ne pas pénétrer dans les lieux \n\\r\\n Réaliser et délimiter un périmetre de sécurité. \n\\r\\n MENTION SI MODIFICATION DES LIEUX VOLONTAIRES OU INVOLONTAIRES",
+            "Answer": "Identifier les personnes présentes (Identité précise et complète)\n\\r\n Décrire les premiers élements receuillis \n\\r\n Mention porter secours ou appel pompiers \n\\r\n Mention du gel des lieux \n\\r\n Informer les appelants de ne pas pénétrer dans les lieux \n\\r\n Réaliser et délimiter un périmetre de sécurité. \n\\r\n MENTION SI MODIFICATION DES LIEUX VOLONTAIRES OU INVOLONTAIRES",
             "File": "F62_42",
             "Category": "PP",
             "Subcategory": null,
@@ -3723,7 +3723,7 @@
         {
             "Id": 256,
             "Label": "Quels renseignements doit on trouver dans la partie Mesures prises d'un PV de transport constat ?",
-            "Answer": "Tous les actes réalisés par l'OPJ à partir de son arrivée sur les lieux des faits \n\\r\\n SI DES PERSONNES FONT L'OBJET D'UNE INTERDICTION DE S'ELOIGNER MENTION DOIT EN ÊTRE FAITE\n\\r\\n CR Parquet + Hierarchie \n\\r\\n CR maire \n\\r\\n Mention si renfort demandé\n\\r\\n Mention si concours demandé (Serrurier / Equipe Cyno etc...)\n\\r\\n Mention des dépistages alcoolémie et stupéfiant",
+            "Answer": "Tous les actes réalisés par l'OPJ à partir de son arrivée sur les lieux des faits \n\\r\n SI DES PERSONNES FONT L'OBJET D'UNE INTERDICTION DE S'ELOIGNER MENTION DOIT EN ÊTRE FAITE\n\\r\n CR Parquet + Hierarchie \n\\r\n CR maire \n\\r\n Mention si renfort demandé\n\\r\n Mention si concours demandé (Serrurier / Equipe Cyno etc...)\n\\r\n Mention des dépistages alcoolémie et stupéfiant",
             "File": "F62_42",
             "Category": "PP",
             "Subcategory": null,
@@ -3738,7 +3738,7 @@
         {
             "Id": 257,
             "Label": "Quels renseignements doit on trouver dans la partie Etat des lieux d'un PV de transport constat ?",
-            "Answer": "Vue d'ensemble des lieux du délit. De la situation la plus éloignée vers la plus proche. Matérialisé a l'aide de plans et croquis \n\\r\\n Exposé littéral précis \n\\r\\n Croquis ou plan \n\\r\\n Prises de vues photographiques avant toute modification des lieux et saisies",
+            "Answer": "Vue d'ensemble des lieux du délit. De la situation la plus éloignée vers la plus proche. Matérialisé a l'aide de plans et croquis \n\\r\n Exposé littéral précis \n\\r\n Croquis ou plan \n\\r\n Prises de vues photographiques avant toute modification des lieux et saisies",
             "File": "F62_42",
             "Category": "PP",
             "Subcategory": null,
@@ -3753,7 +3753,7 @@
         {
             "Id": 258,
             "Label": "Quels renseignements doit on trouver dans la partie Corps du délit d'un PV de transport constat ?",
-            "Answer": "Doit être le plus précis possible. \n\\r\\n Procéder à des prises de vues photographiques\n\\r\\n Traces et indices minutieusement explicitées, décrits et répertoriés\n\\r\\n MENTION DES SAISIES EFFECTUEES\n\\r\\n Toutes les modifications réalisées à partir de l'arrivée de l'OPJ doivent être décrites précisément",
+            "Answer": "Doit être le plus précis possible. \n\\r\n Procéder à des prises de vues photographiques\n\\r\n Traces et indices minutieusement explicitées, décrits et répertoriés\n\\r\n MENTION DES SAISIES EFFECTUEES\n\\r\n Toutes les modifications réalisées à partir de l'arrivée de l'OPJ doivent être décrites précisément",
             "File": "F62_42",
             "Category": "PP",
             "Subcategory": null,
@@ -3798,7 +3798,7 @@
         {
             "Id": 261,
             "Label": "Qu'est ce qu'une réquisition à prestation de services ? ",
-            "Answer": "Requerir toute personne détentrice d'un savoir faire en vue de fournir une prestation qui ne suppose aucun examen technique, indispensable à la poursuite de l'enquête en cours (R642-1 du CP)\n\\n Ne requiert pas l'autorisation du magistrat\n\\n PAS DE PRESTATION DE SERMENT\n\\n PAS DE REMISE DE RAPPORT",
+            "Answer": "Requerir toute personne détentrice d'un savoir faire en vue de fournir une prestation qui ne suppose aucun examen technique, indispensable à la poursuite de l'enquête en cours (R642-1 du CP)\n\n Ne requiert pas l'autorisation du magistrat\n\n PAS DE PRESTATION DE SERMENT\n\n PAS DE REMISE DE RAPPORT",
             "File": "F62_42",
             "Category": "PP",
             "Subcategory": null,
@@ -3813,7 +3813,7 @@
         {
             "Id": 262,
             "Label": "Qu'est ce qu'une réquisition à personne qualifiée ? ",
-            "Answer": "En préli ou Flagrance l'OPJ peux requerir toute personne qualifiée s'il y a lieu de procéder à des constatations ou à des examens techniques ou scientifiques de quelque nature qu'il soit. (Soumis à autorisation du PR en préli)\n\\r\\n En CR: Si besoin d'interprétation ou d'analyse des résultats = Expertise = exclusivement demandée par les juridictions d'instruction ou de jugement",
+            "Answer": "En préli ou Flagrance l'OPJ peux requerir toute personne qualifiée s'il y a lieu de procéder à des constatations ou à des examens techniques ou scientifiques de quelque nature qu'il soit. (Soumis à autorisation du PR en préli)\n\\r\n En CR: Si besoin d'interprétation ou d'analyse des résultats = Expertise = exclusivement demandée par les juridictions d'instruction ou de jugement",
             "File": "F62_42",
             "Category": "PP",
             "Subcategory": null,
@@ -3843,7 +3843,7 @@
         {
             "Id": 264,
             "Label": "Quelles sont les obligations des personnes requises (Personnes qualifiées) ? ",
-            "Answer": "Déférer à la réquisition \n\\r\\n Autorisés à procéder à l'ouverture des scéllés\n\\r\\n Tenues au secret de l'enquête\n\\r\\n Relatent leurs conclusions dans un rapport",
+            "Answer": "Déférer à la réquisition \n\\r\n Autorisés à procéder à l'ouverture des scéllés\n\\r\n Tenues au secret de l'enquête\n\\r\n Relatent leurs conclusions dans un rapport",
             "File": "F62_42",
             "Category": "PP",
             "Subcategory": null,
@@ -3858,7 +3858,7 @@
         {
             "Id": 265,
             "Label": "Par qui est ordonnée une autopsie ? Quelles en sont les caractéristiques ? ",
-            "Answer": "En flagrance ordonnée par l'OPJ et par le PR en préliminaire. \n\\r\\n Toujours effectuée par un medecin légiste \n\\r\\n Les proches de la victime doivent être informés de l'autopsie et des prélevements effectués ",
+            "Answer": "En flagrance ordonnée par l'OPJ et par le PR en préliminaire. \n\\r\n Toujours effectuée par un medecin légiste \n\\r\n Les proches de la victime doivent être informés de l'autopsie et des prélevements effectués ",
             "File": "F62_42",
             "Category": "PP",
             "Subcategory": null,
@@ -3888,7 +3888,7 @@
         {
             "Id": 267,
             "Label": "Quels articles prévoient les réquisitions pour remises d'informations ? ",
-            "Answer": "En Flagrance: 60-1 CPP\n\\r\\n En préli: 77-1-1 CPP\n\\r\\n En CR: 99-3 CPP",
+            "Answer": "En Flagrance: 60-1 CPP\n\\r\n En préli: 77-1-1 CPP\n\\r\n En CR: 99-3 CPP",
             "File": "F62_42",
             "Category": "PP",
             "Subcategory": null,
@@ -3903,7 +3903,7 @@
         {
             "Id": 268,
             "Label": "Dans quels cas peut on effectuer une réquisition portant sur les données techniques (identifier source de connexion ou équipements terminaux utilisés / Données trafic et localisation) ?",
-            "Answer": "1) Les nécéssités de la procédure l'exigent + \n\\n Crime ou délit += 3ans d'empr\n\\n Délit +1an commis par l'utilisation d'un reseau de communication électronique (Identifier l'auteur)\n\\n Les réquis concernent les équipements terminaux de la victime et interviennt à SA demande (Délit avec peine d'Empr)\n\\n Recgerche de personne disparue ou retracer parcours criminel",
+            "Answer": "1) Les nécéssités de la procédure l'exigent + \n\n Crime ou délit += 3ans d'empr\n\n Délit +1an commis par l'utilisation d'un reseau de communication électronique (Identifier l'auteur)\n\n Les réquis concernent les équipements terminaux de la victime et interviennt à SA demande (Délit avec peine d'Empr)\n\n Recgerche de personne disparue ou retracer parcours criminel",
             "File": "F62_42",
             "Category": "PP",
             "Subcategory": null,
@@ -3918,7 +3918,7 @@
         {
             "Id": 269,
             "Label": "Dans quels cas les TIC doivent-ils faire l'objet d'une réquisition à personne qualifiée ? ",
-            "Answer": "1) Lorsqu'ils interviennent en dehors de leurs zone de compétence ou au profit d'une unité exterieure. Dans ce cas, ils ne procèdent pas aux saisies ni scellés\n\\r\\n 2) Afin de réaliser des opérations de révélation et d'échantillonnage impliquant un bris de scellé. ",
+            "Answer": "1) Lorsqu'ils interviennent en dehors de leurs zone de compétence ou au profit d'une unité exterieure. Dans ce cas, ils ne procèdent pas aux saisies ni scellés\n\\r\n 2) Afin de réaliser des opérations de révélation et d'échantillonnage impliquant un bris de scellé. ",
             "File": "F62_42",
             "Category": "PP",
             "Subcategory": null,
@@ -3933,7 +3933,7 @@
         {
             "Id": 270,
             "Label": "Quelles sont les circonstances aggravantes de l'extorsion ? ",
-            "Answer": "Avec violences \n\\r\\n Au préjudice d'une personne vulnérable (312-2 2° CP)\n\\r\\n Par une personne dissimulant volontairement tout ou partie de son visage (CP Art 312-2 4°)\n\\r\\n Dans les établissements scolaires (Abords à l'entrée et sortie des élèves) (CP Art 312-2 5°)\n\\r\\n Avec usage ou menace d'une arme (CP Art 312-5)\n\\r\\n En BO (CP Art 312-6)\n\\r\\n Précédés, accompagnés, suivis de violences ayant entrainé la mort, soit de tortures ou d'actes de barbarie (CP Art 312-7)",
+            "Answer": "Avec violences \n\\r\n Au préjudice d'une personne vulnérable (312-2 2° CP)\n\\r\n Par une personne dissimulant volontairement tout ou partie de son visage (CP Art 312-2 4°)\n\\r\n Dans les établissements scolaires (Abords à l'entrée et sortie des élèves) (CP Art 312-2 5°)\n\\r\n Avec usage ou menace d'une arme (CP Art 312-5)\n\\r\n En BO (CP Art 312-6)\n\\r\n Précédés, accompagnés, suivis de violences ayant entrainé la mort, soit de tortures ou d'actes de barbarie (CP Art 312-7)",
             "File": "F23_33",
             "Category": "DPS",
             "Subcategory": null,
@@ -3978,7 +3978,7 @@
         {
             "Id": 273,
             "Label": "Quelles sont les circonstances aggravantes de l'escroquerie ?",
-            "Answer": "Par dépositaire de l'autorité publique ou chargée du mission de SP\n\\r\\n Par une personne qui prend induement la qualité d'une personne dépositaire de l'autorité publique\n\\r\\n Par une personne qui fait appel au public en vue de la collecte de fond à des fins d'entraide humanitaire\n\\r\\n Commise au préjudice d'une personne vulnérable\n\\r\\n Commise au préjudice d'une personne publique \n\\r\\n Commise en BO",
+            "Answer": "Par dépositaire de l'autorité publique ou chargée du mission de SP\n\\r\n Par une personne qui prend induement la qualité d'une personne dépositaire de l'autorité publique\n\\r\n Par une personne qui fait appel au public en vue de la collecte de fond à des fins d'entraide humanitaire\n\\r\n Commise au préjudice d'une personne vulnérable\n\\r\n Commise au préjudice d'une personne publique \n\\r\n Commise en BO",
             "File": "F23_34",
             "Category": "DPS",
             "Subcategory": null,
@@ -4023,7 +4023,7 @@
         {
             "Id": 276,
             "Label": "Quelles sont les circonstances aggravantes de l'abus de confiance ? (314-2 CP)",
-            "Answer": "Par une personne qui fait appel au public en vue de la collecte de fond pour son compte propre ou une société\n\\r\\n Par une personne qui de manière habituekke se libre ou prete son concours à des opérations portant sur les biens des tiers pour le compte desquels elle recouvre des fonds ou des valeurs (Mandataires, curateur etc...)\n\\r\\n Par une personne qui fait appel au public en vue de la collecte de fond à des fins d'entraide humanitaire\n\\r\\n Commise au préjudice d'une personne vulnérable\n\\r\\n Par un mandataire de justice ou office public dans l'exercice de ses fonctions ou en raison de sa qualité\n\\r\\n Commise en BO",
+            "Answer": "Par une personne qui fait appel au public en vue de la collecte de fond pour son compte propre ou une société\n\\r\n Par une personne qui de manière habituekke se libre ou prete son concours à des opérations portant sur les biens des tiers pour le compte desquels elle recouvre des fonds ou des valeurs (Mandataires, curateur etc...)\n\\r\n Par une personne qui fait appel au public en vue de la collecte de fond à des fins d'entraide humanitaire\n\\r\n Commise au préjudice d'une personne vulnérable\n\\r\n Par un mandataire de justice ou office public dans l'exercice de ses fonctions ou en raison de sa qualité\n\\r\n Commise en BO",
             "File": "F23_35",
             "Category": "DPS",
             "Subcategory": null,
@@ -4038,7 +4038,7 @@
         {
             "Id": 277,
             "Label": "Quelles sont les trois caractéristiques du recel ? ",
-            "Answer": "C'est un délit distinct\n\\r\\n Délit continu\n\\r\\n Délit connexe",
+            "Answer": "C'est un délit distinct\n\\r\n Délit continu\n\\r\n Délit connexe",
             "File": "F23_40",
             "Category": "DPS",
             "Subcategory": null,
@@ -4053,7 +4053,7 @@
         {
             "Id": 278,
             "Label": "Dans quel cas le délit de recel ne peut être retenu ? ",
-            "Answer": "Si les choses proviennent d'une infraction amnistiée. \n\\r\\n Si l'auteur de l'infraction d'origine a été acquitté pour avoir agi sans intention coupable. ",
+            "Answer": "Si les choses proviennent d'une infraction amnistiée. \n\\r\n Si l'auteur de l'infraction d'origine a été acquitté pour avoir agi sans intention coupable. ",
             "File": "F23_40",
             "Category": "DPS",
             "Subcategory": null,
@@ -4068,7 +4068,7 @@
         {
             "Id": 279,
             "Label": "Quelles sont les circonstances aggravantes du recel ? (321-1 du CP)",
-            "Answer": "Recel commis de manière habituelle\n\\r\\n Recel commis en BO",
+            "Answer": "Recel commis de manière habituelle\n\\r\n Recel commis en BO",
             "File": "F23_40",
             "Category": "DPS",
             "Subcategory": null,
@@ -4083,7 +4083,7 @@
         {
             "Id": 280,
             "Label": "Quelles sont les circonstances aggravantes de la non justification des ressources ? ",
-            "Answer": "Lorsque l'infraction procurant les ressources sont des crimes ou délits de: \n\\r\\n Traite des humains \n\\r\\n Extorison ou association de malfaiteurs\n\\r\\n En matière d'arme et de produits explosifs\n\\r\\n Trafic de stupéfiants\n\\r\\n En BO",
+            "Answer": "Lorsque l'infraction procurant les ressources sont des crimes ou délits de: \n\\r\n Traite des humains \n\\r\n Extorison ou association de malfaiteurs\n\\r\n En matière d'arme et de produits explosifs\n\\r\n Trafic de stupéfiants\n\\r\n En BO",
             "File": "F23_40",
             "Category": "DPS",
             "Subcategory": null,
@@ -4098,7 +4098,7 @@
         {
             "Id": 281,
             "Label": "Quelles sont les circonstances aggravantes de l'aide à l'entrée ou au séjour irrégulier ? ",
-            "Answer": "En BO\n\\r\\n - Exposant les etrangers à un risque immédiat de mort ou de blessure de nature a eintrainer une mutilation ou une infirmité permanente\n\\r\\n - En soumettant les étrangers à des conditions de vie, de transport, de travail ou d'hébergement indignes\n\\r\\n - Au moyen d'une habilitation ou d'un titre de circulation en zone réservée d'un aérodrome ou d'un port\n\\r\\n - En éloignant les mineurs de leur milieu familial ou de leur environnement traditionnel. ",
+            "Answer": "En BO\n\\r\n - Exposant les etrangers à un risque immédiat de mort ou de blessure de nature a eintrainer une mutilation ou une infirmité permanente\n\\r\n - En soumettant les étrangers à des conditions de vie, de transport, de travail ou d'hébergement indignes\n\\r\n - Au moyen d'une habilitation ou d'un titre de circulation en zone réservée d'un aérodrome ou d'un port\n\\r\n - En éloignant les mineurs de leur milieu familial ou de leur environnement traditionnel. ",
             "File": "F23_40",
             "Category": "DPS",
             "Subcategory": null,
@@ -4218,7 +4218,7 @@
         {
             "Id": 289,
             "Label": "Où peut-on effectuer une perquisition ? ",
-            "Answer": "Au domicile des personnes qui paraissent avoir participé au crime (CPP art 56 al.1) ou détenir des pièces, informations ou objets relatifs aux faits incriminés\n\\r\\n Se déroule également en tout lieux dans lesquels sont suscpetibles de se trouver des biens dont la confiscation est prévue à l'article 131-21 du CP\n\\r\\n\\r\\n Dans le cadre d'une information judiciaire, la loi vise tous les lieux ou peuvent se trouver des objets ou des données informatiques dont la découverte serait utile à la manifestation de la vérité (CP Art 94)",
+            "Answer": "Au domicile des personnes qui paraissent avoir participé au crime (CPP art 56 al.1) ou détenir des pièces, informations ou objets relatifs aux faits incriminés\n\\r\n Se déroule également en tout lieux dans lesquels sont suscpetibles de se trouver des biens dont la confiscation est prévue à l'article 131-21 du CP\n\\r\n\\r\n Dans le cadre d'une information judiciaire, la loi vise tous les lieux ou peuvent se trouver des objets ou des données informatiques dont la découverte serait utile à la manifestation de la vérité (CP Art 94)",
             "File": "F62_45",
             "Category": "PP",
             "Subcategory": null,
@@ -4428,7 +4428,7 @@
         {
             "Id": 303,
             "Label": "Quels sont les formalismes à respecter pour une perquisition ? ",
-            "Answer": "Respect du prinipe de nécéssité\n\\r\\n La présence d'un tiers\n\\r\\n La prestation de serment des personnes qualifiées\n\\r\\n La rédaction sur le champ d'un procès verbal signé des personnes présentes relatant le déroulement et les justifications\n\\r\\n Le respect des heures légales\n\\r\\n Les formalités particulières prévues pour les enquetes de proxénitisme (CPP art 706-35 al 2) / criminalité organisée (CPP Art 706-92) / trafic de stup (CPP Art 706-28 al.2)",
+            "Answer": "Respect du prinipe de nécéssité\n\\r\n La présence d'un tiers\n\\r\n La prestation de serment des personnes qualifiées\n\\r\n La rédaction sur le champ d'un procès verbal signé des personnes présentes relatant le déroulement et les justifications\n\\r\n Le respect des heures légales\n\\r\n Les formalités particulières prévues pour les enquetes de proxénitisme (CPP art 706-35 al 2) / criminalité organisée (CPP Art 706-92) / trafic de stup (CPP Art 706-28 al.2)",
             "File": "F62_45",
             "Category": "PP",
             "Subcategory": null,
@@ -4451,8 +4451,8 @@
             "DPS_LongLabel": "Vol",
             "DPS_Article": "DELIT prévu et réprimé par l’art 311-1 et 311-3 du CP (Empr 3ans + 45.000E)",
             "DPS_Punissable": "Punissable",
-            "DPS_Intention": "Intention coupable : notion de volonté et intention de s’approprier la chose (en disposer librement)\n\\nLe repentir actif ne supprime pas l’intention coupable",
-            "DPS_ElemMat": "1) Soustraction frauduleuse (S’approprie la chose contre le gré de son propriétaire)\n\\n2) La chose doit être un bien mobilier (Chose transportable d’un endroit à un autre)\n\\n3) La chose doit appartenir à autrui",
+            "DPS_Intention": "Intention coupable : notion de volonté et intention de s’approprier la chose (en disposer librement)\n\nLe repentir actif ne supprime pas l’intention coupable",
+            "DPS_ElemMat": "1) Soustraction frauduleuse (S’approprie la chose contre le gré de son propriétaire)\n\n2) La chose doit être un bien mobilier (Chose transportable d’un endroit à un autre)\n\n3) La chose doit appartenir à autrui",
             "DPS_Desc": null
         },
         {
@@ -4467,7 +4467,7 @@
             "DPS_Article": "DELIT prévu et réprimé par l'Art. 312-1 du CP (Empr 7 ans + 100 000 E)",
             "DPS_Punissable": "Tentative punissable",
             "DPS_Intention": "Intention coupable: L'auteur agit avec la conscience d'obtenir par la violence, menaces de violences ce qu'il n'aurait pu obtenir de la victime si sa volonté était restée libre",
-            "DPS_ElemMat": "1) Des violences ou menace de violences ou contrainte sont commises: \r\n\\nSoit par l'effet des violences directement exercées sur elle (c'est-à-dire des moyens de pression physique.\r\n\\nSoit par l'effet de menaces susceptibles d'inspirer la crainte de violences physiques d'une certaine gravité contre la victime ou contre une tierce personne\r\n\\nSoit l'effet d'un d'une contrainte morale ressentie par la victime comme une force irrésistible d'origine externe dominant sa volonté \r\n\\n\\nLien de causalité entre les moyens utilisés et le résultat poursuivi ou obtenu doit exister pour constituer l'infraction.\r\n\\n\\n2)Portant sur:\r\n\\nl'apposition d'une signature\r\n\\nsur un engagement\r\n\\nune renonciation\r\n\\nsur la révélation d'un secret\r\n\\nsur la remise de fonds\tde valeurs ou d'un bien quelconque.",
+            "DPS_ElemMat": "1) Des violences ou menace de violences ou contrainte sont commises: \n\nSoit par l'effet des violences directement exercées sur elle (c'est-à-dire des moyens de pression physique.\n\nSoit par l'effet de menaces susceptibles d'inspirer la crainte de violences physiques d'une certaine gravité contre la victime ou contre une tierce personne\n\nSoit l'effet d'un d'une contrainte morale ressentie par la victime comme une force irrésistible d'origine externe dominant sa volonté \n\n\nLien de causalité entre les moyens utilisés et le résultat poursuivi ou obtenu doit exister pour constituer l'infraction.\n\n\n2)Portant sur:\n\nl'apposition d'une signature\n\nsur un engagement\n\nune renonciation\n\nsur la révélation d'un secret\n\nsur la remise de fonds\tde valeurs ou d'un bien quelconque.",
             "DPS_Desc": ""
         },
         {
@@ -4482,7 +4482,7 @@
             "DPS_Article": "DELIT prévu et réprimé par l'Art. 312-10 du CP (Empr 5 ans + 75 000 E)",
             "DPS_Punissable": "Tentative punissable (CP Art 312-12)",
             "DPS_Intention": "Intention coupable: L'auteur contraint la victime à donner une chose qu'elle ne remettrait pas de son plein gré. ",
-            "DPS_ElemMat": "1) Menace de réveler ou d'imputer des faits de nature à porter atteinte à l'honneur ou à la considération (Doit être faite dans le dessein d'en tirer un profit)\n\\n2) Une obtention portant soit sur :\n\\nRemise de fonds, valeurs, bien quelconque\n\\nApposition d'une signature, d'un engagement, d'une renonciation\n\\nRevélation d'un secret",
+            "DPS_ElemMat": "1) Menace de réveler ou d'imputer des faits de nature à porter atteinte à l'honneur ou à la considération (Doit être faite dans le dessein d'en tirer un profit)\n\n2) Une obtention portant soit sur :\n\nRemise de fonds, valeurs, bien quelconque\n\nApposition d'une signature, d'un engagement, d'une renonciation\n\nRevélation d'un secret",
             "DPS_Desc": null
         },
         {
@@ -4497,7 +4497,7 @@
             "DPS_Article": "DELIT prévu et réprimé par l'Art 312-12-1 du CP (Empr 6mois + 3 750 E)",
             "DPS_Punissable": "Pas prévu",
             "DPS_Intention": "Conscience d'obtenir par la menace ou la violence ce qui n'aurait pas pu être reçu librement. ",
-            "DPS_ElemMat": "1) Sollicitation de remise de fonds, de valeurs ou de biens quelconques\n\\n2) En réunion \n\\n3) Sur la voie publique\n\\n4) De manière agressive ou sous la menace d'un animal dangereux.",
+            "DPS_ElemMat": "1) Sollicitation de remise de fonds, de valeurs ou de biens quelconques\n\n2) En réunion \n\n3) Sur la voie publique\n\n4) De manière agressive ou sous la menace d'un animal dangereux.",
             "DPS_Desc": "Aussi appelé mendicité agressive"
         },
         {
@@ -4512,7 +4512,7 @@
             "DPS_Article": "DELIT Prévu et réprimé par l'Art 223-15-2 du CP (Empr 3 ans + 375 000E)",
             "DPS_Punissable": "Non punissable",
             "DPS_Intention": "Intention coupable: Volonté d'abuser frauduleusement tout en ayant conscience de la particulière vulnérabilité de la victime",
-            "DPS_ElemMat": "Il faut: \n\\n1) Un mineur ou une personne dont la particulière vulnérabilité est apparente ou connue de son auteur\n\\n2) Abuser frauduleusement de l'état d'ignorance ou de la situation de faiblesse (Abuser des passions d'un mineur)\n\\n3) Que ces agissements soient commis en vue de conduire ce mineur ou cette personne à un acte ou une abstention qui lui sont gravement préjudiciables. ",
+            "DPS_ElemMat": "Il faut: \n\n1) Un mineur ou une personne dont la particulière vulnérabilité est apparente ou connue de son auteur\n\n2) Abuser frauduleusement de l'état d'ignorance ou de la situation de faiblesse (Abuser des passions d'un mineur)\n\n3) Que ces agissements soient commis en vue de conduire ce mineur ou cette personne à un acte ou une abstention qui lui sont gravement préjudiciables. ",
             "DPS_Desc": null
         },
         {
@@ -4527,7 +4527,7 @@
             "DPS_Article": "DELIT Prévu et réprimé par l'Art 313-1 du CP (Empr 5 ans + 375 000E)",
             "DPS_Punissable": "Tentative punissable",
             "DPS_Intention": "Il faut que l'auteur soit de mauvaise foi. (Les fautes de négligence n'engendrent pas de responsabilité pénale)",
-            "DPS_ElemMat": "1) Emploi de manœuvre frauduleuse\n\\n2) Remise de la chose ou fourniture d'un service\n\\n3) Préjudice\n\\n4) Usage d'un faux nom, d'une fausse qualité ou abus d'une qualité vraie",
+            "DPS_ElemMat": "1) Emploi de manœuvre frauduleuse\n\n2) Remise de la chose ou fourniture d'un service\n\n3) Préjudice\n\n4) Usage d'un faux nom, d'une fausse qualité ou abus d'une qualité vraie",
             "DPS_Desc": null
         },
         {
@@ -4572,7 +4572,7 @@
             "DPS_Article": "DELIT Prévu er réprimé par l'Art 313-6-1 du CP (Empr 1an + 15 000E)",
             "DPS_Punissable": "Pas prévu",
             "DPS_Intention": "L'intention coupable résulte de la volonté de l'auteur d'organiser la mise à disposition illicite du bien immobilier d'autrui au profit d'un tiers. ",
-            "DPS_ElemMat": "1) Mettre à disposition d'un tiers, pour qu'il y établisse son habitation, un bien immobilier appartenant à autrui\n\\n2) Que le tiers verse une contribution ou fournisse un avantage en nature\n\\n3) Que l'auteur ne soit pas en mesure de justifier de l'autorisation du propriétaire ou de celle du titulaire du droit d'usage de ce bien. ",
+            "DPS_ElemMat": "1) Mettre à disposition d'un tiers, pour qu'il y établisse son habitation, un bien immobilier appartenant à autrui\n\n2) Que le tiers verse une contribution ou fournisse un avantage en nature\n\n3) Que l'auteur ne soit pas en mesure de justifier de l'autorisation du propriétaire ou de celle du titulaire du droit d'usage de ce bien. ",
             "DPS_Desc": null
         },
         {
@@ -4587,7 +4587,7 @@
             "DPS_Article": "DELIT Prévu et réprimé par l'Art 314-1 du CP (Empr 5ans + 375 000 E)",
             "DPS_Punissable": "Tentative punissable",
             "DPS_Intention": "L'intention coupable: Il est nécessaire que le detournement soit frauduleux, l'auteur agissait en connaissance de cause. Le fait de ne pas restituer dans les temps ne suffit pas à constituer l'intention coupable. ",
-            "DPS_ElemMat": "1) Détourner au préjudice d'autrui des fonds, valeurs, ou un bien quelconque\n\\n2) Qu'il soit remis et accepté\n\\n3) A charge de les rendre, de les représenter ou d'en faire un usage determiné. ",
+            "DPS_ElemMat": "1) Détourner au préjudice d'autrui des fonds, valeurs, ou un bien quelconque\n\n2) Qu'il soit remis et accepté\n\n3) A charge de les rendre, de les représenter ou d'en faire un usage determiné. ",
             "DPS_Desc": null
         },
         {
@@ -4617,7 +4617,7 @@
             "DPS_Article": "DELIT prévu et réprimé par l'art 321-6 du CP (Empr 3 ans + 75 000 E)",
             "DPS_Punissable": "Non punissable",
             "DPS_Intention": "Infraction intentionnelle = Intention coupable. L'auteur dispose de revenus illégaux ou non déclarés. ",
-            "DPS_ElemMat": "1) Entretien des relations habituelles avec une ou plusieurs personnes: qui commettent des crimes ou des délits punis d'au moins cinq ans d'emprisonnement leur procurant au profit direct ou indirect / Ou victime d'une de ces infractions\n\\n2) Ne puisse justifier de ressources correspondant à son train de vie ou de l'origine d'un bien détenu\n\\n3) Soit facilite la justification de ressources fictives par des personnes se livrant à la commission de crime ou de delits punis d'au moins 5 ans d'emprisonnement procurant à celles-ci un profit direct ou indirect",
+            "DPS_ElemMat": "1) Entretien des relations habituelles avec une ou plusieurs personnes: qui commettent des crimes ou des délits punis d'au moins cinq ans d'emprisonnement leur procurant au profit direct ou indirect / Ou victime d'une de ces infractions\n\n2) Ne puisse justifier de ressources correspondant à son train de vie ou de l'origine d'un bien détenu\n\n3) Soit facilite la justification de ressources fictives par des personnes se livrant à la commission de crime ou de delits punis d'au moins 5 ans d'emprisonnement procurant à celles-ci un profit direct ou indirect",
             "DPS_Desc": null
         },
         {
@@ -4632,7 +4632,7 @@
             "DPS_Article": "DELIT prévu et réprimé par l'Art 321-7 et 321-8 du CP (Empr 6 mois + 30 000E) ",
             "DPS_Punissable": "Non punissable",
             "DPS_Intention": "Le refus de présentation suppose une intention coupable. C'est une infraction intentionnelle",
-            "DPS_ElemMat": "1) Ommission de tenir le registre reglementaire \n\\n2) L'apposition de mentions inexactes\n\\n3) Refus de présentation du registre",
+            "DPS_ElemMat": "1) Ommission de tenir le registre reglementaire \n\n2) L'apposition de mentions inexactes\n\n3) Refus de présentation du registre",
             "DPS_Desc": null
         },
         {
@@ -4647,7 +4647,7 @@
             "DPS_Article": "DELIT Prévu et réprimé par le code de l'entrée et du séjour des étrangers et du droit d'asile l'Art L. 823-1 (Empr 5 ans + 30 000E)",
             "DPS_Punissable": "Non punissable",
             "DPS_Intention": "L'intention coupable réside dans la connaissance de la situation administrative irrégulière de l'étranger auquel l'aide est apportée. ",
-            "DPS_ElemMat": "1) Aider directement ou indirectement, ou faciliter ou tenter de faciliter\n\\n2) L'entrée, la circulation ou le séjour irréguliers d'un étranger en France",
+            "DPS_ElemMat": "1) Aider directement ou indirectement, ou faciliter ou tenter de faciliter\n\n2) L'entrée, la circulation ou le séjour irréguliers d'un étranger en France",
             "DPS_Desc": null
         },
         {
@@ -4662,7 +4662,7 @@
             "DPS_Article": "Délit Art. 433-12 CP Emprisonnement de 3 ans et 45 000€",
             "DPS_Punissable": "Non punissable",
             "DPS_Intention": "Intention coupable L'auteur doit agir de mauvaise foi, c'est-à-dire en sachant qu'il n'a aucune qualité pour s'attribuer la fonction qu'il accomplit",
-            "DPS_ElemMat": "1)Lorsqu'une personne agit sans titre\n\\n2) Lorsqu'elle se trouve dans l'exercice d'une fonction publique\n\\n3) Lorsqu'elle accomplisse un des actes réservés au titulaire de cette fonction\n",
+            "DPS_ElemMat": "1)Lorsqu'une personne agit sans titre\n\n2) Lorsqu'elle se trouve dans l'exercice d'une fonction publique\n\n3) Lorsqu'elle accomplisse un des actes réservés au titulaire de cette fonction\n",
             "DPS_Desc": null
         },
         {
@@ -4677,7 +4677,7 @@
             "DPS_Article": "Délit Art. 433-13 CP Emprisonnement de 1 an et 15 000€",
             "DPS_Punissable": "Non punissable",
             "DPS_Intention": "Intention coupable : conscience qu'il est de nature à provoquer une confusion dans l'esprit du public",
-            "DPS_ElemMat": "1) Lorsqu'une personne exerce une activité ou use de documents ou d'écrits présentant des ressemblances avec des actes judiciaires ou extra-judiciaires ou administratifs\n\\n2) Lorsque les conditions sont de nature à créer une confusion dans l'esprit du public",
+            "DPS_ElemMat": "1) Lorsqu'une personne exerce une activité ou use de documents ou d'écrits présentant des ressemblances avec des actes judiciaires ou extra-judiciaires ou administratifs\n\n2) Lorsque les conditions sont de nature à créer une confusion dans l'esprit du public",
             "DPS_Desc": null
         },
         {
@@ -4737,7 +4737,7 @@
             "DPS_Article": "Délit Art. 433-18 CP Emprisonnement de 6 mois et 7 500€",
             "DPS_Punissable": "Non punissable",
             "DPS_Intention": "Intention coupable",
-            "DPS_ElemMat": "1)Une publicité réalisée dans l'intérêt d'une entreprise à but lucratif \n\\n2) Une publicité réalisée par fondateur / dirigeant de cette entreprise, un banquier ou un démarcheur \n\\n3)Lorsque le nom, avec mention de sa qualité ou de sa fonction ou de son ancienne qualité ou fonction, de certaines personnes exerçant ou ayant exercé des fonctions publiques, ou le nom d'une personne avec mention de ses décorations.",
+            "DPS_ElemMat": "1)Une publicité réalisée dans l'intérêt d'une entreprise à but lucratif \n\n2) Une publicité réalisée par fondateur / dirigeant de cette entreprise, un banquier ou un démarcheur \n\n3)Lorsque le nom, avec mention de sa qualité ou de sa fonction ou de son ancienne qualité ou fonction, de certaines personnes exerçant ou ayant exercé des fonctions publiques, ou le nom d'une personne avec mention de ses décorations.",
             "DPS_Desc": null
         },
         {
