@@ -14,8 +14,8 @@ class QuestionsBloc {
   Stream<Question?> get randomQuestion => _randomQuestionFetcher.stream;
   bool get isFirst => _pastQuestions.indexWhere((q) => q.id == _currentQuestion!.id) <= 0 ? true : false;
 
-  fetchAllQuestions(String course, String category, String subcategory) async {
-    _questions = await _repository.fetchAllQuestions(course, category, subcategory);
+  fetchAllQuestions(String course, String category, String subcategory, String month) async {
+    _questions = await _repository.fetchAllQuestions(course, category, subcategory, month);
     _nbQuestions = _questions.length;
     _pastQuestions = [];
     fetchRandomQuestion();

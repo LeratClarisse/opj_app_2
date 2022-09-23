@@ -7,23 +7,29 @@ import 'package:opjapp/src/utils/db_tools.dart';
 import 'package:sqflite/sqflite.dart';
 
 class QuestionProvider {
-  Future<List<Question>> fetchAllQuestions(String course, String category, String subcategory) async {
+  Future<List<Question>> fetchAllQuestions(String course, String category, String subcategory, String month) async {
     if (!kIsWeb) {
       Database db = await DbTools.initDB();
       final List<Map<String, dynamic>> maps;
       String whereString = '';
       List<Object> whereArgs = [];
 
-      if (course != 'Tous' || category != 'Toutes') {
+      if (course != 'Tous' || category != 'Toutes' || month != 'Tous') {
         if (course != 'Tous') {
           whereString = 'File = ?';
           whereArgs = [course];
-        } else if (category != 'Toutes') {
-          whereString = 'Category = ?';
-          whereArgs = [category];
-          if (subcategory != 'Toutes') {
-            whereString += ' AND Subcategory = ?';
-            whereArgs.add(subcategory);
+        } else {
+          if (category != 'Toutes') {
+            whereString = 'Category = ?';
+            whereArgs = [category];
+            if (subcategory != 'Toutes') {
+              whereString += ' AND Subcategory = ?';
+              whereArgs.add(subcategory);
+            }
+          }
+          if (month != 'Tous') {
+            whereString += whereString.isNotEmpty ? ' AND Month = ?' : 'Month = ?';
+            whereArgs.add(month);
           }
         }
         maps = await db.query('Question', where: whereString, whereArgs: whereArgs);
@@ -35,7 +41,7 @@ class QuestionProvider {
         return Question.fromJson(maps[i]);
       });
 
-      // Extract questions as JSON
+      // Extract questions as JSON for web version
       // String jsonQuestions = json.encode(questions);
 
       DbTools.deleteDB();
@@ -50,10 +56,15 @@ class QuestionProvider {
 
         if (course != 'Tous') {
           questions = questions.where((q) => q.file == course).toList();
-        } else if (category != 'Toutes') {
-          questions = questions.where((q) => q.category == category).toList();
-          if (subcategory != 'Toutes') {
-            questions = questions.where((q) => q.subcategory == subcategory).toList();
+        } else {
+          if (category != 'Toutes') {
+            questions = questions.where((q) => q.category == category).toList();
+            if (subcategory != 'Toutes') {
+              questions = questions.where((q) => q.subcategory == subcategory).toList();
+            }
+          }
+          if (month != 'Tous') {
+              questions = questions.where((q) => q.month == month).toList();
           }
         }
 

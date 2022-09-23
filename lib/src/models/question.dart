@@ -12,6 +12,7 @@ class Question {
   final String? dpsIntention;
   final String? dpsElemMat;
   final String? dpsDesc;
+  final String? month;
   bool dontshow;
 
   Question(
@@ -28,6 +29,7 @@ class Question {
       this.dpsIntention,
       this.dpsElemMat,
       this.dpsDesc,
+      this.month,
       this.dontshow = false});
 
   factory Question.fromJson(Map<String, dynamic> json) {
@@ -44,7 +46,8 @@ class Question {
         dpsPunissable: json['DPS_Punissable'],
         dpsIntention: json['DPS_Intention'],
         dpsElemMat: json['DPS_ElemMat'],
-        dpsDesc: json['DPS_Desc']);
+        dpsDesc: json['DPS_Desc'],
+        month: json['Month']);
   }
 
   Map toJson() => {
@@ -60,6 +63,7 @@ class Question {
         'DPS_Punissable': dpsPunissable,
         'DPS_Intention': dpsIntention,
         'DPS_ElemMat': dpsElemMat,
-        'DPS_Desc': dpsDesc
+        'DPS_Desc': dpsDesc,
+        'Month': month
   };
 }

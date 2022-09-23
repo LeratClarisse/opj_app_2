@@ -13,6 +13,7 @@ class _ChooseQuestion extends State<ChooseQuestion> {
   String categoryValue = 'Toutes';
   String subcategoryValue = 'Toutes';
   String courseValue = 'Tous';
+  String monthValue = 'Tous';
   final Map<String, String> listcourseValues = {
     'Tous': 'Tous',
     'F62_03': 'Action civile',
@@ -93,6 +94,26 @@ class _ChooseQuestion extends State<ChooseQuestion> {
                 const SizedBox(height: 30),
                 courseValue == 'Tous'
                     ? Row(mainAxisSize: MainAxisSize.min, children: <Widget>[
+                        Padding(padding: const EdgeInsets.all(20), child: Text("Mois :", style: textStyle)),
+                        DropdownButton<String>(
+                          value: monthValue,
+                          onChanged: (String? newValue) {
+                            setState(() {
+                              monthValue = newValue!;
+                            });
+                          },
+                          items: <String>['Tous', 'Juillet / Août', 'Septembre', 'Octobre'].map<DropdownMenuItem<String>>((String value) {
+                            return DropdownMenuItem<String>(
+                              value: value,
+                              child: Text(value, style: textDdlStyle),
+                            );
+                          }).toList(),
+                        )
+                      ])
+                    : const SizedBox(height: 30),
+                const SizedBox(height: 30),
+                courseValue == 'Tous'
+                    ? Row(mainAxisSize: MainAxisSize.min, children: <Widget>[
                         Padding(padding: const EdgeInsets.all(20), child: Text("Catégorie :", style: textStyle)),
                         DropdownButton<String>(
                           value: categoryValue,
@@ -135,7 +156,7 @@ class _ChooseQuestion extends State<ChooseQuestion> {
                   style: styleButton,
                   onPressed: () {
                     Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(builder: (context) => Questions(courseValue, categoryValue, subcategoryValue)),
+                      MaterialPageRoute(builder: (context) => Questions(courseValue, categoryValue, subcategoryValue, monthValue)),
                     );
                   },
                   child: const Text('Commencer'),
