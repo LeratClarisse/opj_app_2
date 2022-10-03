@@ -18,13 +18,16 @@ class _ChooseQuestion extends State<ChooseQuestion> {
     'Tous': 'Tous',
     'F62_03': 'Action civile',
     'F62_02': 'Action publique',
+    'F62_44': 'Auditions et confrontations',
     'F62_40': 'Cadres généraux d\'enquête',
     'F62_41': 'Cadres particuliers d\'enquête',
+    'F61_15': 'Circonstances aggravantes',
     'F23_41': 'Destructions, dégradations et détériorations',
     'F61_08': 'Définition et classification des peines',
     'F23_34': 'Escroquerie',
     'F23_00': 'Étude du droit pénal spécial',
     'F23_33': 'Extorsion et chantage',
+    'F62_43': 'Garde à vue',
     'F62_42': 'Information au PR, transport, constatations et réquisitions',
     'F23_35': 'Infractions voisines de l\'escroquerie',
     'F61_02': 'L\'infraction',
@@ -43,7 +46,7 @@ class _ChooseQuestion extends State<ChooseQuestion> {
     'F23_60': 'Usurpation ou usage irrégulier de fonctions, nom ou qualité',
     'F23_32': 'Vol'
   };
-
+  
   final textStyle = const TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
   final textDdlStyle = const TextStyle(fontSize: 18);
   final courseDdlStyle = const TextStyle(
