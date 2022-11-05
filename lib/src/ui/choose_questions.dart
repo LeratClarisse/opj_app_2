@@ -18,12 +18,14 @@ class _ChooseQuestion extends State<ChooseQuestion> {
     'Tous': 'Tous',
     'F62_03': 'Action civile',
     'F62_02': 'Action publique',
+    'F23_08': 'Aggressions sexuelles',
     'F62_44': 'Auditions et confrontations',
     'F62_40': 'Cadres généraux d\'enquête',
     'F62_41': 'Cadres particuliers d\'enquête',
     'F61_15': 'Circonstances aggravantes',
     'F23_41': 'Destructions, dégradations et détériorations',
     'F61_08': 'Définition et classification des peines',
+    'F62_32': 'Enfance délinquante',
     'F23_34': 'Escroquerie',
     'F23_00': 'Étude du droit pénal spécial',
     'F23_33': 'Extorsion et chantage',
@@ -32,6 +34,7 @@ class _ChooseQuestion extends State<ChooseQuestion> {
     'F23_35': 'Infractions voisines de l\'escroquerie',
     'F61_02': 'L\'infraction',
     'F61_03': 'La classification des infractions',
+    'F61_07': 'La complicité',
     'F62_01': 'La faute civile et la faute pénale',
     'F61_04': 'La tentative punissable',
     'F62_04': 'Le ministère public',
@@ -46,7 +49,7 @@ class _ChooseQuestion extends State<ChooseQuestion> {
     'F23_60': 'Usurpation ou usage irrégulier de fonctions, nom ou qualité',
     'F23_32': 'Vol'
   };
-  
+
   final textStyle = const TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
   final textDdlStyle = const TextStyle(fontSize: 18);
   final courseDdlStyle = const TextStyle(
@@ -105,7 +108,7 @@ class _ChooseQuestion extends State<ChooseQuestion> {
                               monthValue = newValue!;
                             });
                           },
-                          items: <String>['Tous', 'Juillet / Août', 'Septembre', 'Octobre'].map<DropdownMenuItem<String>>((String value) {
+                          items: <String>['Tous', 'Juillet / Août', 'Septembre', 'Octobre', 'Novembre'].map<DropdownMenuItem<String>>((String value) {
                             return DropdownMenuItem<String>(
                               value: value,
                               child: Text(value, style: textDdlStyle),
