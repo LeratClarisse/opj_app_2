@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+//import 'dart:developer';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:opjapp/src/models/question.dart';
@@ -42,7 +43,7 @@ class QuestionProvider {
       });
 
       // Extract questions as JSON for web version
-      // String jsonQuestions = json.encode(questions);
+      //log(json.encode(questions));
 
       DbTools.deleteDB();
 

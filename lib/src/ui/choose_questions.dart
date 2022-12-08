@@ -23,6 +23,7 @@ class _ChooseQuestion extends State<ChooseQuestion> {
     'F62_40': 'Cadres généraux d\'enquête',
     'F62_41': 'Cadres particuliers d\'enquête',
     'F61_15': 'Circonstances aggravantes',
+    'F62_38': 'Criminalité et délinquance organisées',
     'F23_41': 'Destructions, dégradations et détériorations',
     'F61_08': 'Définition et classification des peines',
     'F62_32': 'Enfance délinquante',
@@ -49,6 +50,7 @@ class _ChooseQuestion extends State<ChooseQuestion> {
     'F23_60': 'Usurpation ou usage irrégulier de fonctions, nom ou qualité',
     'F23_32': 'Vol'
   };
+  final listmonthValues = <String>['Tous', 'Juillet / Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'];
 
   final textStyle = const TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
   final textDdlStyle = const TextStyle(fontSize: 18);
@@ -108,7 +110,7 @@ class _ChooseQuestion extends State<ChooseQuestion> {
                               monthValue = newValue!;
                             });
                           },
-                          items: <String>['Tous', 'Juillet / Août', 'Septembre', 'Octobre', 'Novembre'].map<DropdownMenuItem<String>>((String value) {
+                          items: listmonthValues.map<DropdownMenuItem<String>>((String value) {
                             return DropdownMenuItem<String>(
                               value: value,
                               child: Text(value, style: textDdlStyle),

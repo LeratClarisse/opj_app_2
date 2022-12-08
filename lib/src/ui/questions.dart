@@ -119,7 +119,7 @@ class _Questions extends State<Questions> {
         child: SizedBox(
           width: selected ? 300 : 0,
           height: selected ? 250 : 0,
-          child: Center(child: SingleChildScrollView(scrollDirection: Axis.vertical, child: Text(response + "\n(${id.toString()})"))),
+          child: Center(child: SingleChildScrollView(scrollDirection: Axis.vertical, child: Text("$response\n(${id.toString()})"))),
         ));
   }
 
@@ -143,7 +143,7 @@ class _Questions extends State<Questions> {
                 const SizedBox(height: 10),
                 Text(question.dpsIntention ?? ''),
                 const SizedBox(height: 10),
-                Text('Tentative: ' + question.dpsPunissable!),
+                Text('Tentative: ${question.dpsPunissable!}'),
                 const SizedBox(height: 10),
                 if (question.dpsElemMat != null) buildExpandable('Elément matériel', question.dpsElemMat!),
                 const SizedBox(height: 10),
@@ -160,7 +160,7 @@ class _Questions extends State<Questions> {
         collapseText: 'Voir moins',
         animation: true,
         collapseOnTextTap: true,
-        prefixText: prefixText + '\n',
+        prefixText: '$prefixText\n',
         prefixStyle: prefixStyle,
         maxLines: 1,
         linkColor: Colors.lightBlue);
