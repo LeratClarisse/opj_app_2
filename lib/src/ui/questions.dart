@@ -31,7 +31,7 @@ class _Questions extends State<Questions> {
 
   @override
   void initState() {
-    bloc.fetchAllQuestions(widget.course, widget.category, widget.subcategory, widget.month);
+    bloc.fetchAllQuestions(widget.course, widget.category, widget.subcategory, widget.month, fetchRandom: true);
     super.initState();
   }
 

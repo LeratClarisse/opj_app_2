@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:opjapp/src/ui/about.dart';
 import 'package:opjapp/src/ui/choose_questions.dart';
 import 'package:opjapp/src/ui/home.dart';
+import 'package:opjapp/src/ui/search_dps.dart';
 
 class Menu extends StatelessWidget {
   const Menu({Key? key}) : super(key: key);
@@ -32,6 +33,14 @@ class Menu extends StatelessWidget {
           onTap: () {
             Navigator.of(context).pushReplacement(
               MaterialPageRoute(builder: (context) => const ChooseQuestion()),
+            );
+          },
+        ),
+        ListTile(
+          title: const Text('Infractions'),
+          onTap: () {
+            Navigator.of(context).pushReplacement(
+              MaterialPageRoute(builder: (context) => const SearchDPS()),
             );
           },
         ),

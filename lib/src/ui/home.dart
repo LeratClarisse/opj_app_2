@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:opjapp/src/ui/choose_questions.dart';
 import 'package:opjapp/src/ui/menu.dart';
+import 'package:opjapp/src/ui/search_dps.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -23,7 +24,6 @@ class Home extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            const SizedBox(height: 40),
             ElevatedButton(
               style: style,
               onPressed: () {
@@ -32,6 +32,16 @@ class Home extends StatelessWidget {
                 );
               },
               child: const Text('Quiz'),
+            ),
+            const SizedBox(height: 40),
+            ElevatedButton(
+              style: style,
+              onPressed: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) => const SearchDPS()),
+                );
+              },
+              child: const Text('Infractions'),
             ),
           ],
         ),

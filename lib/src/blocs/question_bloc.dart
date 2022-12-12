@@ -10,15 +10,23 @@ class QuestionsBloc {
   Question? _currentQuestion;
   final _repository = Repository();
   final _randomQuestionFetcher = PublishSubject<Question?>();
+  final _allQuestionsFetcher = PublishSubject<List<Question>>();
 
+  Stream<List<Question>> get allQuestions => _allQuestionsFetcher.stream;
   Stream<Question?> get randomQuestion => _randomQuestionFetcher.stream;
   bool get isFirst => _pastQuestions.indexWhere((q) => q.id == _currentQuestion!.id) <= 0 ? true : false;
 
-  fetchAllQuestions(String course, String category, String subcategory, String month) async {
+  fetchAllQuestions(String course, String category, String subcategory, String month, {bool fetchRandom = false}) async {
     _questions = await _repository.fetchAllQuestions(course, category, subcategory, month);
     _nbQuestions = _questions.length;
     _pastQuestions = [];
-    fetchRandomQuestion();
+
+    _allQuestionsFetcher.sink.add([]);
+    _allQuestionsFetcher.sink.add(_questions);
+
+    if (fetchRandom) {
+      fetchRandomQuestion();
+    }
   }
 
   fetchRandomQuestion() async {
@@ -70,8 +78,23 @@ class QuestionsBloc {
     _pastQuestions.singleWhere((q) => q.id == _currentQuestion!.id).dontshow = true;
   }
 
+  sortQuestions(String column, bool asc) {
+    switch (column) {
+      case 'Label':
+        if (asc == true) {
+          _questions.sort((q1, q2) => q1.label.compareTo(q2.label));
+        } else {
+          _questions.sort((q2, q1) => q1.label.compareTo(q2.label));
+        }
+        break;
+      default:
+        break;
+    }
+  }
+
   dispose() {
     _randomQuestionFetcher.close();
+    _allQuestionsFetcher.close();
   }
 }
 
