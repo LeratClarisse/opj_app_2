@@ -1,5 +1,6 @@
 import 'package:data_table_2/data_table_2.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:opjapp/src/blocs/question_bloc.dart';
 import 'package:opjapp/src/models/question.dart';
 import 'package:opjapp/src/ui/details_dps.dart';
@@ -13,8 +14,7 @@ class SearchDPS extends StatefulWidget {
 }
 
 class _SearchDPS extends State<SearchDPS> {
-  bool _sortAscending = true;
-  int? _sortColumnIndex;
+  bool _searchBoolean = false;
 
   @override
   void initState() {
@@ -33,9 +33,28 @@ class _SearchDPS extends State<SearchDPS> {
         },
         child: Scaffold(
             appBar: AppBar(
-              centerTitle: true,
-              title: const Text('Infractions'),
-            ),
+                centerTitle: true,
+                title: !_searchBoolean ? const Text('Infractions') : searchTextField(),
+                actions: !_searchBoolean
+                    ? [
+                        IconButton(
+                            icon: const Icon(Icons.search),
+                            onPressed: () {
+                              setState(() {
+                                _searchBoolean = true;
+                              });
+                            })
+                      ]
+                    : [
+                        IconButton(
+                            icon: const Icon(Icons.clear),
+                            onPressed: () {
+                              bloc.searchDps();
+                              setState(() {
+                                _searchBoolean = false;
+                              });
+                            })
+                      ]),
             drawer: const Menu(),
             body: StreamBuilder(
               stream: bloc.allQuestions,
@@ -51,20 +70,41 @@ class _SearchDPS extends State<SearchDPS> {
             )));
   }
 
-  List<DataColumn2> buildColumns(BuildContext context, List<Question> documents) {
-    return <DataColumn2>[
-      DataColumn2(
-          size: ColumnSize.L,
-          label: const Text('Intitulé'),
-          onSort: (columnIndex, sortAsc) {
-            setState(() {
-              _sortColumnIndex = columnIndex;
-              _sortAscending = sortAsc;
+  Widget searchTextField() {
+    return TextField(
+      onSubmitted: (String s) {
+        bloc.searchDps(search: s);
+      },
+      inputFormatters: <TextInputFormatter>[
+        FilteringTextInputFormatter.allow(RegExp("[a-zA-Z]")),
+      ],
+      autofocus: true, // Display the keyboard when TextField is displayed
+      cursorColor: Colors.white,
+      style: const TextStyle(
+        color: Colors.white,
+        fontSize: 20,
+      ),
+      textInputAction: TextInputAction.search, // Specify the action for the Enter button on the keyboard
+      decoration: const InputDecoration(
+        //Style of TextField
+        enabledBorder: UnderlineInputBorder(
+            //Default TextField border
+            borderSide: BorderSide(color: Colors.white)),
+        focusedBorder: UnderlineInputBorder(
+            //Borders when a TextField is in focus
+            borderSide: BorderSide(color: Colors.white)),
+        hintText: 'Recherche', //Text that is displayed when nothing is entered.
+        hintStyle: TextStyle(
+          //Style of hintText
+          color: Colors.white60,
+          fontSize: 20,
+        ),
+      ),
+    );
+  }
 
-              bloc.sortQuestions('Label', _sortAscending);
-            });
-          })
-    ];
+  List<DataColumn2> buildColumns(BuildContext context, List<Question> documents) {
+    return const <DataColumn2>[DataColumn2(size: ColumnSize.L, label: Text('Intitulé'))];
   }
 
   List<DataRow> buildRows(List<Question> questions) {
@@ -80,8 +120,8 @@ class _SearchDPS extends State<SearchDPS> {
             if (selected ?? false) {
               Navigator.of(context).push(
                 MaterialPageRoute(
-                    builder: (context) => DetailsDPS(
-                        question.dpsLongLabel!, question.dpsArticle!, question.dpsPunissable!, question.dpsIntention!, question.dpsElemMat!, question.dpsDesc ?? '')),
+                    builder: (context) => DetailsDPS(question.dpsLongLabel!, question.dpsArticle!, question.dpsPunissable!, question.dpsIntention!,
+                        question.dpsElemMat!, question.dpsDesc ?? '')),
               );
             }
           });
@@ -92,6 +132,6 @@ class _SearchDPS extends State<SearchDPS> {
     List<DataColumn2> columns = buildColumns(context, questions);
     List<DataRow> rows = buildRows(questions);
 
-    return DataTable2(sortColumnIndex: _sortColumnIndex, sortAscending: _sortAscending, showCheckboxColumn: false, columns: columns, rows: rows);
+    return DataTable2(showCheckboxColumn: false, columns: columns, rows: rows);
   }
 }

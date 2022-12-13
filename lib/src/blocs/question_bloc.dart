@@ -77,18 +77,16 @@ class QuestionsBloc {
     _currentQuestion!.dontshow = true;
     _pastQuestions.singleWhere((q) => q.id == _currentQuestion!.id).dontshow = true;
   }
+  
+  searchDps({String search = ''}) {
+    if (search.isEmpty) {
+      _allQuestionsFetcher.sink.add([]);
+      _allQuestionsFetcher.sink.add(_questions);
+    } else {
+      _allQuestionsFetcher.sink.add([]);
 
-  sortQuestions(String column, bool asc) {
-    switch (column) {
-      case 'Label':
-        if (asc == true) {
-          _questions.sort((q1, q2) => q1.label.compareTo(q2.label));
-        } else {
-          _questions.sort((q2, q1) => q1.label.compareTo(q2.label));
-        }
-        break;
-      default:
-        break;
+      List<Question> matchingQuestions = _questions.where((q) => q.dpsLongLabel!.toLowerCase().contains(search.toLowerCase())).toList();
+      _allQuestionsFetcher.sink.add(matchingQuestions);
     }
   }
 
