@@ -2,6 +2,7 @@ import 'package:data_table_2/data_table_2.dart';
 import 'package:flutter/material.dart';
 import 'package:opjapp/src/blocs/question_bloc.dart';
 import 'package:opjapp/src/models/question.dart';
+import 'package:opjapp/src/ui/details_dps.dart';
 import 'package:opjapp/src/ui/home.dart';
 import 'package:opjapp/src/ui/menu.dart';
 
@@ -77,8 +78,11 @@ class _SearchDPS extends State<SearchDPS> {
           ],
           onSelectChanged: (selected) {
             if (selected ?? false) {
-              // Open page/modal with answer
-              // bloc.getDocumentByName(doc.file);
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                    builder: (context) => DetailsDPS(
+                        question.dpsLongLabel!, question.dpsArticle!, question.dpsPunissable!, question.dpsIntention!, question.dpsElemMat!, question.dpsDesc ?? '')),
+              );
             }
           });
     });

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:opjapp/src/ui/home.dart';
 import 'package:opjapp/src/ui/menu.dart';
-import 'package:opjapp/src/ui/questions.dart';
+import 'package:opjapp/src/ui/quiz.dart';
 
-class ChooseQuestion extends StatefulWidget {
-  const ChooseQuestion({Key? key}) : super(key: key);
+class ChooseQuiz extends StatefulWidget {
+  const ChooseQuiz({Key? key}) : super(key: key);
   @override
-  State<ChooseQuestion> createState() => _ChooseQuestion();
+  State<ChooseQuiz> createState() => _ChooseQuiz();
 }
 
-class _ChooseQuestion extends State<ChooseQuestion> {
+class _ChooseQuiz extends State<ChooseQuiz> {
   String categoryValue = 'Toutes';
   String subcategoryValue = 'Toutes';
   String courseValue = 'Tous';
@@ -164,7 +164,7 @@ class _ChooseQuestion extends State<ChooseQuestion> {
                   style: styleButton,
                   onPressed: () {
                     Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(builder: (context) => Questions(courseValue, categoryValue, subcategoryValue, monthValue)),
+                      MaterialPageRoute(builder: (context) => Quiz(courseValue, categoryValue, subcategoryValue, monthValue)),
                     );
                   },
                   child: const Text('Commencer'),

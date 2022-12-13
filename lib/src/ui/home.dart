@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:opjapp/src/ui/choose_questions.dart';
+import 'package:opjapp/src/ui/choose_quiz.dart';
 import 'package:opjapp/src/ui/menu.dart';
 import 'package:opjapp/src/ui/search_dps.dart';
 
@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
               style: style,
               onPressed: () {
                 Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(builder: (context) => const ChooseQuestion()),
+                  MaterialPageRoute(builder: (context) => const ChooseQuiz()),
                 );
               },
               child: const Text('Quiz'),

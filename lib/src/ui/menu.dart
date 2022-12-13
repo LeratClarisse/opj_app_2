@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:opjapp/src/ui/about.dart';
-import 'package:opjapp/src/ui/choose_questions.dart';
+import 'package:opjapp/src/ui/choose_quiz.dart';
 import 'package:opjapp/src/ui/home.dart';
 import 'package:opjapp/src/ui/search_dps.dart';
 
@@ -32,7 +32,7 @@ class Menu extends StatelessWidget {
           title: const Text('Questions'),
           onTap: () {
             Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (context) => const ChooseQuestion()),
+              MaterialPageRoute(builder: (context) => const ChooseQuiz()),
             );
           },
         ),
