@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:opjapp/src/app.dart';
+import 'src/core/Presentation/app.dart';
 
 void main() => runApp(const App());

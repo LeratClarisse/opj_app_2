@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:opjapp/src/ui/home.dart';
-import 'package:opjapp/src/ui/menu.dart';
 import 'package:package_info_plus/package_info_plus.dart';
+
+import 'home.dart';
+import 'menu.dart';
 
 class About extends StatelessWidget {
   const About({Key? key}) : super(key: key);

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:opjapp/src/ui/about.dart';
-import 'package:opjapp/src/ui/choose_quiz.dart';
-import 'package:opjapp/src/ui/home.dart';
-import 'package:opjapp/src/ui/search_dps.dart';
+
+import '../../features/infractions/Presentation/search_dps.dart';
+import '../../features/quiz/choose_quiz.dart';
+import 'about.dart';
+import 'home.dart';
 
 class Menu extends StatelessWidget {
   const Menu({Key? key}) : super(key: key);
