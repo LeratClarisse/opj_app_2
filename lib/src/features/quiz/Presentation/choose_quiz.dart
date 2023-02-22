@@ -3,7 +3,7 @@ import 'package:opjapp/src/core/styles/buttons.dart';
 
 import '../../../core/Presentation/home.dart';
 import '../../../core/Presentation/menu.dart';
-import '../../../core/utils/consts.dart';
+import '../../../core/utils/const_lists.dart';
 import 'quiz.dart';
 
 class ChooseQuiz extends StatefulWidget {
