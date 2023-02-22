@@ -10,7 +10,7 @@ class InfractionUsecase {
     return _infractions;
   }
 
-  searchDps({String search = ''}) {
+  searchDps(String search) {
     if (search.isEmpty) {
       return _infractions;
     } else {

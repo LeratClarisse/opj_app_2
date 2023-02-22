@@ -11,3 +11,6 @@ final ButtonStyle elebtn_100x50 = ElevatedButton.styleFrom(
   fixedSize: const Size(100, 50),
   padding: const EdgeInsets.all(0),
 );
+
+const prefixStyle = TextStyle(fontWeight: FontWeight.bold, fontSize: 16);
+const titleStyle = TextStyle(fontWeight: FontWeight.bold, fontSize: 18);

@@ -24,7 +24,7 @@ class InfractionRepository {
     List<InfractionEntity> infEntities = [];
 
     for (InfractionDTO inf in infractionsBrut) {
-      InfractionEntity infEnt = InfractionEntity(inf.dpsLongLabel, inf.dpsArticle, inf.dpsPunissable, inf.dpsIntention, inf.dpsElemMat, inf.dpsDesc);
+      InfractionEntity infEnt = InfractionEntity(inf.label, inf.dpsLongLabel, inf.dpsArticle, inf.dpsPunissable, inf.dpsIntention, inf.dpsElemMat, inf.dpsDesc);
 
       infEntities.add(infEnt);
     }

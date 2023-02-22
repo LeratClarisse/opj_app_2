@@ -1,4 +1,5 @@
 class InfractionEntity {
+  final String label;
   final String? dpsLongLabel;
   final String? dpsArticle;
   final String? dpsPunissable;
@@ -6,5 +7,5 @@ class InfractionEntity {
   final String? dpsElemMat;
   final String? dpsDesc;
 
-  InfractionEntity(this.dpsLongLabel, this.dpsArticle, this.dpsPunissable, this.dpsIntention, this.dpsElemMat, this.dpsDesc);
+  InfractionEntity(this.label, this.dpsLongLabel, this.dpsArticle, this.dpsPunissable, this.dpsIntention, this.dpsElemMat, this.dpsDesc);
 }
