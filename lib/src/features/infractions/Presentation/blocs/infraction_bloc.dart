@@ -8,14 +8,14 @@ class InfractionsBloc {
 
   Stream<List<InfractionEntity>> get allInfractions => _allInfractionsFetcher.stream;
 
-  fetchAllInfractions() {
+  fetchAllInfractions() async {
     _allInfractionsFetcher.sink.add([]);
-    _allInfractionsFetcher.sink.add(_usecase.fetchAllInfractions());
+    _allInfractionsFetcher.sink.add(await _usecase.fetchAllInfractions());
   }
-  
+
   searchDps({String search = ''}) {
-      _allInfractionsFetcher.sink.add([]);
-      _allInfractionsFetcher.sink.add(_usecase.searchDps(search));
+    _allInfractionsFetcher.sink.add([]);
+    _allInfractionsFetcher.sink.add(_usecase.searchDps(search));
   }
 
   dispose() {

@@ -5,8 +5,8 @@ class InfractionUsecase {
   List<InfractionEntity> _infractions = [];
   final _repository = InfractionRepository();
 
-  fetchAllInfractions() {
-    _infractions = _repository.fetchAllInfractions();
+  fetchAllInfractions() async {
+    _infractions = await _repository.fetchAllInfractions();
     return _infractions;
   }
 

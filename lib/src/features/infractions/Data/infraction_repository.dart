@@ -9,14 +9,14 @@ class InfractionRepository {
   // ignore: prefer_typing_uninitialized_variables
   late var infractionDS;
 
-  List<InfractionEntity> fetchAllInfractions() {
+  Future<List<InfractionEntity>> fetchAllInfractions() async {
     if (kIsWeb) {
       infractionDS = InfractionJsonDataSource();
     } else {
       infractionDS = InfractionSqliteDataSource();
     }
 
-    List<QuestionDTO> infractionsBrut = infractionDS.fetchAllInfractions() as List<QuestionDTO>;
+    List<QuestionDTO> infractionsBrut = await infractionDS.fetchAllInfractions() as List<QuestionDTO>;
 
     return _convertDatasToEntities(infractionsBrut);
   }
@@ -25,7 +25,8 @@ class InfractionRepository {
     List<InfractionEntity> infEntities = [];
 
     for (QuestionDTO inf in infractionsBrut) {
-      InfractionEntity infEnt = InfractionEntity(inf.label, inf.dpsLongLabel, inf.dpsArticle, inf.dpsPunissable, inf.dpsIntention, inf.dpsElemMat, inf.dpsDesc);
+      InfractionEntity infEnt =
+          InfractionEntity(inf.label, inf.dpsLongLabel, inf.dpsArticle, inf.dpsPunissable, inf.dpsIntention, inf.dpsElemMat, inf.dpsDesc);
 
       infEntities.add(infEnt);
     }
