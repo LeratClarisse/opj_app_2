@@ -10,17 +10,19 @@ class QuestionUsecase {
   QuestionEntity? _currentQuestion;
   final _repository = QuestionRepository();
 
-  bool get isFirst => _pastQuestions.indexWhere((q) => q.id == _currentQuestion!.id) <= 0 ? true : false;
+  isFirst() {
+    return _pastQuestions.indexWhere((q) => q.id == _currentQuestion!.id) <= 0;
+  }
 
   fetchAllQuestions(String course, String category, String subcategory, String month) async {
-    _questions = _repository.fetchAllQuestions(course, category, subcategory, month);
+    _questions = await _repository.fetchAllQuestions(course, category, subcategory, month);
     _nbQuestions = _questions.length;
     _pastQuestions = [];
 
     return _questions;
   }
 
-  fetchRandomQuestion() async {
+  fetchRandomQuestion() {
     if (_nbQuestions > 0) {
       int randomInt = 0;
       do {
@@ -37,34 +39,34 @@ class QuestionUsecase {
       _questions = _pastQuestions.where((q) => !q.dontshow).toList();
       _nbQuestions = _questions.length;
       _pastQuestions = [];
-      fetchRandomQuestion();
+      return fetchRandomQuestion();
     } else {
       return null;
     }
   }
 
-  fetchPreviousQuestion() async {
+  fetchPreviousQuestion() {
     int indexCurrent = _pastQuestions.indexWhere((q) => q.id == _currentQuestion!.id);
     _currentQuestion = _pastQuestions[indexCurrent - 1];
     return _currentQuestion!;
   }
 
-  fetchNextQuestion() async {
+  fetchNextQuestion() {
     int indexCurrent = _pastQuestions.indexWhere((q) => q.id == _currentQuestion!.id);
     if (indexCurrent == _pastQuestions.length - 1) {
-      await fetchRandomQuestion();
+      return fetchRandomQuestion();
     } else {
       _currentQuestion = _pastQuestions[indexCurrent + 1];
       return _currentQuestion!;
     }
   }
 
-  addQuestion() async {
+  addQuestion() {
     _currentQuestion!.dontshow = false;
     _pastQuestions.singleWhere((q) => q.id == _currentQuestion!.id).dontshow = false;
   }
 
-  removeQuestion() async {
+  removeQuestion() {
     _currentQuestion!.dontshow = true;
     _pastQuestions.singleWhere((q) => q.id == _currentQuestion!.id).dontshow = true;
   }

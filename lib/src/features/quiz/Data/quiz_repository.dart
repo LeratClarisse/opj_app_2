@@ -9,14 +9,14 @@ class QuestionRepository {
   // ignore: prefer_typing_uninitialized_variables
   late var questionDS;
 
-  List<QuestionEntity> fetchAllQuestions(String course, String category, String subcategory, String month) {
+  Future<List<QuestionEntity>> fetchAllQuestions(String course, String category, String subcategory, String month) async {
     if (kIsWeb) {
       questionDS = QuestionJsonDataSource();
     } else {
       questionDS = QuestionSqliteDataSource();
     }
 
-    List<QuestionDTO> questionsBrut = questionDS.fetchAllInfractions(course, category, subcategory, month) as List<QuestionDTO>;
+    List<QuestionDTO> questionsBrut = await questionDS.fetchAllQuestions(course, category, subcategory, month) as List<QuestionDTO>;
 
     return _convertDatasToEntities(questionsBrut);
   }

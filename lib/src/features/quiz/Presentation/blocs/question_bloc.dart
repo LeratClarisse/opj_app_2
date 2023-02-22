@@ -10,11 +10,11 @@ class QuestionsBloc {
 
   Stream<List<QuestionEntity>> get allQuestions => _allQuestionsFetcher.stream;
   Stream<QuestionEntity?> get randomQuestion => _randomQuestionFetcher.stream;
-  bool get isFirst => _usecase.isFirst;
+  bool get isFirst => _usecase.isFirst();
 
   fetchAllQuestions(String course, String category, String subcategory, String month) async {
     _allQuestionsFetcher.sink.add([]);
-    _allQuestionsFetcher.sink.add(_usecase.fetchAllQuestions(course, category, subcategory, month));
+    _allQuestionsFetcher.sink.add(await _usecase.fetchAllQuestions(course, category, subcategory, month));
 
     _randomQuestionFetcher.sink.add(_usecase.fetchRandomQuestion());
   }
