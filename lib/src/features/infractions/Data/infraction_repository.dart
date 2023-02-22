@@ -1,11 +1,12 @@
 import 'package:flutter/foundation.dart';
-import 'package:opjapp/src/features/infractions/Data/infraction_dto.dart';
 
+import '../../../core/Data/DTO/question_dto.dart';
 import '../Domain/infraction_entity.dart';
 import 'infraction_json_datasource.dart';
 import 'infraction_sqlite_datasource.dart';
 
 class InfractionRepository {
+  // ignore: prefer_typing_uninitialized_variables
   late var infractionDS;
 
   List<InfractionEntity> fetchAllInfractions() {
@@ -15,15 +16,15 @@ class InfractionRepository {
       infractionDS = InfractionSqliteDataSource();
     }
 
-    List<InfractionDTO> infractionsBrut = infractionDS.fetchAllInfractions() as List<InfractionDTO>;
+    List<QuestionDTO> infractionsBrut = infractionDS.fetchAllInfractions() as List<QuestionDTO>;
 
     return _convertDatasToEntities(infractionsBrut);
   }
 
-  List<InfractionEntity> _convertDatasToEntities(List<InfractionDTO> infractionsBrut) {
+  List<InfractionEntity> _convertDatasToEntities(List<QuestionDTO> infractionsBrut) {
     List<InfractionEntity> infEntities = [];
 
-    for (InfractionDTO inf in infractionsBrut) {
+    for (QuestionDTO inf in infractionsBrut) {
       InfractionEntity infEnt = InfractionEntity(inf.label, inf.dpsLongLabel, inf.dpsArticle, inf.dpsPunissable, inf.dpsIntention, inf.dpsElemMat, inf.dpsDesc);
 
       infEntities.add(infEnt);

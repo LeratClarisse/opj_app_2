@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../features/infractions/Presentation/search_dps.dart';
-import '../../features/quiz/choose_quiz.dart';
+import '../../features/quiz/Presentation/choose_quiz.dart';
 import 'about.dart';
 import 'home.dart';
 

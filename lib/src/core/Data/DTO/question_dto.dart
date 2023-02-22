@@ -1,4 +1,4 @@
-class InfractionDTO {
+class QuestionDTO {
   final int id;
   final String label;
   final String? answer;
@@ -15,7 +15,7 @@ class InfractionDTO {
   final String? month;
   bool dontshow;
 
-  InfractionDTO(
+  QuestionDTO(
       {required this.id,
       required this.label,
       this.answer,
@@ -32,8 +32,8 @@ class InfractionDTO {
       this.month,
       this.dontshow = false});
 
-  factory InfractionDTO.fromJson(Map<String, dynamic> json) {
-    return InfractionDTO(
+  factory QuestionDTO.fromJson(Map<String, dynamic> json) {
+    return QuestionDTO(
         id: json['Id'],
         label: json['Label'],
         answer: json['Answer'],
@@ -49,4 +49,21 @@ class InfractionDTO {
         dpsDesc: json['DPS_Desc'],
         month: json['Month']);
   }
+
+  Map toJson() => {
+        'Id': id,
+        'Label': label,
+        'Answer': answer,
+        'File': file,
+        'Category': category,
+        'Subcategory': subcategory,
+        'Type': type,
+        'DPS_LongLabel': dpsLongLabel,
+        'DPS_Article': dpsArticle,
+        'DPS_Punissable': dpsPunissable,
+        'DPS_Intention': dpsIntention,
+        'DPS_ElemMat': dpsElemMat,
+        'DPS_Desc': dpsDesc,
+        'Month': month
+      };
 }

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import '../../features/infractions/Presentation/search_dps.dart';
+import '../../features/quiz/Presentation/choose_quiz.dart';
 import '../styles/buttons.dart';
 import 'menu.dart';
-
-import '../../features/quiz/choose_quiz.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
