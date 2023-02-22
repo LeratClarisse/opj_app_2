@@ -1,12 +1,20 @@
+import 'package:flutter/foundation.dart';
 import 'package:opjapp/src/features/infractions/Data/infraction_dto.dart';
 
 import '../Domain/infraction_entity.dart';
-import 'infraction_datasource.dart';
+import 'infraction_json_datasource.dart';
+import 'infraction_sqlite_datasource.dart';
 
 class InfractionRepository {
-  final infractionDS = InfractionDataSource();
+  late var infractionDS;
 
   List<InfractionEntity> fetchAllInfractions() {
+    if (kIsWeb) {
+      infractionDS = InfractionJsonDataSource();
+    } else {
+      infractionDS = InfractionSqliteDataSource();
+    }
+
     List<InfractionDTO> infractionsBrut = infractionDS.fetchAllInfractions() as List<InfractionDTO>;
 
     return _convertDatasToEntities(infractionsBrut);
