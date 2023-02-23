@@ -14,3 +14,6 @@ final ButtonStyle elebtn_100x50 = ElevatedButton.styleFrom(
 
 const prefixStyle = TextStyle(fontWeight: FontWeight.bold, fontSize: 16);
 const titleStyle = TextStyle(fontWeight: FontWeight.bold, fontSize: 18);
+
+const textDdlStyle = TextStyle(fontSize: 18);
+const courseDdlStyle = TextStyle(fontSize: 15);

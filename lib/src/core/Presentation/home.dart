@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../features/infractions/Presentation/search_dps.dart';
 import '../../features/quiz/Presentation/choose_quiz.dart';
-import '../styles/buttons.dart';
+import '../styles/styles.dart';
 import 'menu.dart';
 
 class Home extends StatelessWidget {

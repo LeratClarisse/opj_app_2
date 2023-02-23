@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:opjapp/src/core/styles/buttons.dart';
+import 'package:opjapp/src/core/styles/styles.dart';
 
 import '../../../core/Presentation/home.dart';
 import '../../../core/Presentation/menu.dart';
@@ -19,10 +19,6 @@ class _ChooseQuiz extends State<ChooseQuiz> {
   String monthValue = 'Tous';
 
   final textStyle = const TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
-  final textDdlStyle = const TextStyle(fontSize: 18);
-  final courseDdlStyle = const TextStyle(
-    fontSize: 15,
-  );
 
   @override
   Widget build(BuildContext context) {
@@ -43,83 +39,13 @@ class _ChooseQuiz extends State<ChooseQuiz> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                Row(mainAxisSize: MainAxisSize.min, children: <Widget>[
-                  Padding(padding: const EdgeInsets.all(20), child: Text("Cours :", style: textStyle)),
-                  DropdownButton<String>(
-                    value: courseValue,
-                    onChanged: (String? newValue) {
-                      setState(() {
-                        courseValue = newValue!;
-                      });
-                    },
-                    items: listcourseValues.keys.toList().map((key) {
-                      return DropdownMenuItem<String>(
-                        value: key,
-                        child: SizedBox(width: 200.0, child: Text(listcourseValues[key] ?? '', style: courseDdlStyle)),
-                      );
-                    }).toList(),
-                  )
-                ]),
+                courseField(),
                 const SizedBox(height: 30),
-                courseValue == 'Tous'
-                    ? Row(mainAxisSize: MainAxisSize.min, children: <Widget>[
-                        Padding(padding: const EdgeInsets.all(20), child: Text("Mois :", style: textStyle)),
-                        DropdownButton<String>(
-                          value: monthValue,
-                          onChanged: (String? newValue) {
-                            setState(() {
-                              monthValue = newValue!;
-                            });
-                          },
-                          items: listmonthValues.map<DropdownMenuItem<String>>((String value) {
-                            return DropdownMenuItem<String>(
-                              value: value,
-                              child: Text(value, style: textDdlStyle),
-                            );
-                          }).toList(),
-                        )
-                      ])
-                    : const SizedBox(height: 30),
+                courseValue == 'Tous' ? monthField() : const SizedBox(height: 30),
                 const SizedBox(height: 30),
-                courseValue == 'Tous'
-                    ? Row(mainAxisSize: MainAxisSize.min, children: <Widget>[
-                        Padding(padding: const EdgeInsets.all(20), child: Text("Catégorie :", style: textStyle)),
-                        DropdownButton<String>(
-                          value: categoryValue,
-                          onChanged: (String? newValue) {
-                            setState(() {
-                              categoryValue = newValue!;
-                            });
-                          },
-                          items: <String>['Toutes', 'DPG', 'PP', 'DPS'].map<DropdownMenuItem<String>>((String value) {
-                            return DropdownMenuItem<String>(
-                              value: value,
-                              child: Text(value, style: textDdlStyle),
-                            );
-                          }).toList(),
-                        )
-                      ])
-                    : const SizedBox(height: 30),
+                courseValue == 'Tous' ? categoryField() : const SizedBox(height: 30),
                 const SizedBox(height: 30),
-                categoryValue == 'DPG' && courseValue == 'Tous'
-                    ? Row(mainAxisSize: MainAxisSize.min, children: <Widget>[
-                        Padding(padding: const EdgeInsets.all(20), child: Text("Sous-Catégorie :", style: textStyle)),
-                        DropdownButton<String>(
-                          value: subcategoryValue,
-                          onChanged: (String? newValue) {
-                            setState(() {
-                              subcategoryValue = newValue!;
-                            });
-                          },
-                          items: <String>['Toutes', 'La peine', 'L\'Infraction'].map<DropdownMenuItem<String>>((String value) {
-                            return DropdownMenuItem<String>(
-                              value: value,
-                              child: Text(value, style: textDdlStyle),
-                            );
-                          }).toList(),
-                        )
-                      ])
-                    : const SizedBox(height: 30),
+                categoryValue == 'DPG' && courseValue == 'Tous' ? subcategoryField() : const SizedBox(height: 30),
                 const SizedBox(height: 30),
                 ElevatedButton(
                   style: elebtn_200x70,
@@ -134,5 +60,85 @@ class _ChooseQuiz extends State<ChooseQuiz> {
             ),
           ),
         ));
+  }
+
+  Widget courseField() {
+    return Row(mainAxisSize: MainAxisSize.min, children: <Widget>[
+      Padding(padding: const EdgeInsets.all(20), child: Text("Cours :", style: textStyle)),
+      DropdownButton<String>(
+        value: courseValue,
+        onChanged: (String? newValue) {
+          setState(() {
+            courseValue = newValue!;
+          });
+        },
+        items: listcourseValues.keys.toList().map((key) {
+          return DropdownMenuItem<String>(
+            value: key,
+            child: SizedBox(width: 200.0, child: Text(listcourseValues[key] ?? '', style: courseDdlStyle)),
+          );
+        }).toList(),
+      )
+    ]);
+  }
+
+  Row subcategoryField() {
+    return Row(mainAxisSize: MainAxisSize.min, children: <Widget>[
+      Padding(padding: const EdgeInsets.all(20), child: Text("Sous-Catégorie :", style: textStyle)),
+      DropdownButton<String>(
+        value: subcategoryValue,
+        onChanged: (String? newValue) {
+          setState(() {
+            subcategoryValue = newValue!;
+          });
+        },
+        items: <String>['Toutes', 'La peine', 'L\'Infraction'].map<DropdownMenuItem<String>>((String value) {
+          return DropdownMenuItem<String>(
+            value: value,
+            child: Text(value, style: textDdlStyle),
+          );
+        }).toList(),
+      )
+    ]);
+  }
+
+  Row categoryField() {
+    return Row(mainAxisSize: MainAxisSize.min, children: <Widget>[
+      Padding(padding: const EdgeInsets.all(20), child: Text("Catégorie :", style: textStyle)),
+      DropdownButton<String>(
+        value: categoryValue,
+        onChanged: (String? newValue) {
+          setState(() {
+            categoryValue = newValue!;
+          });
+        },
+        items: <String>['Toutes', 'DPG', 'PP', 'DPS'].map<DropdownMenuItem<String>>((String value) {
+          return DropdownMenuItem<String>(
+            value: value,
+            child: Text(value, style: textDdlStyle),
+          );
+        }).toList(),
+      )
+    ]);
+  }
+
+  Row monthField() {
+    return Row(mainAxisSize: MainAxisSize.min, children: <Widget>[
+      Padding(padding: const EdgeInsets.all(20), child: Text("Mois :", style: textStyle)),
+      DropdownButton<String>(
+        value: monthValue,
+        onChanged: (String? newValue) {
+          setState(() {
+            monthValue = newValue!;
+          });
+        },
+        items: listmonthValues.map<DropdownMenuItem<String>>((String value) {
+          return DropdownMenuItem<String>(
+            value: value,
+            child: Text(value, style: textDdlStyle),
+          );
+        }).toList(),
+      )
+    ]);
   }
 }
