@@ -1,4 +1,4 @@
-class Question {
+class QuestionDTO {
   final int id;
   final String label;
   final String? answer;
@@ -15,7 +15,7 @@ class Question {
   final String? month;
   bool dontshow;
 
-  Question(
+  QuestionDTO(
       {required this.id,
       required this.label,
       this.answer,
@@ -32,8 +32,8 @@ class Question {
       this.month,
       this.dontshow = false});
 
-  factory Question.fromJson(Map<String, dynamic> json) {
-    return Question(
+  factory QuestionDTO.fromJson(Map<String, dynamic> json) {
+    return QuestionDTO(
         id: json['Id'],
         label: json['Label'],
         answer: json['Answer'],
@@ -65,5 +65,5 @@ class Question {
         'DPS_ElemMat': dpsElemMat,
         'DPS_Desc': dpsDesc,
         'Month': month
-  };
+      };
 }
