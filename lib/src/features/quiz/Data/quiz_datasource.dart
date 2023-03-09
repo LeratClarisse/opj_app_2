@@ -1,16 +1,26 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/services.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import '../../../core/Data/DTO/question_dto.dart';
 
-class QuestionJsonDataSource {
+class QuestionDataSource {
   Future<List<QuestionDTO>> fetchAllQuestions(String course, String category, String subcategory, String month) async {
-    final questionsJson = await rootBundle.loadString('assets/db/questions.json');
+    Box boxQuestions = await Hive.openBox('questions');
+    List<QuestionDTO> questions = [];
 
-    if (questionsJson.isNotEmpty) {
-      Iterable l = json.decode(questionsJson)['questions'];
-      List<QuestionDTO> questions = List<QuestionDTO>.from(l.map((model) => QuestionDTO.fromJson(model)));
+    if (!boxQuestions.containsKey('questionDTOs')) {
+      if (!Hive.isAdapterRegistered(2)) Hive.registerAdapter(QuestionDTOAdapter());
+      final questionsJson = await rootBundle.loadString('assets/db/questions.json');
 
+      questions = List<QuestionDTO>.from(json.decode(questionsJson)['questions'].map((model) => QuestionDTO.fromJson(model)));
+
+      boxQuestions.put('questionDTOs', questions);
+    }
+
+    questions = boxQuestions.get('questionDTOs');
+
+    if (questions.isNotEmpty) {
       if (course != 'Tous') {
         questions = questions.where((q) => q.file == course).toList();
       } else {
@@ -24,10 +34,8 @@ class QuestionJsonDataSource {
           questions = questions.where((q) => q.month == month).toList();
         }
       }
-
-      return questions;
-    } else {
-      throw Exception('Failed to load questions');
     }
+
+    return questions;
   }
 }

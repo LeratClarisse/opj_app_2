@@ -1,18 +1,38 @@
+import 'package:hive/hive.dart';
+
+part 'question_dto.g.dart';
+
+@HiveType(typeId: 2)
 class QuestionDTO {
+  @HiveField(0)
   final int id;
+  @HiveField(1)
   final String label;
+  @HiveField(2)
   final String? answer;
+  @HiveField(3)
   final String file;
+  @HiveField(4)
   final String category;
+  @HiveField(5)
   final String? subcategory;
+  @HiveField(6)
   final String? type;
+  @HiveField(7)
   final String? dpsLongLabel;
+  @HiveField(8)
   final String? dpsArticle;
+  @HiveField(9)
   final String? dpsPunissable;
+  @HiveField(10)
   final String? dpsIntention;
+  @HiveField(11)
   final String? dpsElemMat;
+  @HiveField(12)
   final String? dpsDesc;
+  @HiveField(13)
   final String? month;
+  @HiveField(14, defaultValue: false)
   bool dontshow;
 
   QuestionDTO(

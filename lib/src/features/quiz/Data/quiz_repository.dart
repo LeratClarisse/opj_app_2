@@ -1,23 +1,12 @@
-import 'package:flutter/foundation.dart';
 import 'package:opjapp/src/core/Data/DTO/question_dto.dart';
 
 import '../Domain/question_entity.dart';
-import 'quiz_json_datasource.dart';
-import 'quiz_sqlite_datasource.dart';
+import 'quiz_datasource.dart';
 
 class QuestionRepository {
-  // ignore: prefer_typing_uninitialized_variables
-  late var questionDS;
-
   Future<List<QuestionEntity>> fetchAllQuestions(String course, String category, String subcategory, String month) async {
-    if (kIsWeb) {
-      questionDS = QuestionJsonDataSource();
-    } else {
-      questionDS = QuestionSqliteDataSource();
-    }
-
-    List<QuestionDTO> questionsBrut = await questionDS.fetchAllQuestions(course, category, subcategory, month) as List<QuestionDTO>;
-
+    QuestionDataSource questionDS = QuestionDataSource();
+    List<QuestionDTO> questionsBrut = await questionDS.fetchAllQuestions(course, category, subcategory, month);
     return _convertDatasToEntities(questionsBrut);
   }
 
@@ -25,8 +14,8 @@ class QuestionRepository {
     List<QuestionEntity> questEntities = [];
 
     for (QuestionDTO quest in questionsBrut) {
-      QuestionEntity questEnt = QuestionEntity(quest.id, quest.label, quest.answer, quest.file, quest.category, quest.dpsLongLabel, quest.dpsArticle,
-          quest.dpsPunissable, quest.dpsIntention, quest.dpsElemMat, quest.dpsDesc,
+      QuestionEntity questEnt = QuestionEntity(quest.id, quest.label, quest.answer, quest.file, quest.category,
+          quest.dpsLongLabel, quest.dpsArticle, quest.dpsPunissable, quest.dpsIntention, quest.dpsElemMat, quest.dpsDesc,
           dontshow: quest.dontshow);
 
       questEntities.add(questEnt);

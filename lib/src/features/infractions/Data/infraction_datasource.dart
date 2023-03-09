@@ -8,14 +8,18 @@ import '../../../core/Data/DTO/question_dto.dart';
 class InfractionDataSource {
   Future<List<QuestionDTO>> fetchAllInfractions() async {
     Box boxQuestions = await Hive.openBox('questions');
+    List<QuestionDTO> questions = [];
 
     if (!boxQuestions.containsKey('questionDTOs')) {
+      if (!Hive.isAdapterRegistered(2)) Hive.registerAdapter(QuestionDTOAdapter());
       final infractionsJson = await rootBundle.loadString('assets/db/questions.json');
-      boxQuestions.put('questionDTOs', json.decode(infractionsJson)['questions']);
+
+      questions = List<QuestionDTO>.from(json.decode(infractionsJson)['questions'].map((model) => QuestionDTO.fromJson(model)));
+
+      boxQuestions.put('questionDTOs', questions);
     }
 
-    List<QuestionDTO> questions =
-        List<QuestionDTO>.from(boxQuestions.get('questionDTOs').map((model) => QuestionDTO.fromJson(model)));
+    questions = boxQuestions.get('questionDTOs');
 
     return questions.where((q) => q.category == 'DPS').toList();
   }
